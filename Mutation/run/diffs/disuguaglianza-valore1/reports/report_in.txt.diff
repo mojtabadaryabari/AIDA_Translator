@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\disuguaglianza-valore1\out\reports\report_in.txt
+@@ -19,4 +19,5 @@
+ Message:	Checkers results reported below
+ Details:
++LDS_MainClass_C1.rfisrf_definition - error: Tipo di 'Variabile' non valido. , line 164
+ LDS_MainClass_C1.rfisrf_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_0' non viene mai scritto, line 63
+ LDS_MainClass_C1.rfisrf_definition - info: Il literal 'verde' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 67

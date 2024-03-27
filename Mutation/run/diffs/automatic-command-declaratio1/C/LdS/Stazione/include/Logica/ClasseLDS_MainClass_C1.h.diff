@@ -1,0 +1,51 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -16,7 +16,7 @@
+ 
+ typedef struct {
+-    ManCmdResponse event4;
+     ManCmdResponse event5;
+     ManCmdResponse event6;
++    ManCmdResponse event7;
+ } L_P1_C1_Ack_Comandi_Man;
+ 
+@@ -64,7 +64,7 @@
+ 
+ // ID Risposte ai comandi manuali
+-#define L_P1__event4Reply_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event5Reply_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event6Reply_ID  /* NABCC: ID removed for comparison */
++#define L_P1__event7Reply_ID  /* NABCC: ID removed for comparison */
+ 
+ 
+@@ -137,8 +137,4 @@
+ 
+ // risposte ai comandi manuali
+-/* void L_P1__SetOutEvent4(instance_id_t const my_id, ManCmdResponse const value); */
+-#define L_P1__SetOutEvent4(my_id, value)  \
+-    CHECK_LE((value), TAGGM_MAX); \
+-    LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__event4Reply_ID, (Taggm) (value))
+ /* void L_P1__SetOutEvent5(instance_id_t const my_id, ManCmdResponse const value); */
+ #define L_P1__SetOutEvent5(my_id, value)  \
+@@ -149,4 +145,8 @@
+     CHECK_LE((value), TAGGM_MAX); \
+     LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__event6Reply_ID, (Taggm) (value))
++/* void L_P1__SetOutEvent7(instance_id_t const my_id, ManCmdResponse const value); */
++#define L_P1__SetOutEvent7(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__event7Reply_ID, (Taggm) (value))
+ 
+ // controlli dal piazzale
+@@ -205,10 +205,10 @@
+ // Macro di verifica
+ bool L_P1__Macro2(instance_id_t const my_id );
+-bool L_P1__Macro3(instance_id_t const my_id , bool argom2, C1_Enumerat4 argom3, C1_Enumerat1 argom4, bool argom5, C1_Enumerat4 argom6, C1_Enumerat2 argom7);
++bool L_P1__Macro3(instance_id_t const my_id , bool argom4, C1_Enumerat4 argom5, C1_Enumerat1 argom6, bool argom7, C1_Enumerat4 argom8, C1_Enumerat2 argom9);
+ bool L_P1__Macro4(instance_id_t const my_id );
+ bool L_P1__Macro5(instance_id_t const my_id );
+ 
+ // Macro valorizzate
+-C1_Enumerat1 L_P1__Macro1(instance_id_t const my_id , bool argom, C1_Enumerat4 argom1);
++C1_Enumerat1 L_P1__Macro1(instance_id_t const my_id , bool argom2, C1_Enumerat4 argom3);
+ 
+ 

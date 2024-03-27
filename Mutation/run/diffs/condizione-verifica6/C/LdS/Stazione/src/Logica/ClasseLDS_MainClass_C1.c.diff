@@ -1,0 +1,27 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-verifica6\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -553,6 +553,6 @@
+     
+     commento: {38,}  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  commento: {56,} 11430 commento: {36,} e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  commento: {39,}  commento: {34,} o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   commento: {50,}  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++       o che l'argomento argomento_ave7 sia  uguale a  False  
+     
+-    
+     }
+ */
+@@ -562,4 +562,5 @@
+     
+     //  *38,*  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  *56,* 11430 *36,* e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  *39,*  *34,* o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   *50,*  *,*  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++    //     o che l'argomento argomento_ave7 sia  uguale a  False
+     bool res_ImpliesLogicOp_1 = true;
+     bool res_OrLogicOP_2 = false;
+@@ -584,5 +585,9 @@
+     
+     if(res_OrLogicOP_2){
+-    res_ImpliesLogicOp_1 = (res_ImpliesLogicOp_1 && (L_P1__GetLds_m10(my_id) == c120));
++    bool res_OrLogicOP_9 = false;
++    res_OrLogicOP_9 = (res_OrLogicOP_9 || (L_P1__GetLds_m10(my_id) == c120));
++    res_OrLogicOP_9 = (res_OrLogicOP_9 || (argom5 == false));
++    
++    res_ImpliesLogicOp_1 = (res_ImpliesLogicOp_1 && res_OrLogicOP_9);
+     }
+     res_AndLogicOP_0 = (res_AndLogicOP_0 && res_ImpliesLogicOp_1);

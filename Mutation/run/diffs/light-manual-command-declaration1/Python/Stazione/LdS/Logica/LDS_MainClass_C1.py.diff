@@ -1,0 +1,20 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\light-manual-command-declaration1\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -47,4 +47,9 @@
+         else:
+             self.set_man_cmd_response('eventLds_mainclass_c1_command_comm9DaSender4db07f5e',self.ManCmdResponse.NOOP)
++        if self.is_triggered('eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04'):
++            IS_STATE_ACCEPTING_eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04 = false # no state is accepting this command!
++            self.set_man_cmd_response('eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04',self.ManCmdResponse.BLOCKED if IS_STATE_ACCEPTING_eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04 else self.ManCmdResponse.UNEXPECTED)
++        else:
++            self.set_man_cmd_response('eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04',self.ManCmdResponse.NOOP)
+ 
+ 
+@@ -1220,4 +1225,7 @@
+         notifying_process.response_notify_man_cmd(self, 'eventLds_mainclass_c1_command_comm9DaSender4db07f5e')
+     
++    def eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04(self, notifying_process):
++        notifying_process.response_notify_man_cmd(self, 'eventNabcc_lds_mainclass_c1_command_comm10DaSender4db04')
++    
+     # for each automatic command, the corresponding method is created
+     def eventLds_mainclass_c1_command_comm5(self, notifying_process):

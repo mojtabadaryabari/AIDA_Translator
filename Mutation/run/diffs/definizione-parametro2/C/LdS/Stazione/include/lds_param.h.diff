@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\lds_param.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro2\out\C\LdS\Stazione\include\lds_param.h
+@@ -28,4 +28,5 @@
+     bool lds_m8;
+     bool lds_m9;
++    Intero nabcc;
+ } Classe_L_P1_C1_Param;
+ 

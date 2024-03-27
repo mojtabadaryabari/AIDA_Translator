@@ -1,0 +1,13 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore4\out\C\LdS\Stazione\src\config.c
+@@ -90,5 +90,10 @@
+ }
+ 
++Counter* L_P1__GetNabcc(instance_id_t const my_id)
++{
++    return &(lds_Stazione_data->L_P1_C1[my_id].nabcc);
++}
+ 
++
+ ExecResponse L_P1_C1_GetResponse(instance_id_t const my_id)
+ {

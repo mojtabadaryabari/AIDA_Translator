@@ -1,0 +1,17 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2_priv.h
+@@ -39,4 +39,6 @@
+ offset_t L_P1__GetParamLds_s10Start(instance_id_t const my_id);
+ index_t L_P1__GetParamLds_s10Length(instance_id_t const my_id);
++offset_t L_P1__GetParamNabccStart(instance_id_t const my_id);
++index_t L_P1__GetParamNabccLength(instance_id_t const my_id);
+ 
+ // record
+@@ -47,5 +49,7 @@
+ const L_P1__Recor1* L_P1__GetRecLds_s10(instance_id_t const my_id, index_t const elem_idx);
+ 
++const L_P1__Recor1* L_P1__GetRecNabcc(instance_id_t const my_id, index_t const elem_idx);
+ 
++
+ // comandi automatici
+ 

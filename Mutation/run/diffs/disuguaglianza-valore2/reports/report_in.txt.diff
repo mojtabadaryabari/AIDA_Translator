@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\disuguaglianza-valore2\out\reports\report_in.txt
+@@ -153,5 +153,5 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co3' non viene mai letto, line 28
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' dovrebbe avere accessibilità privata, line 30
+-LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
++LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 150
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 170
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co9' dovrebbe avere accessibilità privata, line 29

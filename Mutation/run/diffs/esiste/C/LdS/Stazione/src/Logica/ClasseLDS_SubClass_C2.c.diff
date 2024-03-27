@@ -1,0 +1,30 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\esiste\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -940,5 +940,5 @@
+     CNL corrispondente:
+      
+-    { commento: {[} commento: {43,}  se LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4  è disattivo , assegna alla macro il valore spento
++     { commento: {[} commento: {43,}  se LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4 esiste e  è disattivo , assegna alla macro il valore spento  
+     
+      commento: {46,} assegna alla macro il valore spento commento: {],}
+@@ -949,6 +949,6 @@
+ C2_Enumerat4 res_macro_val;
+     
+-    //  LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4  è disattivo
+-    bool res_ForAllPredicate_0 = true;
++    //  LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4 esiste e  è disattivo
++    bool res_ForAllPredicateNotEmpty_0 = false;
+     for (index_t i = 0; i < L_P1__GetParamLds_s9Length(my_id); ++i)
+     {
+@@ -956,8 +956,8 @@
+     bool res_ImpliesLogicOp_1 = true;
+     res_ImpliesLogicOp_1 = (res_ImpliesLogicOp_1 && Timer_Disattivo(L_P1__GetLds_m14(it->lds_m21)));
+-    res_ForAllPredicate_0 = res_ImpliesLogicOp_1;
+-    if(!res_ForAllPredicate_0) {break;}
++    res_ForAllPredicateNotEmpty_0 = res_ImpliesLogicOp_1;
++    if(!res_ForAllPredicateNotEmpty_0) {break;}
+     }
+-    if(res_ForAllPredicate_0){
++    if(res_ForAllPredicateNotEmpty_0){
+     
+     res_macro_val = spento;

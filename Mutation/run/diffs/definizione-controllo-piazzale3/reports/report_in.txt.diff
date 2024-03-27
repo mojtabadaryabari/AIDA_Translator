@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-controllo-piazzale3\out\reports\report_in.txt
+@@ -84,4 +84,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' dovrebbe avere accessibilità privata, line 32
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' non viene mai letto, line 32
++LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'nabcc_mainclass_c1_controllo_c2' dovrebbe avere accessibilità privata, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'nabcc_mainclass_c1_controllo_c2' non viene mai letto, line 11
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallogiallo' dell'enumeratore 'Enumerator_1' non viene mai usato, line 64
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai usato, line 66

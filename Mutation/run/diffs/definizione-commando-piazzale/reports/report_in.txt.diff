@@ -1,0 +1,14 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-commando-piazzale\out\reports\report_in.txt
+@@ -20,5 +20,4 @@
+ Details:
+ LDS_MainClass_C1.rfisrf_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_0' non viene mai scritto, line 63
+-LDS_MainClass_C1.rfisrf_definition - info: Il literal 'verde' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 67
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'eventLds_mainclass_c1_command_comm10' è molto simile a 'eventLds_mainclass_c1_command_comm11' nella classe 'LDS_MainClass_C1', line 58
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'eventLds_mainclass_c1_command_comm11' è molto simile a 'eventLds_mainclass_c1_command_comm10' nella classe 'LDS_MainClass_C1', line 59
+@@ -47,4 +46,5 @@
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m6' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m5' nella classe 'LDS_MainClass_C1', line 51
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'lds_mainclass_c1_comando_c7' non viene mai scritto, line 39
++LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'nabcc_mainclass_c1_comando_c5' non viene mai scritto, line 11
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm10 della classe LDS_MainClass_C1 non viene mai ricevuto, line 58
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm11 della classe LDS_MainClass_C1 non viene mai ricevuto, line 59

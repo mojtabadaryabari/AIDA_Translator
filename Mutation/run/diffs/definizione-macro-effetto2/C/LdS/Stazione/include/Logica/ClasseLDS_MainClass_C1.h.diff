@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-effett2\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -202,4 +202,5 @@
+ // Macro di effetto
+ void L_P1__Macro(instance_id_t const my_id );
++void L_P1__Macro6(instance_id_t const my_id , C1_Enumerat2 argom8);
+ 
+ // Macro di verifica

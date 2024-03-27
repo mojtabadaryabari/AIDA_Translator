@@ -1,0 +1,23 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\nessuna\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -51,18 +51,10 @@
+      
+     {
+-    Verifica che il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x
++      Nessuna  
+     }
+ */
+ static inline bool L_P1__Guard3(instance_id_t const my_id)
+ {
+-    bool res_AndLogicOP_0 = true;
+-    
+-    //  che il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x
+-    res_AndLogicOP_0 = (res_AndLogicOP_0 && (L_P1__GetParamLds_s11(my_id) == c120x));
+-    
+-    
+-    
+-    
+-    return res_AndLogicOP_0;
++    return true;
+ }
+ 

@@ -1,0 +1,47 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
+@@ -9,7 +9,7 @@
+ 
+ typedef struct {
+-    bool event13;
+-    bool argom31;
+-    bool argom32;
++    bool event14;
++    bool argom33;
++    bool argom34;
+ } L_P1_C3_Comandi_Auto;
+ 
+@@ -44,21 +44,21 @@
+ 
+ // comandi automatici
+-/* bool L_P1__GetCAEvent13(instance_id_t const my_id); */
+-#define L_P1__GetCAEvent13(my_id) (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event13)
++/* bool L_P1__GetCAEvent14(instance_id_t const my_id); */
++#define L_P1__GetCAEvent14(my_id) (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event14)
+ 
+-/* bool L_P1__GetCAArgom31(instance_id_t const my_id); */
+-#define L_P1__GetCAArgom31(my_id)  (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom31)
++/* bool L_P1__GetCAArgom33(instance_id_t const my_id); */
++#define L_P1__GetCAArgom33(my_id)  (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom33)
+ 
+-/* bool L_P1__GetCAArgom32(instance_id_t const my_id); */
+-#define L_P1__GetCAArgom32(my_id)  (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom32)
++/* bool L_P1__GetCAArgom34(instance_id_t const my_id); */
++#define L_P1__GetCAArgom34(my_id)  (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom34)
+ 
+-/* void L_P1__SetCAEvent13(instance_id_t const my_id, bool const value); */
+-#define L_P1__SetCAEvent13(my_id, value)   ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event13 = (value)
++/* void L_P1__SetCAEvent14(instance_id_t const my_id, bool const value); */
++#define L_P1__SetCAEvent14(my_id, value)   ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event14 = (value)
+ 
+-/* void L_P1__SetCAArgom31(instance_id_t const my_id, bool const value); */
+-#define L_P1__SetCAArgom31(my_id, value)  ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom31 = (value)
++/* void L_P1__SetCAArgom33(instance_id_t const my_id, bool const value); */
++#define L_P1__SetCAArgom33(my_id, value)  ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom33 = (value)
+ 
+-/* void L_P1__SetCAArgom32(instance_id_t const my_id, bool const value); */
+-#define L_P1__SetCAArgom32(my_id, value)  ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom32 = (value)
++/* void L_P1__SetCAArgom34(instance_id_t const my_id, bool const value); */
++#define L_P1__SetCAArgom34(my_id, value)  ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom34 = (value)
+ 
+ 

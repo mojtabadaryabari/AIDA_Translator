@@ -1,0 +1,22 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\nessuna\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -239,7 +239,5 @@
+                     DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
+                     ]),#0
+-                    DIBoolExpr("""NAryLogicOP (AND)\nVerifica che il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x""", [
+-                    DIBoolExpr("""EqualImpl\nche il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x""", [
+-                    ]),#0
++                    DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
+                     ]),#1
+                     DIBoolExpr("""NAryLogicOP (AND)\nVerifica che il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x""", [
+@@ -358,8 +356,8 @@
+          
+         {
+-        Verifica che il parametro LDS_SubClass_C2_parametro_P4 sia  uguale a c120x
++          Nessuna  
+         }
+         """
+-        return db((db(self.get_lds_subclass_c2_parametro_p4() == GlobalEnumeration.c120x, self.dbs[1].subs[0])), self.dbs[1])
++        return db((True), self.dbs[1])
+     
+     def guard_NOMINAL_ACTUATION_state1_000(self):

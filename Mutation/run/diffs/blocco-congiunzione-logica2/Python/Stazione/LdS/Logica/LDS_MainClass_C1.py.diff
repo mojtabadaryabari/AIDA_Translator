@@ -1,0 +1,51 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-congiunzione-logica2\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -804,5 +804,5 @@
+         { commento: {62,}  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+          commento: {63,} commento: {36,}  se il timer LDS_MainClass_C1_timer_T3 non è attivo commento: {38,} o  se il contatore LDS_MainClass_C1_contatore_Co9 è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 commento: {36,} e  se il timer LDS_MainClass_C1_timer_T8 non è scaduto o  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti { 
+-         commento: {61,}  se il parametro ConsDef  è  uguale a FALSE  commento: {34,} e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++         commento: {61,}  se il parametro ConsDef  è  uguale a FALSE  commento: {34,} e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+          commento: {34,}  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  commento: {36,} o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  commento: {34,} e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   commento: {47,}   il parametro ConsDef sia uguale a FALSE 
+          commento: {104,} e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -833,5 +833,5 @@
+                             DIBoolExpr("""NAryLogicOP (AND)\n/*62,*/  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*63,*/ /*36,*/  se il timer LDS_MainClass_C1_timer_T3 non è attivo /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co9 è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è scaduto o  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti { 
+- /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++ /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -854,5 +854,5 @@
+                             DIBoolExpr("""ImpliesLogicOpImpl\n/*62,*/  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*63,*/ /*36,*/  se il timer LDS_MainClass_C1_timer_T3 non è attivo /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co9 è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è scaduto o  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti { 
+- /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++ /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -875,5 +875,5 @@
+                             DIBoolExpr("""NAryLogicOP (OR)\nAlmeno una delle seguenti { 
+  /*63,*/ /*36,*/  se il timer LDS_MainClass_C1_timer_T3 non è attivo /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co9 è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è scaduto o  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti { 
+- /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++ /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -893,5 +893,5 @@
+  }""", [
+                             DIBoolExpr("""ImpliesLogicOpImpl\n/*63,*/ /*36,*/  se il timer LDS_MainClass_C1_timer_T3 non è attivo /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co9 è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è scaduto o  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti { 
+- /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++ /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -930,5 +930,5 @@
+                             ]),#0
+                             DIBoolExpr("""NAryLogicOP (XOR)\nSolo una delle seguenti { 
+- /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++ /*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 
+@@ -944,5 +944,5 @@
+ 
+  }""", [
+-                            DIBoolExpr("""ImpliesLogicOpImpl\n/*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Tutte le seguenti { 
++                            DIBoolExpr("""ImpliesLogicOpImpl\n/*61,*/  se il parametro ConsDef  è  uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  True  e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+  /*34,*/  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False  /*36,*/ o  se il timer LDS_MainClass_C1_timer_T2 non è scaduto o  se il parametro ConsDef è uguale a FALSE  /*34,*/ e  se il parametro LDS_MainClass_C1_parametro_P5 non è  diverso da  False , Verifica che   /*47,*/   il parametro ConsDef sia uguale a FALSE 
+  /*104,*/ e  che   il parametro ConsDef sia uguale a FALSE 

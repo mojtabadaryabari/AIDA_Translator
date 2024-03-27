@@ -1,0 +1,32 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -64,9 +64,10 @@
+     # method called by the configurator before the use of the scheduler
+     # it creates the references of the processes needed
+-    def init_configuration(self, lds_subclass_c2_lista_l1, lds_subclass_c2_lista_l4, lds_subclass_c2_lista_l7, consdef, lds_subclass_c2_parametro_p4):
++    def init_configuration(self, lds_subclass_c2_lista_l1, lds_subclass_c2_lista_l4, lds_subclass_c2_lista_l7, nabcc_lds_subclass_c2_lista_l4, consdef, lds_subclass_c2_parametro_p4):
+         # initialize the record type parameters
+         self.set_lds_subclass_c2_lista_l1(lds_subclass_c2_lista_l1)
+         self.set_lds_subclass_c2_lista_l4(lds_subclass_c2_lista_l4)
+         self.set_lds_subclass_c2_lista_l7(lds_subclass_c2_lista_l7)
++        self.set_nabcc_lds_subclass_c2_lista_l4(nabcc_lds_subclass_c2_lista_l4)
+         # initialize the simple type parameters
+         self.set_consdef(consdef)
+@@ -95,5 +96,8 @@
+         self.memory.set_var(self.station_name,self.name,self.instance_name,"lds_subclass_c2_lista_l7",lds_subclass_c2_lista_l7)
+ 
++    def set_nabcc_lds_subclass_c2_lista_l4(self, nabcc_lds_subclass_c2_lista_l4):
++        self.memory.set_var(self.station_name,self.name,self.instance_name,"nabcc_lds_subclass_c2_lista_l4",nabcc_lds_subclass_c2_lista_l4)
+ 
++
+     # getters for record type parameters
+     def get_lds_subclass_c2_lista_l1(self):
+@@ -106,5 +110,8 @@
+         return self.memory.get_var(self.station_name,self.name,self.instance_name,"lds_subclass_c2_lista_l7")
+ 
++    def get_nabcc_lds_subclass_c2_lista_l4(self):
++        return self.memory.get_var(self.station_name,self.name,self.instance_name,"nabcc_lds_subclass_c2_lista_l4")
+ 
++
+     # setters for simple type parameters
+     def set_consdef(self, consdef):

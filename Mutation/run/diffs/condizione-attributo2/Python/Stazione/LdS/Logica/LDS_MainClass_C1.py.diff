@@ -1,0 +1,38 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo2\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -381,5 +381,5 @@
+          ,altrimenti  commento: {66,} Assegna al comando LDS_MainClass_C1_comando_C4 il valore  False 
+         
+-        
++        se il controllo LDS_MainClass_C1_controllo_C9 è  uguale a False e 
+           se il parametro ConsDef è uguale a FALSE  commento: {37,} e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, commento: {68,}Attiva il timer LDS_MainClass_C1_timer_T3
+         
+@@ -494,9 +494,15 @@
+                             ]),#0
+                             ]),#3
+-                            DIStatement("""ITEStatementImpl\nse il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3
++                            DIStatement("""ITEStatementImpl\nse il controllo LDS_MainClass_C1_controllo_C9 è  uguale a False e 
++  se il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3
+ 
+  ,altrimenti  /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3""", [
+-                            DIBoolExpr("""NAryLogicOP (AND)\nse il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\nse il controllo LDS_MainClass_C1_controllo_C9 è  uguale a False e 
++  se il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\n( (lds_mainclass_c1_controllo_c9)  è uguale a  (False) )  e  ( (consdef)  è uguale a  (False) )""", [
++                            DIBoolExpr("""EqualImpl\n(lds_mainclass_c1_controllo_c9)  è uguale a  (False)""", [
++                            ]),#0
+                             DIBoolExpr("""EqualImpl\n(consdef)  è uguale a  (False)""", [
++                            ]),#1
+                             ]),#0
+                             DIBoolExpr("""EqualImpl\n(lds_mainclass_c1_variabile_v1)  è uguale a  (lds_mainclass_c1_variabile_v1)""", [
+@@ -531,7 +537,8 @@
+         else:
+             self.set_lds_mainclass_c1_comando_c4(False)
+-        #  se il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3
++        #  se il controllo LDS_MainClass_C1_controllo_C9 è  uguale a False e 
++        #    se il parametro ConsDef è uguale a FALSE  /*37,*/ e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3
+         #   ,altrimenti  /*68,*/Attiva il timer LDS_MainClass_C1_timer_T3
+-        if db((db(self.get_consdef() == False, di_ctx.subs[4].subs[0].subs[0]) and db(self.get_lds_mainclass_c1_variabile_v1() == self.get_lds_mainclass_c1_variabile_v1(), di_ctx.subs[4].subs[0].subs[1])), di_ctx.subs[4].subs[0]):
++        if db((db((db(self.get_lds_mainclass_c1_controllo_c9() == False, di_ctx.subs[4].subs[0].subs[0].subs[0]) and db(self.get_consdef() == False, di_ctx.subs[4].subs[0].subs[0].subs[1])), di_ctx.subs[4].subs[0].subs[0]) and db(self.get_lds_mainclass_c1_variabile_v1() == self.get_lds_mainclass_c1_variabile_v1(), di_ctx.subs[4].subs[0].subs[1])), di_ctx.subs[4].subs[0]):
+             self.get_lds_mainclass_c1_timer_t3().attiva()
+         else:

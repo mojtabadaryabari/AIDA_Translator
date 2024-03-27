@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-effetto1\out\reports\report_in.txt
+@@ -109,4 +109,5 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m5' non viene mai utilizzata, line 49
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m6' non viene mai utilizzata, line 51
++LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroNabcc_lds_mainclass_c1_macroef_m8' non viene mai utilizzata, line 41
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v1' dovrebbe avere accessibilità protetta, line 13
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v7' dovrebbe avere accessibilità protetta, line 14

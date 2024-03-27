@@ -1,0 +1,26 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-verifica4\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -1171,4 +1171,23 @@
+         return db((db(not db((db(self.get_lds_mainclass_c1_contatore_co6().get_valore() < self.get_lds_mainclass_c1_contatore_co6().get_valore(), di_ctx.subs[0].subs[0].subs[0].subs[0]) and db(self.get_consdef() == False, di_ctx.subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0]) or db(not db((db(self.get_consdef() == False, di_ctx.subs[0].subs[0].subs[1].subs[0].subs[0]) or db(not db(self.get_lds_mainclass_c1_contatore_co9().get_valore() == 14, di_ctx.subs[0].subs[0].subs[1].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[1].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[1].subs[0]) or db((db((db((db(not db(self.get_lds_mainclass_c1_timer_t3().isAttivato(), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0].subs[0].subs[0]) and db(self.get_consdef() == False, di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0].subs[0]) or db(self.get_lds_mainclass_c1_timer_t1().isAttivato(), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[0]) or db((db(not db(not db(self.get_lds_mainclass_c1_parametro_p5() == True, di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1].subs[0]) and db(not db(self.get_lds_mainclass_c1_parametro_p3() == True, di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1].subs[1])), di_ctx.subs[0].subs[0].subs[1].subs[1].subs[1])), di_ctx.subs[0].subs[0].subs[1].subs[1]), di_ctx.subs[0].subs[0].subs[1]), di_ctx.subs[0].subs[0]) and db(self.get_lds_mainclass_c1_timer_t2().isAttivato(), di_ctx.subs[0].subs[1])), di_ctx.subs[0])
+     
++    @srf_value_macro("macroNabcc_mainclass_c1_macrove_m")
++    def macroNabcc_mainclass_c1_macrove_m(self, argomento_ave9, di_ctx: DIVerifyMacro):
++        """
++        CNL corrispondente:
++         {Verifica che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120}
++        """
++        def populate_macroNabcc_mainclass_c1_macrove_m_SrfMacroDefInfo(macroDebInfo: DIVerifyMacro):
++            #if macroDebInfo is not yet populated
++            if not macroDebInfo.is_initialized() :
++                macroDebInfo.initialize([
++                            DIBoolExpr("""NAryLogicOP (AND)\nVerifica che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++                            DIBoolExpr("""EqualImpl\nche la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++                            ]),#0
++                            ]),#0
++                ])
++
++        populate_macroNabcc_mainclass_c1_macrove_m_SrfMacroDefInfo(di_ctx)
++        return db((db(self.get_lds_mainclass_c1_variabile_v1() == GlobalEnumeration.c120, di_ctx.subs[0].subs[0])), di_ctx.subs[0])
++    
+     # value macros
+     @srf_value_macro("macroLds_mainclass_c1_macrova_m10")

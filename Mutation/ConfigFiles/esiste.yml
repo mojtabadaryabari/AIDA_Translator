@@ -1,0 +1,17 @@
+name: 'esiste'
+generation_tasks:
+  - type: 'simplediff.simple_patch'
+    file: 'Sheets/Stazione/LdS/LDS_SubClass_C2.rfisrf_definition'
+    # List=Find_List('LDS_SubClass_C2_lista_L\d+') 
+    # Line=Find(se.*\{List}\s*è)
+    at_line: '\{Line}'
+    execute: 'Replace' # Insert between list and è
+    text: ' esiste e  '
+
+
+oracle_tasks:
+  - type: 'simplediff.direct_diff_output'
+    output: '\{diff_dir}/esiste'
+    criteria:
+      - target: 'output'
+        expect: 'success'

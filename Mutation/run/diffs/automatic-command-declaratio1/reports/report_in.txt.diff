@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\reports\report_in.txt
+@@ -51,4 +51,5 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm5 della classe LDS_MainClass_C1 non viene mai ricevuto, line 57
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm9DaSender4db07f5e della classe LDS_MainClass_C1 non viene mai ricevuto, line 56
++LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Nabcc_lds_mainclass_c1_command_comm5 della classe LDS_MainClass_C1 non viene mai ricevuto, line 53
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co5' dovrebbe avere accessibilità privata, line 23
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co5' non viene mai letto, line 23

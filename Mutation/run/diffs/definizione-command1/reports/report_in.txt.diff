@@ -1,0 +1,14 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command1\out\reports\report_in.txt
+@@ -209,5 +209,4 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v7' dovrebbe avere accessibilità privata, line 16
+ LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 68
+-LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'c180' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 68
+ LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'rossogiallogiallo' dell'enumeratore 'Enumerator_1' non viene mai scritto, line 65
+ LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'eventLdv_mainclass_c1_command_comm2' è molto simile a 'eventLdv_mainclass_c1_command_comm8' nella classe 'LDV_MainClass_C1', line 57
+@@ -232,4 +231,5 @@
+ LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrove_m2' è molto simile a 'macroLdv_mainclass_c1_macrove_m4' nella classe 'LDV_MainClass_C1', line 42
+ LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrove_m4' è molto simile a 'macroLdv_mainclass_c1_macrove_m2' nella classe 'LDV_MainClass_C1', line 44
++LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando al piazzale 'ldv_mainclass_c1_output_1' non viene mai scritto, line 31
+ LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando self.Ldv_mainclass_c1_command_comm1DaSender59cfb9d8 della classe LDV_MainClass_C1 non viene mai ricevuto, line 59
+ LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando self.Ldv_mainclass_c1_command_comm2 della classe LDV_MainClass_C1 non viene mai ricevuto, line 57

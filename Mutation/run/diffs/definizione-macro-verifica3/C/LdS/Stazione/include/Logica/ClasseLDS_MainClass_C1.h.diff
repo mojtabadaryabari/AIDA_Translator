@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-verifica3\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -208,4 +208,5 @@
+ bool L_P1__Macro4(instance_id_t const my_id );
+ bool L_P1__Macro5(instance_id_t const my_id );
++bool L_P1__Macro6(instance_id_t const my_id );
+ 
+ // Macro valorizzate

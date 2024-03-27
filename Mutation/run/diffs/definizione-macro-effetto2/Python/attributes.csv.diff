@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-effett2\out\Python\attributes.csv
+@@ -35,4 +35,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro verifica,macroLds_mainclass_c1_macrove_m6,BasicType:Boolean,privato,no,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro effetto,macroLds_mainclass_c1_macroef_m8,,privato,no,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro effetto,macroNabcc_lds_mainclass_c1_macroef_m,,privato,no,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro valorizzata,macroLds_mainclass_c1_macrova_m10,Enumerator:Enumerator_1,pubblico,no,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,"NABCC: References Removed for Comparison"

@@ -1,0 +1,10 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -1224,4 +1224,7 @@
+         notifying_process.response_notify_auto_cmd(self, 'eventLds_mainclass_c1_command_comm5')
+     
++    def eventNabcc_lds_mainclass_c1_command_comm5(self, notifying_process, argomento_ave3, argomento_ave4):
++        notifying_process.response_notify_auto_cmd(self, 'eventNabcc_lds_mainclass_c1_command_comm5', argomento_ave3=argomento_ave3, argomento_ave4=argomento_ave4)
++    
+ 
+     def update_precedente(self):

@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio2\out\C\LdS\Stazione\src\config.c
+@@ -430,4 +430,5 @@
+     for (instance_id_t i = 1; i <= getNumeroL_P1_C1(); ++i) {
+         L_P1__SetCAEvent2(i, false);
++        L_P1__SetCAEvent4(i, false);
+     }
+ }

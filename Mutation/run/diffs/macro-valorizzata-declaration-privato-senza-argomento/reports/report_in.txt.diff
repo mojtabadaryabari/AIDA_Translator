@@ -1,0 +1,20 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\macro-valorizzata-declaration-privato-senza-argomento\out\reports\report_in.txt
+@@ -20,4 +20,5 @@
+ Details:
+ LDS_MainClass_C1.rfisrf_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_0' non viene mai scritto, line 63
++LDS_MainClass_C1.rfisrf_definition - info: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai letto, line 66
+ LDS_MainClass_C1.rfisrf_definition - info: Il literal 'verde' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 67
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'eventLds_mainclass_c1_command_comm10' è molto simile a 'eventLds_mainclass_c1_command_comm11' nella classe 'LDS_MainClass_C1', line 58
+@@ -85,5 +86,4 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' non viene mai letto, line 32
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallogiallo' dell'enumeratore 'Enumerator_1' non viene mai usato, line 64
+-LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai usato, line 66
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'rosso' dell'enumeratore 'Enumerator_2' non viene mai usato, line 65
+ LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
+@@ -109,4 +109,5 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m5' non viene mai utilizzata, line 49
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m6' non viene mai utilizzata, line 51
++LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroNabcc_mainclass_c1_macrova_m10' non viene mai utilizzata, line 41
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v1' dovrebbe avere accessibilità protetta, line 13
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v7' dovrebbe avere accessibilità protetta, line 14

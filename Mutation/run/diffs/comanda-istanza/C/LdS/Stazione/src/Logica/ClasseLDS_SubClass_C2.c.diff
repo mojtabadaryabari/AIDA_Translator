@@ -1,0 +1,24 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\comanda-istanza\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -107,5 +107,5 @@
+      
+     {
+-    Incrementa il contatore LDS_SubClass_C2_contatore_Co10
++     Comanda al campo LDS_MainClass_C1 di LDS_SubClass_C2_lista_L1 di eseguire  commento: {114,} LDS_MainClass_C1_command_comm10 
+     }
+ */
+@@ -113,6 +113,12 @@
+ {
+     
+-    //  Incrementa il contatore LDS_SubClass_C2_contatore_Co10
+-    Counter_Incr(L_P1__GetLds_s18(my_id));
++    //  Comanda al campo LDS_MainClass_C1 di LDS_SubClass_C2_lista_L1 di eseguire  *114,* LDS_MainClass_C1_command_comm10
++    for (index_t i = 0; i < L_P1__GetParamLds_s8Length(my_id); ++i)
++    {
++    const L_P1__Recor * it = L_P1__GetRecLds_s8(my_id,i);
++    
++    L_P1__SetCAEvent(it->lds_m20,true);
++    scheduler_NotifyCommand(L_P1_C1_TO_GLOBAL(it->lds_m20));
++    }
+ }
+ 

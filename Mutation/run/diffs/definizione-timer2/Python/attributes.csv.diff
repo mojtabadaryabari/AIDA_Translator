@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-timer2\out\Python\attributes.csv
+@@ -19,4 +19,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",timer,lds_mainclass_c1_timer_t3,Timer:TimerState,pubblico,si,,1000,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",timer,lds_mainclass_c1_timer_t8,Timer:TimerState,pubblico,si,,1430000,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",timer,nabcc_mainclass_c1_timer_t5,Timer:TimerState,privato,si,,2000,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,lds_mainclass_c1_contatore_co5,Counter,protetto,si,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,lds_mainclass_c1_contatore_co6,Counter,protetto,si,,"NABCC: References Removed for Comparison"

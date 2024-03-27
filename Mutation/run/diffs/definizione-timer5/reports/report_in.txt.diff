@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-timer5\out\reports\report_in.txt
+@@ -95,4 +95,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t3' dovrebbe avere accessibilità protetta, line 26
+ LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t8' dovrebbe avere accessibilità protetta, line 28
++LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'nabcc_mainclass_c1_restoreti_ti3' dovrebbe avere accessibilità privata, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'nabcc_mainclass_c1_restoreti_ti3' non viene mai letto, line 11
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 71
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a9' non viene mai utilizzato nella macro, line 71

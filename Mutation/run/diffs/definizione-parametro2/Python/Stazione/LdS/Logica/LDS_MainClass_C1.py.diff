@@ -1,0 +1,33 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro2\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -65,5 +65,5 @@
+     # method called by the configurator before the use of the scheduler
+     # it creates the references of the processes needed
+-    def init_configuration(self, consdef, lds_mainclass_c1_parametro_p2, lds_mainclass_c1_parametro_p3, lds_mainclass_c1_parametro_p5):
++    def init_configuration(self, consdef, lds_mainclass_c1_parametro_p2, lds_mainclass_c1_parametro_p3, lds_mainclass_c1_parametro_p5, nabcc_mainclass_c1_parametro_p3):
+         # initialize the record type parameters
+         # initialize the simple type parameters
+@@ -72,4 +72,5 @@
+         self.set_lds_mainclass_c1_parametro_p3(lds_mainclass_c1_parametro_p3)
+         self.set_lds_mainclass_c1_parametro_p5(lds_mainclass_c1_parametro_p5)
++        self.set_nabcc_mainclass_c1_parametro_p3(nabcc_mainclass_c1_parametro_p3)
+ 
+         # initialize the timers
+@@ -104,5 +105,8 @@
+         self.memory.set_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_parametro_p5",lds_mainclass_c1_parametro_p5)
+ 
++    def set_nabcc_mainclass_c1_parametro_p3(self, nabcc_mainclass_c1_parametro_p3):
++        self.memory.set_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_parametro_p3",nabcc_mainclass_c1_parametro_p3)
+ 
++
+     # getters for simple type parameters
+     def get_consdef(self):
+@@ -118,5 +122,8 @@
+         return self.memory.get_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_parametro_p5")
+ 
++    def get_nabcc_mainclass_c1_parametro_p3(self):
++        return self.memory.get_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_parametro_p3")
+ 
++
+     # setters for comandi al piazzale
+     def set_lds_mainclass_c1_comando_c4(self, lds_mainclass_c1_comando_c4):

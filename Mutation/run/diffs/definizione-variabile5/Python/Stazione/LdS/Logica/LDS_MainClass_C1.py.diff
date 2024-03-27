@@ -1,0 +1,23 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-variabile5\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -25,4 +25,5 @@
+         self.set_lds_mainclass_c1_variabile_v1(GlobalEnumeration.rosso)
+         self.set_lds_mainclass_c1_variabile_v7(GlobalEnumeration.giallox)
++        self.set_nabcc_mainclass_c1_variabile_v3(0)
+ 
+         self._expected_commands_map = {
+@@ -149,4 +150,6 @@
+     def set_lds_mainclass_c1_variabile_v7(self, lds_mainclass_c1_variabile_v7):
+         self.memory.set_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_variabile_v7",lds_mainclass_c1_variabile_v7)
++    def set_nabcc_mainclass_c1_variabile_v3(self, nabcc_mainclass_c1_variabile_v3):
++        self.memory.set_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_variabile_v3",nabcc_mainclass_c1_variabile_v3)
+ 
+     # getters for state variables
+@@ -157,4 +160,7 @@
+         return self.memory.get_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_variabile_v7")
+ 
++    def get_nabcc_mainclass_c1_variabile_v3(self):
++        return self.memory.get_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_variabile_v3")
++
+     def get_stato_restore(self):
+         return self.memory.get_var(self.station_name,self.name,self.instance_name,"stato_restore")

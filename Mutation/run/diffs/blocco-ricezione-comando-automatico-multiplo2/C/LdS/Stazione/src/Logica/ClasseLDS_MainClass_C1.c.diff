@@ -1,0 +1,51 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-ricezione-comando-automatico-multiplo2\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -70,10 +70,24 @@
+      
+     {
+-    Nessuna
++      Almeno una delle seguenti {Ricezione del  comando   LDS_MainClass_C1_command_comm5  } 
+     }
+ */
+ static inline bool L_P1__Guard1(instance_id_t const my_id)
+ {
+-    return true;
++    bool res_AndLogicOP_0 = true;
++    
++    //  comando   LDS_MainClass_C1_command_comm5
++    res_AndLogicOP_0 = (res_AndLogicOP_0 && L_P1__GetCAEvent2(my_id));
++    
++    if(res_AndLogicOP_0){
++    L_P1__SetCAEvent2(my_id,false);
++    }
++    else{
++    
++    }
++    
++    
++    
++    return res_AndLogicOP_0;
+ }
+ 
+@@ -177,10 +191,4 @@
+ 
+         case C1_St_state:
+-            if (L_P1__Guard1(my_id)) {
+-                L_P1_C1_SetState(my_id, C1_St_state);
+-                L_P1__Effec1(my_id);				
+-                L_P1_C1_SetResponse(my_id, LDS_SCHED_WAIT);
+-            }
+-            else
+                 {STOP_EXECUTION(LOGIC_ERROR); } // fine transizioni da state nella fase LDS_PHASE_STATE
+             break;
+@@ -199,4 +207,10 @@
+ 
+         case C1_St_state:
++            if (L_P1__Guard1(my_id)) {
++                L_P1_C1_SetState(my_id, C1_St_state);
++                L_P1__Effec1(my_id);				
++                L_P1_C1_SetResponse(my_id, LDS_SCHED_DONE);
++            }
++            else
+                 { } // fine transizioni da state nella fase LDS_PHASE_AUTO
+             break;

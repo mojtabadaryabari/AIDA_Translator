@@ -1,0 +1,17 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-controllo-piazzale4\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -52,4 +52,5 @@
+ #define L_P1__lds_m5_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__lds_m6_ID  /* NABCC: ID removed for comparison */
++#define L_P1__nabcc_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Comandi al piazzale
+@@ -167,4 +168,8 @@
+     (bool) \
+     LogicGetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__lds_m6_ID)
++/* bool L_P1__GetInNabcc(instance_id_t const my_id); */
++#define L_P1__GetInNabcc(my_id)  \
++    (bool) \
++    LogicGetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__nabcc_ID)
+ 
+ // comandi al piazzale

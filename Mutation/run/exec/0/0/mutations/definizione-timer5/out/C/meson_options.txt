@@ -1,0 +1,12 @@
+option('system-dir', type: 'string', value: '../../../../System',
+       description: 'path to system dir containing Common and application-specific directories (e.g. SwIMRS). Default: ../../../../System')
+
+option('logic-utils-dir', type: 'string',
+       value: '../../../../GenericLogic/LogicUtils',
+       description: 'path to logic utils dir containing general utilities for logics. Default: ../../../../GenericLogic/LogicUtils')
+
+option('coverage-enabled', type: 'boolean', value: 'false',
+       description: 'used to enable/disable inclusion of libraries for coverage')
+
+option('with-feasibility', type: 'boolean', value: 'false',
+       description: 'If feasibility library shall be built')

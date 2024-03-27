@@ -1,0 +1,25 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
+@@ -22,9 +22,9 @@
+ 
+     // dati dinamici invisibili
+-    Timer ldv_m6;
+-    Counter ldv_m7;
++    Timer ldv_m7;
+     Counter ldv_m8;
+     Counter ldv_m9;
+     Counter ldv_m10;
++    Counter ldv_m11;
+     L_P1_C3_Comandi_Auto comandi_automatici;
+     ExecResponse response;
+@@ -36,7 +36,7 @@
+ // parametri
+ bool L_P1__GetParamConsd2(instance_id_t const my_id);
+-bool L_P1__GetParamLdv_m(instance_id_t const my_id);
+-Intero L_P1__GetParamLdv_m1(instance_id_t const my_id);
+-C3_Enumerat1 L_P1__GetParamLdv_m2(instance_id_t const my_id);
++bool L_P1__GetParamLdv_m1(instance_id_t const my_id);
++Intero L_P1__GetParamLdv_m2(instance_id_t const my_id);
++C3_Enumerat1 L_P1__GetParamLdv_m3(instance_id_t const my_id);
+ 
+ 

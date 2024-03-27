@@ -1,0 +1,14 @@
+name: 'attuazione-nominale2'
+generation_tasks:
+  - type: 'simplediff.simple_patch'
+    file: 'Sheets/Stazione/LdV/LDV_MainClass_C1.rfisrf_ldv_sheet'
+    at_line: 29
+    execute: 'Replace'
+    text: 'Effetti  della attuazione {'
+
+oracle_tasks:
+  - type: 'simplediff.direct_diff_output'
+    output: '\{diff_dir}/attuazione-nominale2'
+    criteria:
+      - target: 'output'
+        expect: 'success'

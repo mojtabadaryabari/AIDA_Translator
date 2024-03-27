@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore3\out\reports\report_in.txt
+@@ -76,4 +76,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 87
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 88
++LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'nabcc_mainclass_c1_contatore_co4' dovrebbe avere accessibilità privata, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'nabcc_mainclass_c1_contatore_co4' non viene mai letto, line 11
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' dovrebbe avere accessibilità privata, line 33
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' non viene mai letto, line 33

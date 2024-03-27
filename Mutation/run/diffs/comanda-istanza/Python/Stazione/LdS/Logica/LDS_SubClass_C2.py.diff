@@ -1,0 +1,32 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\comanda-istanza\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -247,4 +247,8 @@
+                     ]),#0
+                     ]),#2
++                    DIStatement("""Statement ForAll\nComanda al campo LDS_MainClass_C1 di LDS_SubClass_C2_lista_L1 di eseguire  /*114,*/ LDS_MainClass_C1_command_comm10""", [
++                    DIStatement("""ITStatement\nesegui il comando 'eventLds_mainclass_c1_command_comm10 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1'""", [
++                    ]),#0
++                    ]),#3
+                      )
+         add_instance_deb_info(self.station_name, self.name, self.instance_name, CdLDebInfo([
+@@ -264,5 +268,5 @@
+             TransDebInfo(Stazione.LdS.Logica.Enumeratives.LDS_SubClass_C2.Stateenumerator.state1,Stazione.LdS.Logica.Enumeratives.LDS_SubClass_C2.Stateenumerator.state1,
+                          guard=(self.dbs[1], ),
+-                         effect=(),
++                         effect=(self.dbs[3], ),
+                          phase = TransPhase.Stato
+                          ),
+@@ -388,9 +392,10 @@
+          
+         {
+-        Incrementa il contatore LDS_SubClass_C2_contatore_Co10
++         Comanda al campo LDS_MainClass_C1 di LDS_SubClass_C2_lista_L1 di eseguire  commento: {114,} LDS_MainClass_C1_command_comm10 
+         }
+         """
+-        #  Incrementa il contatore LDS_SubClass_C2_contatore_Co10
+-        self.get_lds_subclass_c2_contatore_co10().incrementa()
++        #  Comanda al campo LDS_MainClass_C1 di LDS_SubClass_C2_lista_L1 di eseguire  /*114,*/ LDS_MainClass_C1_command_comm10
++        for idx, it in enumerate(self.get_lds_subclass_c2_lista_l1()):
++                it.get_lds_mainclass_c1().eventLds_mainclass_c1_command_comm10(self)
+     
+     def effect_NOMINAL_ACTUATION_state1_000(self):

@@ -1,0 +1,51 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo7\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -367,5 +367,5 @@
+          ,altrimenti  commento: {72,}Azzera il contatore LDS_MainClass_C1_contatore_Co5
+         
+-        
++        se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento e 
+           se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento commento: {40,}  commento: {38,} o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 commento: {38,} e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  commento: {56,} contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  commento: {67,} Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 commento: {67,}
+         
+@@ -412,11 +412,16 @@
+                             ]),#0
+                             ]),#0
+-                            DIStatement("""ITEStatementImpl\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
++                            DIStatement("""ITEStatementImpl\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento e 
++  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
+ 
+  ,altrimenti  /*66,*/ Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex""", [
+-                            DIBoolExpr("""NAryLogicOP (OR)\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE""", [
+-                            DIBoolExpr("""NAryLogicOP (OR)\n( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) )  o  
++                            DIBoolExpr("""NAryLogicOP (OR)\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento e 
++  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE""", [
++                            DIBoolExpr("""NAryLogicOP (OR)\n( ( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) )  e  
++( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) ) )  o  
+ ( ( negazione di ((lds_mainclass_c1_contatore_co8)  è minore di  (lds_mainclass_c1_contatore_co6)) )  e  
+ ( negazione di (negazione di ((lds_mainclass_c1_contatore_co8)  è uguale a  (lds_mainclass_c1_contatore_co8))) ) )""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\n( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) )  e  
++( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) )""", [
+                             DIBoolExpr("""Operatore Logico Not\nnegazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento))""", [
+                             DIBoolExpr("""EqualImpl\n(chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)""", [
+@@ -424,4 +429,10 @@
+                             ]),#0
+                             ]),#0
++                            DIBoolExpr("""Operatore Logico Not\nnegazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento))""", [
++                            DIBoolExpr("""EqualImpl\n(chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)""", [
++                            DIValueMacro("""MacroCallValorizzataImpl\nchiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10'"""),#0
++                            ]),#0
++                            ]),#1
++                            ]),#0
+                             DIBoolExpr("""NAryLogicOP (AND)\n( negazione di ((lds_mainclass_c1_contatore_co8)  è minore di  (lds_mainclass_c1_contatore_co6)) )  e  
+ ( negazione di (negazione di ((lds_mainclass_c1_contatore_co8)  è uguale a  (lds_mainclass_c1_contatore_co8))) )""", [
+@@ -513,7 +524,8 @@
+         else:
+             self.get_lds_mainclass_c1_contatore_co5().resetta()
+-        #  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
++        #  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento e 
++        #    se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
+         #   ,altrimenti  /*66,*/ Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex
+-        if db((db((db(not db(db(self.macroLds_mainclass_c1_macrova_m10(True,GlobalEnumeration.verde, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0]) == GlobalEnumeration.avanzamento, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0]) or db((db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() < self.get_lds_mainclass_c1_contatore_co6().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0]) and db(not db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() == self.get_lds_mainclass_c1_contatore_co8().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1])), di_ctx.subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0]) or db(self.get_consdef() == False, di_ctx.subs[1].subs[0].subs[1])), di_ctx.subs[1].subs[0]):
++        if db((db((db((db(not db(db(self.macroLds_mainclass_c1_macrova_m10(True,GlobalEnumeration.verde, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]) == GlobalEnumeration.avanzamento, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0]) and db(not db(db(self.macroLds_mainclass_c1_macrova_m10(True,GlobalEnumeration.verde, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1].subs[0].subs[0]) == GlobalEnumeration.avanzamento, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0].subs[0]) or db((db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() < self.get_lds_mainclass_c1_contatore_co6().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0]) and db(not db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() == self.get_lds_mainclass_c1_contatore_co8().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1])), di_ctx.subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0]) or db(self.get_consdef() == False, di_ctx.subs[1].subs[0].subs[1])), di_ctx.subs[1].subs[0]):
+             self.set_lds_mainclass_c1_variabile_v1(GlobalEnumeration.c120)
+         else:

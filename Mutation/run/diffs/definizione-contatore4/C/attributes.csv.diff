@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore4\out\C\attributes.csv
+@@ -23,4 +23,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,lds_mainclass_c1_contatore_co8,Counter,protetto,si,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,lds_mainclass_c1_contatore_co9,Counter,protetto,si,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,nabcc_mainclass_c1_contatore_co4,Counter,privato,si,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando automatico,eventLds_mainclass_c1_command_comm5,,pubblico,no,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando manuale leggero,eventLds_mainclass_c1_command_comm10,,pubblico,si,,,"NABCC: References Removed for Comparison"

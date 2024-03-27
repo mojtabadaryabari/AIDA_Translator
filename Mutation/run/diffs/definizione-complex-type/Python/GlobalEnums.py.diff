@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\GlobalEnums.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-complex-type\out\Python\GlobalEnums.py
+@@ -35,3 +35,5 @@
+     avanzamentox = 26
+     c180 = 27
++    nabcc_enumvalue1 = 28
++    nabcc_enumvalue2 = 29
+ 

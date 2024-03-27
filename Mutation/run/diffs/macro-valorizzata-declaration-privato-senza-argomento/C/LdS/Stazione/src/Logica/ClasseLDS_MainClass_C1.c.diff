@@ -1,0 +1,16 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\macro-valorizzata-declaration-privato-senza-argomento\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -892,4 +892,13 @@
+ }
+ 
++/*
++    CNL corrispondente:
++     {assegna alla macro il valore Giallox}
++*/
++C1_Enumerat3 L_P1__Macro6(instance_id_t const my_id )
++{
++return giallox;
++}
+ 
+ 
++

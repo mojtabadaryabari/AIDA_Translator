@@ -1,0 +1,43 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-verifica7\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -618,6 +618,6 @@
+      commento: {104,} e  che  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+      commento: {104,} e  che  commento: {,}  il timer LDS_MainClass_C1_timer_T3 sia disattivo
++     o  che il parametro LDS_MainClass_C1_parametro_P5 non sia  diverso da  True   
+     
+-    
+     }
+ */
+@@ -760,17 +760,26 @@
+     //   *104,* e  che  *,*  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+     //   *104,* e  che  *,*  il timer LDS_MainClass_C1_timer_T3 sia disattivo
+-    bool res_AndLogicOP_35 = true;
++    //   o  che il parametro LDS_MainClass_C1_parametro_P5 non sia  diverso da  True
++    bool res_OrLogicOP_35 = false;
+     bool res_AndLogicOP_36 = true;
+-    res_AndLogicOP_36 = (res_AndLogicOP_36 && (L_P1__GetParamConsd(my_id) == false));
+-    res_AndLogicOP_36 = (res_AndLogicOP_36 && (L_P1__GetLds_m10(my_id) == c120));
++    bool res_AndLogicOP_37 = true;
++    res_AndLogicOP_37 = (res_AndLogicOP_37 && (L_P1__GetParamConsd(my_id) == false));
++    res_AndLogicOP_37 = (res_AndLogicOP_37 && (L_P1__GetLds_m10(my_id) == c120));
+     
+-    res_AndLogicOP_35 = (res_AndLogicOP_35 && res_AndLogicOP_36);
+-    res_AndLogicOP_35 = (res_AndLogicOP_35 && Timer_Disattivo(L_P1__GetLds_m14(my_id)));
++    res_AndLogicOP_36 = (res_AndLogicOP_36 && res_AndLogicOP_37);
++    res_AndLogicOP_36 = (res_AndLogicOP_36 && Timer_Disattivo(L_P1__GetLds_m14(my_id)));
+     
+-    res_AndLogicOP_0 = (res_AndLogicOP_0 && res_AndLogicOP_35);
++    res_OrLogicOP_35 = (res_OrLogicOP_35 || res_AndLogicOP_36);
++    bool res_NotLogicOP_38 = true;
++    bool res_NotLogicOP_39 = true;
++    res_NotLogicOP_39 = (res_NotLogicOP_39 && ! (L_P1__GetParamLds_m9(my_id) == true));
++    res_NotLogicOP_38 = (res_NotLogicOP_38 && ! res_NotLogicOP_39);
++    res_OrLogicOP_35 = (res_OrLogicOP_35 || res_NotLogicOP_38);
+     
++    res_AndLogicOP_0 = (res_AndLogicOP_0 && res_OrLogicOP_35);
+     
+     
+     
++    
+     return res_AndLogicOP_0;
+ }

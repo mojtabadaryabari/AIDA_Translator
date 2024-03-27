@@ -1,0 +1,23 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\chiamata-macro-effetto\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -377,5 +377,5 @@
+      commento: {38,}  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  commento: {54,} 13 commento: {38,} o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  commento: {53,} 1215 e  se il parametro ConsDef è uguale a FALSE  commento: {34,} o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, commento: {67,} Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+     
+-     ,altrimenti  commento: {69,}Disattiva il timer LDS_SubClass_C2_timer_T4
++     ,altrimenti  commento: {68,}Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2
+     
+     
+@@ -512,5 +512,5 @@
+     }
+     //  *38,*  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  *54,* 13 *38,* o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  *53,* 1215 e  se il parametro ConsDef è uguale a FALSE  *34,* o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, *67,* Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+-    // ,altrimenti  *69,*Disattiva il timer LDS_SubClass_C2_timer_T4
++    // ,altrimenti  *68,*Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2
+     bool res_OrLogicOP_29 = false;
+     bool res_OrLogicOP_30 = false;
+@@ -534,5 +534,5 @@
+     }else{
+     
+-    Timer_Disattiva(L_P1__GetLds_s17(my_id));
++    L_P1__Macro6(my_id);
+     }
+ }

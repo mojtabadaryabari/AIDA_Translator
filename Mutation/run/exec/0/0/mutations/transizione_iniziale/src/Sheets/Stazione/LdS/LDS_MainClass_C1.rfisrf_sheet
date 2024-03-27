@@ -1,0 +1,30 @@
+Scheda di classe LDS_MainClass_C1
+ /*[*/ Scheda di inizializzazione 
+ Transizioni iniziali 
+
+ Transizione iniziale verso state1
+ Condizioni per la transizione
+ {
+ Nessuna
+ }
+ Effetti della transizione
+ {
+ Nessuna 
+ } /*],*/Transizione iniziale verso state1 Condizioni per la transizione{ Verifica che il parametro LDS_MainClass_C1_parametro_P3 sia  diverso da  True}Effetti della transizione{ Azzera il contatore LDS_MainClass_C1_contatore_Co5 } /*],*/
+Scheda di stato  state1
+ Permanenza in  state1 
+Condizioni per la permanenza 
+{
+Nessuna
+}
+Effetti della permanenza 
+{
+Azzera il contatore LDS_MainClass_C1_contatore_Co5
+}
+Attuazioni nominali
+Nessuna
+Normalizzazioni
+Nessuna
+Attuazioni con soccorso  Nessuna 
+ /*]*//*[*/
+/*[*/

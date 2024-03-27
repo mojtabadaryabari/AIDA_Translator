@@ -1,0 +1,11 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-controllo-piazzale2\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -143,5 +143,8 @@
+         return self.memory.get_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_controllo_c9")
+ 
++    def get_nabcc_mainclass_c1_controllo_c1(self):
++        return self.memory.get_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_controllo_c1")
+ 
++
+     # setters for state variables
+     def set_lds_mainclass_c1_variabile_v1(self, lds_mainclass_c1_variabile_v1):

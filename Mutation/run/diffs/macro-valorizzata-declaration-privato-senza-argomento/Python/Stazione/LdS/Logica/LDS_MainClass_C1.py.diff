@@ -1,0 +1,24 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\macro-valorizzata-declaration-privato-senza-argomento\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -1210,4 +1210,21 @@
+         return GlobalEnumeration.avanzamento
+     
++    @srf_value_macro("macroNabcc_mainclass_c1_macrova_m10")
++    def macroNabcc_mainclass_c1_macrova_m10(self, di_ctx: DIValueMacro):
++        """
++        CNL corrispondente:
++         {assegna alla macro il valore Giallox}
++        """
++        def populate_macroNabcc_mainclass_c1_macrova_m10_SrfMacroDefInfo(macroDebInfo: DIValueMacro):
++            #if macroDebInfo is not yet populated
++            if not macroDebInfo.is_initialized() :
++                macroDebInfo.initialize([
++                ])
++
++        populate_macroNabcc_mainclass_c1_macrova_m10_SrfMacroDefInfo(di_ctx)
++        
++        #  assegna alla macro il valore Giallox
++        return GlobalEnumeration.giallox
++    
+     # for each manual command, the corresponding method is created
+     def eventLds_mainclass_c1_command_comm10(self, notifying_process):

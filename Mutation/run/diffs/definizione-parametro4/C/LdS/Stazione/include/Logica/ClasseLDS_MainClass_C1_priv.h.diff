@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro4\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1_priv.h
+@@ -40,4 +40,5 @@
+ bool L_P1__GetParamLds_m8(instance_id_t const my_id);
+ bool L_P1__GetParamLds_m9(instance_id_t const my_id);
++bool L_P1__GetParamNabcc(instance_id_t const my_id);
+ 
+ 

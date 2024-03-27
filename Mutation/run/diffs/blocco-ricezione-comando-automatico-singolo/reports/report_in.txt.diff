@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-ricezione-comando-automatico-singolo\out\reports\report_in.txt
+@@ -47,5 +47,4 @@
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m6' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m5' nella classe 'LDS_MainClass_C1', line 51
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'lds_mainclass_c1_comando_c7' non viene mai scritto, line 39
+-LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm10 della classe LDS_MainClass_C1 non viene mai ricevuto, line 58
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm11 della classe LDS_MainClass_C1 non viene mai ricevuto, line 59
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm5 della classe LDS_MainClass_C1 non viene mai ricevuto, line 57

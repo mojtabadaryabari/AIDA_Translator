@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\lds_param.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\C\LdS\Stazione\include\lds_param.h
+@@ -43,4 +43,6 @@
+     offset_t lds_s10_start;
+     index_t lds_s10_length;
++    offset_t nabcc_start;
++    index_t nabcc_length;
+ } Classe_L_P1_C2_Param;
+ 

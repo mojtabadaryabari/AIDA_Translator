@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\C\attributes.csv
+@@ -94,4 +94,5 @@
+ classe,Stazione.LdV,3,LDV_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,ldv_mainclass_c1_variabile_v9,Enumerator:Enumerator_3,protetto,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdV,3,LDV_MainClass_C1,"NABCC: ID Removed for Comparison",variabile ripristino,stato_restore,Enumerator:Stateenumerator,protetto,si,,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdV,3,LDV_MainClass_C1,"NABCC: ID Removed for Comparison",comando output,ldv_mainclass_c1_output_1,Enumerator:Enumerator_4,privato,si,receiver:inviatoa4b8809d,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdV,3,LDV_MainClass_C1,"NABCC: ID Removed for Comparison",timer,ldv_mainclass_c1_timer_t3,Timer:TimerState,protetto,si,,10000,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdV,3,LDV_MainClass_C1,"NABCC: ID Removed for Comparison",contatore,ldv_mainclass_c1_contatore_co1,Counter,privato,si,,"NABCC: References Removed for Comparison"

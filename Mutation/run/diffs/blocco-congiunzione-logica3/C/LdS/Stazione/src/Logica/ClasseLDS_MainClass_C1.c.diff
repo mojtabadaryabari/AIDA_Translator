@@ -1,0 +1,16 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-congiunzione-logica3\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -779,5 +779,5 @@
+     CNL corrispondente:
+      
+-    { commento: {62,} commento: {38,}  se il contatore LDS_MainClass_C1_contatore_Co6 è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
++    { commento: {62,} commento: {38,}  se il contatore LDS_MainClass_C1_contatore_Co6 è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti  { 
+       se il parametro ConsDef è uguale a FALSE  commento: {38,} o  se il contatore LDS_MainClass_C1_contatore_Co9 non è  uguale a  commento: {53,} 14, Verifica che   commento: {47,49,}  commento: {,}  il timer LDS_MainClass_C1_timer_T3 non sia attivo
+      commento: {104,} e  che   il parametro ConsDef  sia  uguale a FALSE 
+@@ -796,5 +796,5 @@
+ bool res_AndLogicOP_0 = true;
+     
+-    //  *62,* *38,*  se il contatore LDS_MainClass_C1_contatore_Co6 è  minore di  *55,* contatore LDS_MainClass_C1_contatore_Co6 e  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
++    //  *62,* *38,*  se il contatore LDS_MainClass_C1_contatore_Co6 è  minore di  *55,* contatore LDS_MainClass_C1_contatore_Co6 e  se il parametro ConsDef  è  uguale a FALSE , Solo una delle seguenti  { 
+     //    se il parametro ConsDef è uguale a FALSE  *38,* o  se il contatore LDS_MainClass_C1_contatore_Co9 non è  uguale a  *53,* 14, Verifica che   *47,49,*  *,*  il timer LDS_MainClass_C1_timer_T3 non sia attivo
+     //   *104,* e  che   il parametro ConsDef  sia  uguale a FALSE 

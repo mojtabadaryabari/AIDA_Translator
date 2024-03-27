@@ -1,0 +1,72 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\C\LdV\Stazione\src\config.c
+@@ -45,11 +45,6 @@
+ // ********** Getter e setter Classe L_P1_C3 **********
+ 
+-Timer* L_P1__GetLdv_m6(instance_id_t const my_id)
++Timer* L_P1__GetLdv_m7(instance_id_t const my_id)
+ {
+-    return &(ldv_Stazione_data->L_P1_C3[my_id].ldv_m6);
+-}
+-
+-Counter* L_P1__GetLdv_m7(instance_id_t const my_id)
+-{
+     return &(ldv_Stazione_data->L_P1_C3[my_id].ldv_m7);
+ }
+@@ -70,5 +65,10 @@
+ }
+ 
++Counter* L_P1__GetLdv_m11(instance_id_t const my_id)
++{
++    return &(ldv_Stazione_data->L_P1_C3[my_id].ldv_m11);
++}
+ 
++
+ ExecResponse L_P1_C3_GetResponse(instance_id_t const my_id)
+ {
+@@ -94,23 +94,23 @@
+ }
+ 
+-bool L_P1__GetParamLdv_m(instance_id_t const my_id)
++bool L_P1__GetParamLdv_m1(instance_id_t const my_id)
+ {
+     CHECK_POINTER(ldv_Stazione_conf.pConfL_P1_C3);
+     CHECK_LE(my_id, getNumeroL_P1_C3());
+-    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m;
++    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m1;
+ }
+ 
+-Intero L_P1__GetParamLdv_m1(instance_id_t const my_id)
++Intero L_P1__GetParamLdv_m2(instance_id_t const my_id)
+ {
+     CHECK_POINTER(ldv_Stazione_conf.pConfL_P1_C3);
+     CHECK_LE(my_id, getNumeroL_P1_C3());
+-    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m1;
++    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m2;
+ }
+ 
+-C3_Enumerat1 L_P1__GetParamLdv_m2(instance_id_t const my_id)
++C3_Enumerat1 L_P1__GetParamLdv_m3(instance_id_t const my_id)
+ {
+     CHECK_POINTER(ldv_Stazione_conf.pConfL_P1_C3);
+     CHECK_LE(my_id, getNumeroL_P1_C3());
+-    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m2;
++    return ldv_Stazione_conf.pConfL_P1_C3[my_id - 1u].ldv_m3;
+ }
+ 
+@@ -242,5 +242,5 @@
+         scheduler->tbl[L_P1_C3_TO_GLOBAL(i)].exec_fun = L_P1_C3_GExec;
+         scheduler->tbl[L_P1_C3_TO_GLOBAL(i)].tick_fun = L_P1_C3_GTick;
+-        scheduler->tbl[L_P1_C3_TO_GLOBAL(i)].setsafe_fun = NULL;
++        scheduler->tbl[L_P1_C3_TO_GLOBAL(i)].setsafe_fun = L_P1_C3_GSetSafe;
+         scheduler->tbl[L_P1_C3_TO_GLOBAL(i)].updateprev_fun = NULL;
+     }
+@@ -308,7 +308,7 @@
+             (void) fprintf(out,"***** Istanza %" PRIu16 ":\n",i);
+             (void) fprintf(out,"consd2 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamConsd2(i));
+-            (void) fprintf(out,"ldv_m = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLdv_m(i));
+             (void) fprintf(out,"ldv_m1 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLdv_m1(i));
+             (void) fprintf(out,"ldv_m2 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLdv_m2(i));
++            (void) fprintf(out,"ldv_m3 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLdv_m3(i));
+         }
+     }

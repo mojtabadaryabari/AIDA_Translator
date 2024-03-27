@@ -1,0 +1,44 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizioni-lista\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -1118,5 +1118,5 @@
+         
+         { commento: {[}
+-         commento: {46,} assegna alla macro il valore RossoGiallo commento: {],}
++          	 commento: {[} commento: {34,}  se il parametro LDS_SubClass_C2_parametro_P4 non è  diverso da c120x,  commento: {43,}   se LDS_MainClass_C1_timer_T8 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 esiste e  commento: {105,} è attivo, commento: {88,} quando  commento: {41,}   LDS_MainClass_C1_parametro_P2 del campo LDS_MainClass_C1      commento: {105,} è  uguale a  commento: {53,} 5 , assegna alla macro il valore RossoGiallo    assegna alla macro il valore RossoGiallo 
+         }
+         """
+@@ -1125,10 +1125,32 @@
+             if not macroDebInfo.is_initialized() :
+                 macroDebInfo.initialize([
++                            DIStatement("""ITStatement\n/*[*/
++  	 /*[*/ /*34,*/  se il parametro LDS_SubClass_C2_parametro_P4 non è  diverso da c120x,  /*43,*/   se LDS_MainClass_C1_timer_T8 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 esiste e  /*105,*/ è attivo, /*88,*/ quando  /*41,*/   LDS_MainClass_C1_parametro_P2 del campo LDS_MainClass_C1      /*105,*/ è  uguale a  /*53,*/ 5 , assegna alla macro il valore RossoGiallo""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\n/*[*/
++  	 /*[*/ /*34,*/  se il parametro LDS_SubClass_C2_parametro_P4 non è  diverso da c120x,  /*43,*/   se LDS_MainClass_C1_timer_T8 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 esiste e  /*105,*/ è attivo, /*88,*/ quando  /*41,*/   LDS_MainClass_C1_parametro_P2 del campo LDS_MainClass_C1      /*105,*/ è  uguale a  /*53,*/ 5""", [
++                            DIBoolExpr("""Operatore Logico Not\nnegazione di (negazione di ((lds_subclass_c2_parametro_p4)  è uguale a  (c120x)))""", [
++                            DIBoolExpr("""Operatore Logico Not\nnegazione di ((lds_subclass_c2_parametro_p4)  è uguale a  (c120x))""", [
++                            DIBoolExpr("""EqualImpl\n(lds_subclass_c2_parametro_p4)  è uguale a  (c120x)""", [
++                            ]),#0
++                            ]),#0
++                            ]),#0
++                            DIBoolExpr("""ForAllPredicateNotEmptyImpl\nper ognuna delle seguenti con lista non vuota {se ((lds_mainclass_c1_parametro_p2 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1)  è uguale a  (5)) allora (il timer 'lds_mainclass_c1_timer_t8 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1' è attivo)}""", [
++                            DIBoolExpr("""ImpliesLogicOpImpl\nse ((lds_mainclass_c1_parametro_p2 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1)  è uguale a  (5)) allora (il timer 'lds_mainclass_c1_timer_t8 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1' è attivo)""", [
++                            DIBoolExpr("""EqualImpl\n(lds_mainclass_c1_parametro_p2 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1)  è uguale a  (5)""", [
++                            ]),#0
++                            DIBoolExpr("""Predicato Oggetto\nil timer 'lds_mainclass_c1_timer_t8 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l1' è attivo""", [
++                            ]),#1
++                            ]),#0
++                            ]),#1
++                            ]),#0
++                            ]),#0
+                 ])
+ 
+         populate_macroLds_subclass_c2_macrova_m5_SrfMacroDefInfo(di_ctx)
+-        
+         #  /*[*/
+-        #   /*46,*/ assegna alla macro il valore RossoGiallo
++        #    	 /*[*/ /*34,*/  se il parametro LDS_SubClass_C2_parametro_P4 non è  diverso da c120x,  /*43,*/   se LDS_MainClass_C1_timer_T8 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 esiste e  /*105,*/ è attivo, /*88,*/ quando  /*41,*/   LDS_MainClass_C1_parametro_P2 del campo LDS_MainClass_C1      /*105,*/ è  uguale a  /*53,*/ 5 , assegna alla macro il valore RossoGiallo
++        if db((db(not db(not db(self.get_lds_subclass_c2_parametro_p4() == GlobalEnumeration.c120x, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0]) and db(all_notempty(db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_timer_t8().isAttivato(), di_ctx.subs[0].subs[0].subs[1].subs[0].subs[1][idx]) for idx, it in enumerate(self.get_lds_subclass_c2_lista_l1()) if db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_parametro_p2() == 5, di_ctx.subs[0].subs[0].subs[1].subs[0].subs[0][idx])), di_ctx.subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0]):
++            return GlobalEnumeration.rossogiallo
++        #  assegna alla macro il valore RossoGiallo
+         return GlobalEnumeration.rossogiallo
+     

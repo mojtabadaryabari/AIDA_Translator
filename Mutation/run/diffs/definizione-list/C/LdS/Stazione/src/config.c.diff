@@ -1,0 +1,48 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\C\LdS\Stazione\src\config.c
+@@ -265,6 +265,29 @@
+ }
+ 
++offset_t L_P1__GetParamNabccStart(instance_id_t const my_id)
++{
++    CHECK_POINTER(lds_Stazione_conf.pConfL_P1_C2);
++    CHECK_LE(my_id, getNumeroL_P1_C2());
++    return lds_Stazione_conf.pConfL_P1_C2[my_id - 1u].nabcc_start;
++}
+ 
++index_t L_P1__GetParamNabccLength(instance_id_t const my_id)
++{
++    CHECK_POINTER(lds_Stazione_conf.pConfL_P1_C2);
++    CHECK_LE(my_id, getNumeroL_P1_C2());
++    return lds_Stazione_conf.pConfL_P1_C2[my_id - 1u].nabcc_length;
++}
+ 
++const L_P1__Recor1* L_P1__GetRecNabcc(instance_id_t const my_id, index_t const elem_idx)
++{
++    offset_t const start = L_P1__GetParamNabccStart(my_id);
++    L_P1__Recor1 *p = (L_P1__Recor1 *)
++        ((uint8_t*) lds_Stazione_conf.pConfHeader + start);
++    CHECK_LT(elem_idx, L_P1__GetParamNabccLength(my_id));
++    return &p[elem_idx];
++}
++
++
++
+ // ********** Procedure di attach **********
+ 
+@@ -524,4 +547,15 @@
+             }
+             (void) fprintf(out,"]\n");
++            (void) fprintf(out,"nabcc start = 0x%08" PRIx32 ", length = %" PRIu32 " : [",
++                L_P1__GetParamNabccStart(i),
++                L_P1__GetParamNabccLength(i));
++            for (index_t j = 0u; j < L_P1__GetParamNabccLength(i); ++j) {
++                L_P1__Recor1 it = L_P1__GetRecNabcc(i,j);
++                (void) fprintf(out,"(%" PRIu32 " %" PRIu32 " %" PRIu32 " %" PRIu32 ")", (uint32_t) it.lds_m21, (uint32_t) it.recor4, (uint32_t) it.recor5, (uint32_t) it.recor6);
++                if (j != L_P1__GetParamNabccLength(i)-1u) {
++                    (void) fprintf(out,", ");
++                }
++            }
++            (void) fprintf(out,"]\n");
+         }
+     }

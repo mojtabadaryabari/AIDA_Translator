@@ -1,0 +1,106 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1.h
+@@ -29,21 +29,22 @@
+ 
+ // ID Variabili
+-#define L_P1__ldv_m3_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__ldv_m4_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__ldv_m5_ID  /* NABCC: ID removed for comparison */
++#define L_P1__ldv_m6_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__stato5_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Timer
+-#define L_P1__ldv_m6_ID  /* NABCC: ID removed for comparison */
++#define L_P1__ldv_m7_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Counter
+-#define L_P1__ldv_m7_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__ldv_m8_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__ldv_m9_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__ldv_m10_ID  /* NABCC: ID removed for comparison */
++#define L_P1__ldv_m11_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Controlli dal piazzale
+ 
+ // ID Comandi al piazzale
++#define L_P1__ldv_m_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Comandi manuali
+@@ -69,31 +70,31 @@
+ 
+ // variabili
+-/* Intero L_P1__GetLdv_m3(instance_id_t const my_id); */
+-#define L_P1__GetLdv_m3(my_id)  \
+-    (Intero) \
+-    LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m3_ID)
+-/* void L_P1__SetLdv_m3(instance_id_t const my_id, Intero const value); */
+-#define L_P1__SetLdv_m3(my_id, value)  \
+-    CHECK_LE((value), TAGGM_MAX); \
+-    LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m3_ID, (Taggm) (value))
+-
+-/* bool L_P1__GetLdv_m4(instance_id_t const my_id); */
++/* Intero L_P1__GetLdv_m4(instance_id_t const my_id); */
+ #define L_P1__GetLdv_m4(my_id)  \
+-    (bool) \
++    (Intero) \
+     LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m4_ID)
+-/* void L_P1__SetLdv_m4(instance_id_t const my_id, bool const value); */
++/* void L_P1__SetLdv_m4(instance_id_t const my_id, Intero const value); */
+ #define L_P1__SetLdv_m4(my_id, value)  \
+     CHECK_LE((value), TAGGM_MAX); \
+     LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m4_ID, (Taggm) (value))
+ 
+-/* C3_Enumerat3 L_P1__GetLdv_m5(instance_id_t const my_id); */
++/* bool L_P1__GetLdv_m5(instance_id_t const my_id); */
+ #define L_P1__GetLdv_m5(my_id)  \
+-    (C3_Enumerat3) \
++    (bool) \
+     LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m5_ID)
+-/* void L_P1__SetLdv_m5(instance_id_t const my_id, C3_Enumerat3 const value); */
++/* void L_P1__SetLdv_m5(instance_id_t const my_id, bool const value); */
+ #define L_P1__SetLdv_m5(my_id, value)  \
+     CHECK_LE((value), TAGGM_MAX); \
+     LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m5_ID, (Taggm) (value))
+ 
++/* C3_Enumerat3 L_P1__GetLdv_m6(instance_id_t const my_id); */
++#define L_P1__GetLdv_m6(my_id)  \
++    (C3_Enumerat3) \
++    LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m6_ID)
++/* void L_P1__SetLdv_m6(instance_id_t const my_id, C3_Enumerat3 const value); */
++#define L_P1__SetLdv_m6(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m6_ID, (Taggm) (value))
++
+ /* C3_Stateenu L_P1__GetStato5(instance_id_t const my_id); */
+ #define L_P1__GetStato5(my_id)  \
+@@ -107,11 +108,11 @@
+ 
+ // timer
+-Timer* L_P1__GetLdv_m6(instance_id_t const my_id);
++Timer* L_P1__GetLdv_m7(instance_id_t const my_id);
+ 
+ // counter
+-Counter* L_P1__GetLdv_m7(instance_id_t const my_id);    
+ Counter* L_P1__GetLdv_m8(instance_id_t const my_id);    
+ Counter* L_P1__GetLdv_m9(instance_id_t const my_id);    
+ Counter* L_P1__GetLdv_m10(instance_id_t const my_id);    
++Counter* L_P1__GetLdv_m11(instance_id_t const my_id);    
+ 
+ // comandi manuali
+@@ -138,5 +139,10 @@
+ 
+ // comandi al piazzale
++/* void L_P1__SetOutLdv_m(instance_id_t const my_id, C3_Enumerat4 const value); */
++#define L_P1__SetOutLdv_m(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__ldv_m_ID, (Taggm) (value))
+ 
++
+ // ********** Metodi standard **********
+ 
+@@ -149,4 +155,5 @@
+ void L_P1_C3_GTick(global_id_t const proc_id);
+ 
++void L_P1_C3_GSetSafe(global_id_t const proc_id);
+ 
+ 

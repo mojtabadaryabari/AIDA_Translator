@@ -1,0 +1,16 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\la-costante\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -616,5 +616,5 @@
+     
+      } Verifica che   commento: {47,49,50,}   il parametro ConsDef  sia  uguale a FALSE 
+-     commento: {104,} e  che  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++     commento: {104,} e  che  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120 
+      commento: {104,} e  che  commento: {,}  il timer LDS_MainClass_C1_timer_T3 sia disattivo
+     
+@@ -758,5 +758,5 @@
+     
+     //  che   *47,49,50,*   il parametro ConsDef  sia  uguale a FALSE 
+-    //   *104,* e  che  *,*  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++    //   *104,* e  che  *,*  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120 
+     //   *104,* e  che  *,*  il timer LDS_MainClass_C1_timer_T3 sia disattivo
+     bool res_AndLogicOP_35 = true;

@@ -1,0 +1,79 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-effetto1\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -275,5 +275,5 @@
+     }
+ */
+-void L_P1__Macro6(instance_id_t const my_id )
++void L_P1__Macro7(instance_id_t const my_id )
+ {
+ //  *43,*  se LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 è attivo *37,* e  se la variabile LDS_SubClass_C2_variabile_V3 non è  maggiore di  *54,* 4 *36,* o  se il timer LDS_SubClass_C2_timer_T4 è disattivo, *66,* Assegna al comando LDS_SubClass_C2_comando_C10 il valore c120x
+@@ -383,5 +383,5 @@
+     }
+ */
+-void L_P1__Macro7(instance_id_t const my_id )
++void L_P1__Macro8(instance_id_t const my_id )
+ {
+ //  *38,*  se il contatore LDS_SubClass_C2_contatore_Co2 è  uguale a  *53,* 14 *34,* e  se il parametro LDS_SubClass_C2_parametro_P4 è  diverso da c120x *36,* e  se il timer LDS_SubClass_C2_timer_T4 non è attivo *36,* e  se il timer LDS_SubClass_C2_timer_T4 non è attivo o  se il parametro ConsDef  è  uguale a FALSE , *72,*Azzera il contatore LDS_SubClass_C2_contatore_Co2
+@@ -547,5 +547,5 @@
+     }
+ */
+-void L_P1__Macro8(instance_id_t const my_id )
++void L_P1__Macro9(instance_id_t const my_id )
+ {
+ //  *34,*  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a variabile LDS_SubClass_C2_variabile_V10 *34,* e  se il parametro LDS_SubClass_C2_parametro_P4 è  diverso da c120x *38,* o  se il contatore LDS_SubClass_C2_contatore_Co2 è  minore di  *55,* 12 *34,* o  se il parametro LDS_SubClass_C2_parametro_P4 non è  uguale a c120x o  se il parametro ConsDef è uguale a FALSE  *34,* o  se il parametro LDS_SubClass_C2_parametro_P4 è  diverso da c120x, *66,* Assegna al comando LDS_SubClass_C2_comando_C4 il valore  False
+@@ -607,5 +607,5 @@
+     }
+ */
+-bool L_P1__Macro13(instance_id_t const my_id )
++bool L_P1__Macro14(instance_id_t const my_id )
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -622,5 +622,5 @@
+     bool res_NotLogicOP_3 = true;
+     bool res_NotLogicOP_4 = true;
+-    res_NotLogicOP_4 = (res_NotLogicOP_4 && ! (L_P1__Macro12(my_id) == spento));
++    res_NotLogicOP_4 = (res_NotLogicOP_4 && ! (L_P1__Macro13(my_id) == spento));
+     res_NotLogicOP_3 = (res_NotLogicOP_3 && ! res_NotLogicOP_4);
+     res_AndLogicOP_2 = (res_AndLogicOP_2 && res_NotLogicOP_3);
+@@ -712,5 +712,5 @@
+     }
+ */
+-bool L_P1__Macro14(instance_id_t const my_id , C2_Enumerat4 argom19, C2_Enumerat2 argom20, C2_Enumerat3 argom21, C2_Enumerat3 argom22, bool argom23, bool argom24)
++bool L_P1__Macro15(instance_id_t const my_id , C2_Enumerat4 argom19, C2_Enumerat2 argom20, C2_Enumerat3 argom21, C2_Enumerat3 argom22, bool argom23, bool argom24)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -775,5 +775,5 @@
+     }
+ */
+-bool L_P1__Macro15(instance_id_t const my_id , bool argom25, bool argom26, C2_Enumerat2 argom27, C2_Enumerat4 argom28, bool argom29, bool argom30)
++bool L_P1__Macro16(instance_id_t const my_id , bool argom25, bool argom26, C2_Enumerat2 argom27, C2_Enumerat4 argom28, bool argom29, bool argom30)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -839,5 +839,5 @@
+     }
+ */
+-C2_Enumerat1 L_P1__Macro9(instance_id_t const my_id )
++C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id )
+ {
+ C2_Enumerat1 res_macro_val;
+@@ -890,5 +890,5 @@
+     }
+ */
+-C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id , C2_Enumerat1 argom8, bool argom9, C2_Enumerat1 argom10, C2_Enumerat4 argom11)
++C2_Enumerat1 L_P1__Macro11(instance_id_t const my_id , C2_Enumerat1 argom8, bool argom9, C2_Enumerat1 argom10, C2_Enumerat4 argom11)
+ {
+ return rossogiallo1;
+@@ -903,5 +903,5 @@
+     }
+ */
+-bool L_P1__Macro11(instance_id_t const my_id , C2_Enumerat4 argom12, C2_Enumerat1 argom13, C2_Enumerat4 argom14, C2_Enumerat1 argom15, C2_Enumerat1 argom16, C2_Enumerat2 argom17, C2_Enumerat3 argom18)
++bool L_P1__Macro12(instance_id_t const my_id , C2_Enumerat4 argom12, C2_Enumerat1 argom13, C2_Enumerat4 argom14, C2_Enumerat1 argom15, C2_Enumerat1 argom16, C2_Enumerat2 argom17, C2_Enumerat3 argom18)
+ {
+ bool res_macro_val;
+@@ -945,5 +945,5 @@
+     }
+ */
+-C2_Enumerat4 L_P1__Macro12(instance_id_t const my_id )
++C2_Enumerat4 L_P1__Macro13(instance_id_t const my_id )
+ {
+ C2_Enumerat4 res_macro_val;

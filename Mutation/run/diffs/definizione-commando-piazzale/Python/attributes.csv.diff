@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-commando-piazzale\out\Python\attributes.csv
+@@ -11,4 +11,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando output,lds_mainclass_c1_comando_c5,Enumerator:Enumerator_4,privato,si,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando output,lds_mainclass_c1_comando_c7,BasicType:Boolean,privato,si,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando output,nabcc_mainclass_c1_comando_c5,Enumerator:Enumerator_4,privato,si,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",controllo input,lds_mainclass_c1_controllo_c10,Enumerator:Enumerator_3,pubblico,si,,rossoverde,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",controllo input,lds_mainclass_c1_controllo_c2,BasicType:Boolean,pubblico,si,,false,"NABCC: References Removed for Comparison"

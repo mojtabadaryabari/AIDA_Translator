@@ -1,0 +1,20 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro2\out\C\LdS\Stazione\src\config.c
+@@ -180,4 +180,11 @@
+ }
+ 
++Intero L_P1__GetParamNabcc(instance_id_t const my_id)
++{
++    CHECK_POINTER(lds_Stazione_conf.pConfL_P1_C1);
++    CHECK_LE(my_id, getNumeroL_P1_C1());
++    return lds_Stazione_conf.pConfL_P1_C1[my_id - 1u].nabcc;
++}
++
+ // ********** Getter parametri classe L_P1_C2 **********
+ 
+@@ -482,4 +489,5 @@
+             (void) fprintf(out,"lds_m8 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLds_m8(i));
+             (void) fprintf(out,"lds_m9 = %" PRIu32 "\n", (uint32_t) L_P1__GetParamLds_m9(i));
++            (void) fprintf(out,"nabcc = %" PRIu32 "\n", (uint32_t) L_P1__GetParamNabcc(i));
+         }
+     }

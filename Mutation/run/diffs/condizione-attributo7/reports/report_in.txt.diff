@@ -1,0 +1,17 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo7\out\reports\report_in.txt
+@@ -57,11 +57,11 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 109
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 133
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 151
++LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 150
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 156
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 81
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 93
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' dovrebbe avere accessibilità privata, line 22
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
++LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 150
++LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 150
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 88
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 93

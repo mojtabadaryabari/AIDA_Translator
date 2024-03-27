@@ -1,0 +1,27 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore6\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -86,4 +86,5 @@
+         self.set_lds_mainclass_c1_contatore_co8(0)
+         self.set_lds_mainclass_c1_contatore_co9(0)
++        self.set_nabcc_mainclass_c1_contatore_co2(0)
+ 
+     # setters for record type parameters
+@@ -202,5 +203,8 @@
+         self.lds_mainclass_c1_contatore_co9 = Counter(counterInitValue, self.station_name, self.name, self.instance_name, "lds_mainclass_c1_contatore_co9", self.memory)
+ 
++    def set_nabcc_mainclass_c1_contatore_co2(self, counterInitValue):
++        self.nabcc_mainclass_c1_contatore_co2 = Counter(counterInitValue, self.station_name, self.name, self.instance_name, "nabcc_mainclass_c1_contatore_co2", self.memory)
+ 
++
+     # getters for counters
+     def get_lds_mainclass_c1_contatore_co5(self):
+@@ -216,6 +220,9 @@
+         return self.lds_mainclass_c1_contatore_co9
+ 
++    def get_nabcc_mainclass_c1_contatore_co2(self):
++        return self.nabcc_mainclass_c1_contatore_co2
+ 
+ 
++
+     def is_current_state(self, stateval):
+         res = self.get_fsmState() == stateval

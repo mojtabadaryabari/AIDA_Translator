@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\C\attributes.csv
+@@ -56,4 +56,5 @@
+ classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",lista enti collegati,lds_subclass_c2_lista_l4,Record:RecordHeaderR9,privato,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",lista enti collegati,lds_subclass_c2_lista_l7,Record:RecordHeaderR9,privato,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",lista enti collegati,nabcc_lds_subclass_c2_lista_l4,Record:RecordHeaderR9,privato,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",timer,lds_subclass_c2_timer_t4,Timer:TimerState,privato,si,,45000,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,2,LDS_SubClass_C2,"NABCC: ID Removed for Comparison",contatore,lds_subclass_c2_contatore_co10,Counter,protetto,si,,"NABCC: References Removed for Comparison"

@@ -1,0 +1,15 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\macro-valorizzata-declaration-pubblico-con-argomento\out\reports\report_in.txt
+@@ -96,4 +96,5 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t8' dovrebbe avere accessibilità protetta, line 28
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 71
++LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a3' non viene mai utilizzato nella macro, line 69
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a9' non viene mai utilizzato nella macro, line 71
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave2' non viene mai utilizzato nella macro, line 100
+@@ -109,4 +110,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m5' non viene mai utilizzata, line 49
+ LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m6' non viene mai utilizzata, line 51
++LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroNabcc_mainclass_c1_macrova_m10' dovrebbe avere accessibilità privata, line 41
++LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroNabcc_mainclass_c1_macrova_m10' non viene mai utilizzata, line 41
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v1' dovrebbe avere accessibilità protetta, line 13
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v7' dovrebbe avere accessibilità protetta, line 14

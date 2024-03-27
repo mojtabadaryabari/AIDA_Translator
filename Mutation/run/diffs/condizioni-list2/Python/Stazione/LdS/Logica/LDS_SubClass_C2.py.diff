@@ -1,0 +1,46 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizioni-list2\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -411,5 +411,5 @@
+         { commento: {43,}  se LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 è attivo commento: {37,} e  se la variabile LDS_SubClass_C2_variabile_V3 non è  maggiore di  commento: {54,} 4 commento: {36,} o  se il timer LDS_SubClass_C2_timer_T4 è disattivo, commento: {66,} Assegna al comando LDS_SubClass_C2_comando_C10 il valore c120x
+         
+-           
++        se  LDS_MainClass_C1_controllo_C9 del campo  LDS_MainClass_C1 di LDS_SubClass_C2_lista_L4  è  diverso da False e  
+          commento: {41,}  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  commento: {105,} è  diverso da  False  commento: {38,} e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  commento: {53,} 135 o  se il parametro ConsDef  è  uguale a FALSE , commento: {66,} Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
+         
+@@ -442,8 +442,17 @@
+                             ]),#0
+                             ]),#0
+-                            DIStatement("""ITStatement\n/*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE , /*66,*/ Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento""", [
+-                            DIBoolExpr("""NAryLogicOP (OR)\n/*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE""", [
+-                            DIBoolExpr("""NAryLogicOP (AND)\n( per ognuna delle seguenti con lista non vuota {(negazione di ((lds_mainclass_c1_parametro_p5 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l7)  è uguale a  (False)))} )  e  
++                            DIStatement("""ITStatement\nse  LDS_MainClass_C1_controllo_C9 del campo  LDS_MainClass_C1 di LDS_SubClass_C2_lista_L4  è  diverso da False e  
++ /*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE , /*66,*/ Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento""", [
++                            DIBoolExpr("""NAryLogicOP (OR)\nse  LDS_MainClass_C1_controllo_C9 del campo  LDS_MainClass_C1 di LDS_SubClass_C2_lista_L4  è  diverso da False e  
++ /*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\n( ( per ognuna delle seguenti {(negazione di ((lds_mainclass_c1_controllo_c9 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l4)  è uguale a  (False)))} )  e  ( per ognuna delle seguenti con lista non vuota {(negazione di ((lds_mainclass_c1_parametro_p5 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l7)  è uguale a  (False)))} ) )  e  
+ ( negazione di ((lds_subclass_c2_contatore_co8)  è uguale a  (135)) )""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\n( per ognuna delle seguenti {(negazione di ((lds_mainclass_c1_controllo_c9 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l4)  è uguale a  (False)))} )  e  ( per ognuna delle seguenti con lista non vuota {(negazione di ((lds_mainclass_c1_parametro_p5 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l7)  è uguale a  (False)))} )""", [
++                            DIBoolExpr("""Predicato ForAll\nper ognuna delle seguenti {(negazione di ((lds_mainclass_c1_controllo_c9 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l4)  è uguale a  (False)))}""", [
++                            DIBoolExpr("""Operatore Logico Not\nnegazione di ((lds_mainclass_c1_controllo_c9 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l4)  è uguale a  (False))""", [
++                            DIBoolExpr("""EqualImpl\n(lds_mainclass_c1_controllo_c9 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l4)  è uguale a  (False)""", [
++                            ]),#0
++                            ]),#0
++                            ]),#0
+                             DIBoolExpr("""ForAllPredicateNotEmptyImpl\nper ognuna delle seguenti con lista non vuota {(negazione di ((lds_mainclass_c1_parametro_p5 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l7)  è uguale a  (False)))}""", [
+                             DIBoolExpr("""Operatore Logico Not\nnegazione di ((lds_mainclass_c1_parametro_p5 del campo lds_mainclass_c1 della lista lds_subclass_c2_lista_l7)  è uguale a  (False))""", [
+@@ -451,4 +460,5 @@
+                             ]),#0
+                             ]),#0
++                            ]),#1
+                             ]),#0
+                             DIBoolExpr("""Operatore Logico Not\nnegazione di ((lds_subclass_c2_contatore_co8)  è uguale a  (135))""", [
+@@ -492,6 +502,7 @@
+         if db((db((db(all(db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_timer_t3().isAttivato(), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0][idx]) for idx, it in enumerate(self.get_lds_subclass_c2_lista_l1())), di_ctx.subs[0].subs[0].subs[0].subs[0]) and db(not db(self.get_lds_subclass_c2_variabile_v3() > 4, di_ctx.subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0]) or db(self.get_lds_subclass_c2_timer_t4().isDisattivato(), di_ctx.subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0]):
+             self.set_lds_subclass_c2_comando_c10(GlobalEnumeration.c120x)
+-        #  /*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE , /*66,*/ Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
+-        if db((db((db(all_notempty(db(not db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_parametro_p5() == False, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0][idx]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0][idx]) for idx, it in enumerate(self.get_lds_subclass_c2_lista_l7())), di_ctx.subs[1].subs[0].subs[0].subs[0]) and db(not db(self.get_lds_subclass_c2_contatore_co8().get_valore() == 135, di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0]) or db(self.get_consdef() == False, di_ctx.subs[1].subs[0].subs[1])), di_ctx.subs[1].subs[0]):
++        #  se  LDS_MainClass_C1_controllo_C9 del campo  LDS_MainClass_C1 di LDS_SubClass_C2_lista_L4  è  diverso da False e  
++        #   /*41,*/  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  /*105,*/ è  diverso da  False  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  /*53,*/ 135 o  se il parametro ConsDef  è  uguale a FALSE , /*66,*/ Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
++        if db((db((db((db(all(db(not db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_controllo_c9() == False, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0][idx]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0][idx]) for idx, it in enumerate(self.get_lds_subclass_c2_lista_l4())), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0]) and db(all_notempty(db(not db(it.get_lds_mainclass_c1().get_lds_mainclass_c1_parametro_p5() == False, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1].subs[0].subs[0][idx]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1].subs[0][idx]) for idx, it in enumerate(self.get_lds_subclass_c2_lista_l7())), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0].subs[0]) and db(not db(self.get_lds_subclass_c2_contatore_co8().get_valore() == 135, di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0]) or db(self.get_consdef() == False, di_ctx.subs[1].subs[0].subs[1])), di_ctx.subs[1].subs[0]):
+             self.set_lds_subclass_c2_comando_c2(GlobalEnumeration.spento)
+         #  /*37,*/  se la variabile LDS_SubClass_C2_variabile_V3 è  maggiore di  /*54,*/ 3 e  se il parametro ConsDef è uguale a FALSE  /*38,*/ e  se il contatore LDS_SubClass_C2_contatore_Co10 è  uguale a  /*53,*/ 122 /*34,*/ e  se il parametro LDS_SubClass_C2_parametro_P4 non è  uguale a c120x /*37,*/ o  se la variabile LDS_SubClass_C2_variabile_V7 è  diverso da c270x, /*66,*/ Assegna al comando LDS_SubClass_C2_comando_C10 il valore c120x

@@ -1,0 +1,71 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-ricezione-comando-automatico-multiplo2\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -27,5 +27,5 @@
+ 
+         self._expected_commands_map = {
+-            Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1 : set([]),
++            Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1 : set(['eventLds_mainclass_c1_command_comm5',]),
+         }
+ 
+@@ -229,5 +229,6 @@
+                     DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
+                     ]),#0
+-                    DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
++                    DIBoolExpr("""NAryLogicOP (AND)\nAlmeno una delle seguenti {Ricezione del  comando   LDS_MainClass_C1_command_comm5  }""", [
++                    EventDebInfo("""Ricezione Comando Automatico\ncomando   LDS_MainClass_C1_command_comm5"""),#0
+                     ]),#1
+                      )
+@@ -241,10 +242,10 @@
+             # transizioni della fase manuale
+             # transizioni della fase di stato
++            # transizioni della fase automatica
+             TransDebInfo(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1,Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1,
+                          guard=(self.dbs[1], ),
+                          effect=(),
+-                         phase = TransPhase.Stato
++                         phase = TransPhase.Automatica
+                          ),
+-            # transizioni della fase automatica
+         ]))
+ 
+@@ -270,5 +271,5 @@
+             self.set_fsmState(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1)
+             self.effect_INITIALIZATION_StatoIniziale_state1_000()
+-            self.response_wait()
++            self.response_done()
+ 
+ 
+@@ -291,6 +292,5 @@
+         if self.is_state_phase():
+             if self.is_current_state(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1):
+-                if(self.guard_PERMANENCE_state1_000()):
+-                    self.curr_transition = self.Transition._State1__State1__stateSheet_0__permanence
++                pass #return ERROR("the current state variable is not set (command: %s)" % command)
+             else:
+                 # if the current state variable is not set, an exception will be raised
+@@ -299,5 +299,6 @@
+         if self.is_automatic_phase():
+             if self.is_current_state(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1):
+-                pass #return ERROR("the current state variable is not set (command: %s)" % command)
++                if(self.guard_PERMANENCE_state1_000()):
++                    self.curr_transition = self.Transition._State1__State1__stateSheet_0__permanence
+             else:
+                 # if the current state variable is not set, an exception will be raised
+@@ -312,5 +313,5 @@
+             self.set_fsmState(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1)
+             self.effect_PERMANENCE_state1_000()
+-            self.response_wait()
++            self.response_done()
+   
+         return self.end_execute()
+@@ -331,8 +332,8 @@
+          
+         {
+-        Nessuna
++          Almeno una delle seguenti {Ricezione del  comando   LDS_MainClass_C1_command_comm5  } 
+         }
+         """
+-        return db((True), self.dbs[1])
++        return db((db(self.is_triggered('eventLds_mainclass_c1_command_comm5'), self.dbs[1].subs[0])), self.dbs[1])
+     
+     # for each effect, the corresponding method is created

@@ -1,0 +1,31 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\la-costante\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -821,5 +821,5 @@
+         
+          } Verifica che   commento: {47,49,50,}   il parametro ConsDef  sia  uguale a FALSE 
+-         commento: {104,} e  che  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++         commento: {104,} e  che  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120 
+          commento: {104,} e  che  commento: {,}  il timer LDS_MainClass_C1_timer_T3 sia disattivo
+         
+@@ -850,5 +850,5 @@
+ 
+  } Verifica che   /*47,49,50,*/   il parametro ConsDef  sia  uguale a FALSE 
+- /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++ /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120 
+  /*104,*/ e  che  /*,*/  il timer LDS_MainClass_C1_timer_T3 sia disattivo""", [
+                             DIBoolExpr("""ImpliesLogicOpImpl\n/*62,*/  se il parametro ConsDef  è  uguale a FALSE , Almeno una delle seguenti { 
+@@ -1050,11 +1050,11 @@
+                             ]),#0
+                             DIBoolExpr("""NAryLogicOP (AND)\nche   /*47,49,50,*/   il parametro ConsDef  sia  uguale a FALSE 
+- /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++ /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120 
+  /*104,*/ e  che  /*,*/  il timer LDS_MainClass_C1_timer_T3 sia disattivo""", [
+                             DIBoolExpr("""NAryLogicOP (AND)\nche   /*47,49,50,*/   il parametro ConsDef  sia  uguale a FALSE 
+- /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++ /*104,*/ e  che  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120""", [
+                             DIBoolExpr("""EqualImpl\nche   /*47,49,50,*/   il parametro ConsDef  sia  uguale a FALSE""", [
+                             ]),#0
+-                            DIBoolExpr("""EqualImpl\nche  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++                            DIBoolExpr("""EqualImpl\nche  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a la costante c120""", [
+                             ]),#1
+                             ]),#0

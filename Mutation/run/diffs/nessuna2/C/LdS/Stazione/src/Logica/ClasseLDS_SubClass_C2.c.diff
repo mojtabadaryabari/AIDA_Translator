@@ -1,0 +1,16 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\nessuna2\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -107,5 +107,5 @@
+      
+     {
+-    Incrementa il contatore LDS_SubClass_C2_contatore_Co10
++      Nessuna  
+     }
+ */
+@@ -113,6 +113,4 @@
+ {
+     
+-    //  Incrementa il contatore LDS_SubClass_C2_contatore_Co10
+-    Counter_Incr(L_P1__GetLds_s18(my_id));
+ }
+ 

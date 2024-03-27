@@ -1,0 +1,23 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\assegna1\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -279,5 +279,5 @@
+       se il parametro ConsDef è uguale a FALSE  commento: {37,} e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, commento: {68,}Attiva il timer LDS_MainClass_C1_timer_T3
+     
+-     ,altrimenti  commento: {68,}Attiva il timer LDS_MainClass_C1_timer_T3
++     ,altrimenti  commento: {68,}Assegna al comando LDS_MainClass_C1_comando_C4 il valore  False
+     
+     
+@@ -390,5 +390,5 @@
+     }
+     //  se il parametro ConsDef è uguale a FALSE  *37,* e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, *68,*Attiva il timer LDS_MainClass_C1_timer_T3
+-    // ,altrimenti  *68,*Attiva il timer LDS_MainClass_C1_timer_T3
++    // ,altrimenti  *68,*Assegna al comando LDS_MainClass_C1_comando_C4 il valore  False
+     bool res_AndLogicOP_21 = true;
+     res_AndLogicOP_21 = (res_AndLogicOP_21 && (L_P1__GetParamConsd(my_id) == false));
+@@ -400,5 +400,5 @@
+     }else{
+     
+-    Timer_Attiva(L_P1__GetLds_m14(my_id));
++    L_P1__SetOutLds_m(my_id,false);
+     }
+ }

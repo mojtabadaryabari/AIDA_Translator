@@ -1,0 +1,39 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\heavy-manual-command-declaration1\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -27,23 +27,30 @@
+     if (L_P1__GetInEvent(my_id)) {
+         #define IS_STATE_ACCEPTING_Event false // no state is accepting this command!
+-        L_P1__SetOutEvent4(my_id, IS_STATE_ACCEPTING_Event ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        L_P1__SetOutEvent5(my_id, IS_STATE_ACCEPTING_Event ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+     } else {
+-        L_P1__SetOutEvent4(my_id, LDS_MANCMD_NOOP);
++        L_P1__SetOutEvent5(my_id, LDS_MANCMD_NOOP);
+     }
+     if (L_P1__GetInEvent1(my_id)) {
+         #define IS_STATE_ACCEPTING_Event1 false // no state is accepting this command!
+-        L_P1__SetOutEvent5(my_id, IS_STATE_ACCEPTING_Event1 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        L_P1__SetOutEvent6(my_id, IS_STATE_ACCEPTING_Event1 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+     } else {
+-        L_P1__SetOutEvent5(my_id, LDS_MANCMD_NOOP);
++        L_P1__SetOutEvent6(my_id, LDS_MANCMD_NOOP);
+     }
+     if (L_P1__GetInEvent3(my_id)) {
+         #define IS_STATE_ACCEPTING_Event3 false // no state is accepting this command!
+-        L_P1__SetOutEvent6(my_id, IS_STATE_ACCEPTING_Event3 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        L_P1__SetOutEvent7(my_id, IS_STATE_ACCEPTING_Event3 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+     } else {
+-        L_P1__SetOutEvent6(my_id, LDS_MANCMD_NOOP);
++        L_P1__SetOutEvent7(my_id, LDS_MANCMD_NOOP);
+     }
++    if (L_P1__GetInEvent4(my_id)) {
++        #define IS_STATE_ACCEPTING_Event4 false // no state is accepting this command!
++        L_P1__SetOutEvent8(my_id, IS_STATE_ACCEPTING_Event4 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        isCommandPresent |= true;		
++    } else {
++        L_P1__SetOutEvent8(my_id, LDS_MANCMD_NOOP);
++    }
+     
+     return isCommandPresent;

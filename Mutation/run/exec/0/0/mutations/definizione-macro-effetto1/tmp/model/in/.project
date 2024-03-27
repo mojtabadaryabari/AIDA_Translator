@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>in</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>eu.fbk.tools.aida.builder.AIDABuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>eu.fbk.eclipse.aida.AIDANature</nature>
+		<nature>org.polarsys.chess.CHESSNature</nature>
+	</natures>
+</projectDescription>

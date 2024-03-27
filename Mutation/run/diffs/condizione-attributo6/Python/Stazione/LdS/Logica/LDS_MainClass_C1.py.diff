@@ -1,0 +1,48 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo6\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -754,5 +754,5 @@
+         
+         { 
+-        
++        se   l'argomento argomento_ave2 è  diverso da  False e  
+         commento: {38,}  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  commento: {56,} 11430 commento: {36,} e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  commento: {39,}  commento: {34,} o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   commento: {50,}  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+         
+@@ -764,9 +764,20 @@
+             if not macroDebInfo.is_initialized() :
+                 macroDebInfo.initialize([
+-                            DIBoolExpr("""NAryLogicOP (AND)\n/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   /*50,*/  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
+-                            DIBoolExpr("""ImpliesLogicOpImpl\n/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   /*50,*/  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
+-                            DIBoolExpr("""NAryLogicOP (OR)\n/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True""", [
+-                            DIBoolExpr("""NAryLogicOP (AND)\n/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False""", [
+-                            DIBoolExpr("""NAryLogicOP (AND)\n/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   /*50,*/  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++                            DIBoolExpr("""ImpliesLogicOpImpl\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   /*50,*/  /*,*/  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120""", [
++                            DIBoolExpr("""NAryLogicOP (OR)\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  /*39,*/  /*34,*/ o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430 /*36,*/ e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo""", [
++                            DIBoolExpr("""NAryLogicOP (AND)\nse   l'argomento argomento_ave2 è  diverso da  False e  
++/*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430""", [
++                            DIBoolExpr("""Operatore Logico Not\nl'argomento argomento_ave2 è  diverso da  False""", [
++                            DIBoolExpr("""EqualImpl\n(argomento_ave2)  è uguale a  (False)""", [
++                            ]),#0
++                            ]),#0
+                             DIBoolExpr("""Operatore Logico Not\nil contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  /*56,*/ 11430""", [
+                             DIBoolExpr("""Operatore Logico Not\nnegazione di ((lds_mainclass_c1_contatore_co9)  è uguale a  (11430))""", [
+@@ -774,4 +785,5 @@
+                             ]),#0
+                             ]),#0
++                            ]),#1
+                             ]),#0
+                             DIBoolExpr("""Operatore Logico Not\nil timer LDS_MainClass_C1_timer_T8 non è disattivo""", [
+@@ -795,5 +807,5 @@
+ 
+         populate_macroLds_mainclass_c1_macrove_m4_SrfMacroDefInfo(di_ctx)
+-        return db((db(not db((db((db((db(not db(not db(self.get_lds_mainclass_c1_contatore_co9().get_valore() == 11430, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]) and db(not db(self.get_lds_mainclass_c1_timer_t8().isDisattivato(), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0]) and db(argomento_ave7 == False, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0].subs[0]) or db(not db(self.get_lds_mainclass_c1_parametro_p5() == True, di_ctx.subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0]) or db(self.get_lds_mainclass_c1_variabile_v1() == GlobalEnumeration.c120, di_ctx.subs[0].subs[0].subs[1]), di_ctx.subs[0].subs[0])), di_ctx.subs[0])
++        return db((db(not db((db((db((db((db(not db(argomento_ave2 == False, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]) and db(not db(not db(self.get_lds_mainclass_c1_contatore_co9().get_valore() == 11430, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[0]) and db(not db(self.get_lds_mainclass_c1_timer_t8().isDisattivato(), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0].subs[0].subs[0]) and db(argomento_ave7 == False, di_ctx.subs[0].subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0].subs[0]) or db(not db(self.get_lds_mainclass_c1_parametro_p5() == True, di_ctx.subs[0].subs[0].subs[0].subs[1].subs[0]), di_ctx.subs[0].subs[0].subs[0].subs[1])), di_ctx.subs[0].subs[0].subs[0]) or db(self.get_lds_mainclass_c1_variabile_v1() == GlobalEnumeration.c120, di_ctx.subs[0].subs[0].subs[1]), di_ctx.subs[0].subs[0])), di_ctx.subs[0])
+     
+     @srf_value_macro("macroLds_mainclass_c1_macrove_m5")

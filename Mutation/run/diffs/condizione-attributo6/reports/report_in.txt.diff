@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo6\out\reports\report_in.txt
+@@ -97,5 +97,4 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 71
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a9' non viene mai utilizzato nella macro, line 71
+-LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave2' non viene mai utilizzato nella macro, line 100
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave3' non viene mai utilizzato nella macro, line 100
+ LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave6' non viene mai utilizzato nella macro, line 100

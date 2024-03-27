@@ -1,0 +1,28 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\light-manual-command-declaration2\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -13,17 +13,17 @@
+ 
+     // for each manual command of L_P1_C2
+-    if (L_P1__GetInEvent7(my_id)) {
+-        #define IS_STATE_ACCEPTING_Event7 false // no state is accepting this command!
+-        L_P1__SetOutEvent9(my_id, IS_STATE_ACCEPTING_Event7 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++    if (L_P1__GetInEvent9(my_id)) {
++        #define IS_STATE_ACCEPTING_Event9 false // no state is accepting this command!
++        L_P1__SetOutEvent11(my_id, IS_STATE_ACCEPTING_Event9 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+     } else {
+-        L_P1__SetOutEvent9(my_id, LDS_MANCMD_NOOP);
++        L_P1__SetOutEvent11(my_id, LDS_MANCMD_NOOP);
+     }
+-    if (L_P1__GetInEvent8(my_id)) {
+-        #define IS_STATE_ACCEPTING_Event8 false // no state is accepting this command!
+-        L_P1__SetOutEvent10(my_id, IS_STATE_ACCEPTING_Event8 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++    if (L_P1__GetInEvent10(my_id)) {
++        #define IS_STATE_ACCEPTING_Event10 false // no state is accepting this command!
++        L_P1__SetOutEvent12(my_id, IS_STATE_ACCEPTING_Event10 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+     } else {
+-        L_P1__SetOutEvent10(my_id, LDS_MANCMD_NOOP);
++        L_P1__SetOutEvent12(my_id, LDS_MANCMD_NOOP);
+     }
+     

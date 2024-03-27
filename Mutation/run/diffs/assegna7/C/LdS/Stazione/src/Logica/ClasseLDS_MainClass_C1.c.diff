@@ -1,0 +1,23 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\assegna7\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -265,5 +265,5 @@
+       se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento commento: {40,}  commento: {38,} o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 commento: {38,} e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  commento: {56,} contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  commento: {67,} Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 commento: {67,}
+     
+-     ,altrimenti  commento: {66,} Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex
++     ,altrimenti  commento: {68,}Azzera il contatore LDS_MainClass_C1_contatore_Co9
+     
+     
+@@ -309,5 +309,5 @@
+     }
+     //  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento *40,*  *38,* o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  *55,* contatore LDS_MainClass_C1_contatore_Co6 *38,* e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  *56,* contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  *67,* Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 *67,*
+-    // ,altrimenti  *66,* Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex
++    // ,altrimenti  *68,*Azzera il contatore LDS_MainClass_C1_contatore_Co9
+     bool res_OrLogicOP_4 = false;
+     bool res_OrLogicOP_5 = false;
+@@ -335,5 +335,5 @@
+     }else{
+     
+-    L_P1__SetOutLds_m1(my_id,gialloxverd);
++    Counter_Res(L_P1__GetLds_m19(my_id));
+     }
+     //  *38,*  se il contatore LDS_MainClass_C1_contatore_Co9 è  diverso da  *56,* contatore LDS_MainClass_C1_contatore_Co6 o  se il parametro ConsDef  è  uguale a FALSE  e  se il parametro ConsDef è uguale a FALSE ,  *67,* Assegna alla variabile LDS_MainClass_C1_variabile_V7 il valore RossoVerde *67,*

@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-controllo-piazzale2\out\Python\attributes.csv
+@@ -15,4 +15,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",controllo input,lds_mainclass_c1_controllo_c6,Enumerator:Enumerator_2,pubblico,si,,c120,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",controllo input,lds_mainclass_c1_controllo_c9,BasicType:Boolean,pubblico,si,,true,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",controllo input,nabcc_mainclass_c1_controllo_c1,Enumerator:Enumerator_3,privato,si,,giallox,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",timer,lds_mainclass_c1_timer_t1,Timer:TimerState,pubblico,si,,3000,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",timer,lds_mainclass_c1_timer_t2,Timer:TimerState,pubblico,si,,3152000,"NABCC: References Removed for Comparison"

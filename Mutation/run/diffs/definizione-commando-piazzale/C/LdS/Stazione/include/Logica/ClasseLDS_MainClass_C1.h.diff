@@ -1,0 +1,19 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-commando-piazzale\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -57,4 +57,5 @@
+ #define L_P1__lds_m1_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__lds_m2_ID  /* NABCC: ID removed for comparison */
++#define L_P1__nabcc_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Comandi manuali
+@@ -184,5 +185,10 @@
+     LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__lds_m2_ID, (Taggm) (value))
+ 
++/* void L_P1__SetOutNabcc(instance_id_t const my_id, C1_Enumerat4 const value); */
++#define L_P1__SetOutNabcc(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__nabcc_ID, (Taggm) (value))
+ 
++
+ // ********** Metodi standard **********
+ 

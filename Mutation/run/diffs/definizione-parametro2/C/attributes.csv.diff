@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro2\out\C\attributes.csv
+@@ -5,4 +5,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",parametro locale,lds_mainclass_c1_parametro_p3,BasicType:Boolean,pubblico,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",parametro locale,lds_mainclass_c1_parametro_p5,BasicType:Boolean,pubblico,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",parametro locale,nabcc_mainclass_c1_parametro_p3,BasicType:Integer,privato,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,lds_mainclass_c1_variabile_v1,Enumerator:Enumerator_2,pubblico,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,lds_mainclass_c1_variabile_v7,Enumerator:Enumerator_3,pubblico,si,,,"NABCC: References Removed for Comparison"

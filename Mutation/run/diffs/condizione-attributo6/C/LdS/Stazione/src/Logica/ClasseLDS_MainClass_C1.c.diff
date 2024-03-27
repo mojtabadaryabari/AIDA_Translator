@@ -1,0 +1,51 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-attributo6\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -551,5 +551,5 @@
+     
+     { 
+-    
++    se   l'argomento argomento_ave2 è  diverso da  False e  
+     commento: {38,}  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  commento: {56,} 11430 commento: {36,} e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  commento: {39,}  commento: {34,} o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   commento: {50,}  commento: {,}  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+     
+@@ -561,4 +561,5 @@
+ bool res_AndLogicOP_0 = true;
+     
++    //  se   l'argomento argomento_ave2 è  diverso da  False e  
+     //  *38,*  se il contatore LDS_MainClass_C1_contatore_Co9 non è  diverso da  *56,* 11430 *36,* e  se il timer LDS_MainClass_C1_timer_T8 non è disattivo e  se l'argomento argomento_ave7 è  uguale a  False  *39,*  *34,* o  se il parametro LDS_MainClass_C1_parametro_P5 è  diverso da  True , Verifica che   *50,*  *,*  la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+     bool res_ImpliesLogicOp_1 = true;
+@@ -566,20 +567,26 @@
+     bool res_AndLogicOP_3 = true;
+     bool res_AndLogicOP_4 = true;
+-    bool res_NotLogicOP_5 = true;
++    bool res_AndLogicOP_5 = true;
+     bool res_NotLogicOP_6 = true;
+-    res_NotLogicOP_6 = (res_NotLogicOP_6 && ! (Counter_GetValore(L_P1__GetLds_m19(my_id)) == 11430u));
+-    res_NotLogicOP_5 = (res_NotLogicOP_5 && ! res_NotLogicOP_6);
+-    res_AndLogicOP_4 = (res_AndLogicOP_4 && res_NotLogicOP_5);
++    res_NotLogicOP_6 = (res_NotLogicOP_6 && ! (argom2 == false));
++    res_AndLogicOP_5 = (res_AndLogicOP_5 && res_NotLogicOP_6);
+     bool res_NotLogicOP_7 = true;
+-    res_NotLogicOP_7 = (res_NotLogicOP_7 && ! Timer_Disattivo(L_P1__GetLds_m15(my_id)));
+-    res_AndLogicOP_4 = (res_AndLogicOP_4 && res_NotLogicOP_7);
++    bool res_NotLogicOP_8 = true;
++    res_NotLogicOP_8 = (res_NotLogicOP_8 && ! (Counter_GetValore(L_P1__GetLds_m19(my_id)) == 11430u));
++    res_NotLogicOP_7 = (res_NotLogicOP_7 && ! res_NotLogicOP_8);
++    res_AndLogicOP_5 = (res_AndLogicOP_5 && res_NotLogicOP_7);
+     
++    res_AndLogicOP_4 = (res_AndLogicOP_4 && res_AndLogicOP_5);
++    bool res_NotLogicOP_9 = true;
++    res_NotLogicOP_9 = (res_NotLogicOP_9 && ! Timer_Disattivo(L_P1__GetLds_m15(my_id)));
++    res_AndLogicOP_4 = (res_AndLogicOP_4 && res_NotLogicOP_9);
++    
+     res_AndLogicOP_3 = (res_AndLogicOP_3 && res_AndLogicOP_4);
+     res_AndLogicOP_3 = (res_AndLogicOP_3 && (argom5 == false));
+     
+     res_OrLogicOP_2 = (res_OrLogicOP_2 || res_AndLogicOP_3);
+-    bool res_NotLogicOP_8 = true;
+-    res_NotLogicOP_8 = (res_NotLogicOP_8 && ! (L_P1__GetParamLds_m9(my_id) == true));
+-    res_OrLogicOP_2 = (res_OrLogicOP_2 || res_NotLogicOP_8);
++    bool res_NotLogicOP_10 = true;
++    res_NotLogicOP_10 = (res_NotLogicOP_10 && ! (L_P1__GetParamLds_m9(my_id) == true));
++    res_OrLogicOP_2 = (res_OrLogicOP_2 || res_NotLogicOP_10);
+     
+     if(res_OrLogicOP_2){

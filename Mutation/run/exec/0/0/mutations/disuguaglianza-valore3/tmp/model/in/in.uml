@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CHESSViews="http://CHESS/Core/Views" xmlns:Core="http://CHESS/Core" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://CHESS/Core/Views http://CHESS/Core#//CHESSViews">
+  <uml:Model xmi:id="_Qn8qUeEfEe6FH5kJMvCk1w" name="model">
+    <packagedElement xmi:type="uml:Package" xmi:id="_RrTkwOEfEe6FH5kJMvCk1w" name="modelRequirementView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R7eHsOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R7jnQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R7ofwOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R7tYQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RsLHcOEfEe6FH5kJMvCk1w" name="modelSystemView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rs4SEOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rs9xoOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RtMbIOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RtWMIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RtbEoOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rtf9IOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RtlcsOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RtvNsOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RtzfIOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rt4-sOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rt-eQOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RuHoMOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuNHwOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RuSAQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuXf0OEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RucYUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/SystemModel/STS#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_-aQIUKbREeSHP5PnCeTneg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R7FGIOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R7J-oOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R7PeMOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R7UWsOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R7y30OEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R73wUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R85rEOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9EDIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R9IUkOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9N0IOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R9SFkOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9XlIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R9cdoOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9h9MOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R9ikQOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9ncwOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R9ruMOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R9wmsOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R92GQOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R96-wOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R-AeUOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-FW0OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RugpwOEfEe6FH5kJMvCk1w" name="modelComponentView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RvEDYOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RvObcOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/ComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_MftccDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RvObceEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RvYzgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RvYzgeEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RvjLkOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RvjLkeEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rvs8kOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rvx1EOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rv2GgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rv7mEOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RwBssOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RwF-IOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RwQWMOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RwV1wOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RwaHMOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RwfmwOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RwlGUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R1DWoOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1L5gOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/GCM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YgAioAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R1NusOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1XfsOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Alloc"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ar8OsAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R6sEkOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R6w9EOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RwpXwOEfEe6FH5kJMvCk1w" name="modelDeploymentView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RxMxYOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RxRp4OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/DeploymentConfiguration/HardwareBaseline#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_1TsX8MCpEd-RT45s8cwWMg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RxRp4eEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RxcB8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RxcB8eEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rxly8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rxly8eEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rxvj8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rxvj8eEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rx58AOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rx-0gOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyE7IOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RyJzoOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyNeAOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RyS9kOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyZEMOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R1c_QOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1h3wOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_2dtsgAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R1mJMOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1sP0OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_P80EcBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R1whQOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R11ZwOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwComputing"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_aMhZsBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R17gYOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R1_x0OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwCommunication"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_bmL7UBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R2EqUOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R2PCYOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwTiming"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_dG2c0BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R2T64OEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R2eS8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwDevice"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ja8REBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R2jLcOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R2tjgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ZJjPoEIbEd6dmI2dd6jVFQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R2ycAOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R23UgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwMemory"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_gHI-ABJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R280EOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R3BskOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwStorageManager"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_hst0sBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3F-AOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R3LdkOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_R7sL8BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3QWEOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R3auIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwLayout"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_uAf6gBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3auIeEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R3fmoOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwPower"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_vrbyUBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3kfIOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R3u3MOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwGeneral"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_WGZ44BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3veQOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R35PQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Alloc"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ar8OsAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R3-HwOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R4DAQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R4H4wOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R4NYUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/GCM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YgAioAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R4SQ0OEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R4XJUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R611kOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R6_mkOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ryd8sOEfEe6FH5kJMvCk1w" name="modelAnalysisView">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RzKgQOEfEe6FH5kJMvCk1w" name="modelDependabilityAnalysisView">
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RzU4UOEfEe6FH5kJMvCk1w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RzZw0OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedAnalysis#/"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_Wgxh0L8_Ed-TL8tpOyViyA"/>
+        </profileApplication>
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RzfQYOEfEe6FH5kJMvCk1w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rzkv8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+        </profileApplication>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R0Bb4OEfEe6FH5kJMvCk1w" name="modelRTAnalysisView">
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R4wx8OEfEe6FH5kJMvCk1w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R46i8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/SAM"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5ZCOIAPMEdyuUt-4qHuVvQ"/>
+        </profileApplication>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R4_bcOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R5FiEOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_R0f9AeEfEe6FH5kJMvCk1w" name="modelPSMView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R5JzgOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R5PTEOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/SAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5ZCOIAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R5ZEEOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R5d8kOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R5jcIOEfEe6FH5kJMvCk1w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R5oUoOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Interaction"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_EIfnABJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RWYdoOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RWw4IOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_EA6IcDcwEd-mWLzcI61s7Q"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RkZrgOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RkjcgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Core#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_ad4owDgVEd-68Z_bhNRGsA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rkt0kOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rk3lkOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Core#//CHESSViews"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_FttqgMJDEd-0jpzjleFnug"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rk8eEOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RlCksOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RlLuoOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RlR1QOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_QgRZcMe6Ed-7etIj5eTw0Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_cE_bwLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RlWGsOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RlgewOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RllXQOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RlvIQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RlvIQeEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rl6HYOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rl_m8OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RmLNIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedAnalysis#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_Wgxh0L8_Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RmTI8OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RmYBcOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RmiZgOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RmxDAOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RnElAOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RnZVIOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rne0sOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rnn-oOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_S2Uq0ce6Ed-7etIj5eTw0Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_nyQ7MLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Rn3PMOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RoBnQOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/DeploymentConfiguration/HardwareBaseline#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_1TsX8MCpEd-RT45s8cwWMg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RoF4sOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RoQQwOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RoaBwOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RojywOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/ARINCComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_GMlQEGwuEeWvYIaEJT1qow"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RopSUOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RozDUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/ComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_MftccDQ2EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ro370OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RpDiAOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/SystemModel/STS#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_-aQIUKbREeSHP5PnCeTneg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RpHMYOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RpME4OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Safety#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_f-f6oMvrEeSajLw6mg2A8Q"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RpQ9YOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RpeYwOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/AsyncCommunication#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_iErvYKnlEeyLSfdLzsFShA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RpmUkOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RpvegOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/StateMachines#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_gfWT0KnmEeyLSfdLzsFShA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R4cB0OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R4mZ4OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/NFPs"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_U_GAoAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R5ubQOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R6EZgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/CoreElements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_-wEewECLEd6UTJZnztgOLw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R6TqEOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R6c0AOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL/DataTypes"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_9FdqwA-MEdyLh7muGbCqMw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R-K2YOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-UAUOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R-gNkOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-jQ4OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R-yhcOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-9gkOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R_MKEOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R_VUAOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R_lLoOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R_qrMOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R_57wOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SAejgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SAsl8OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SA2W8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SBAH8OEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SBJ48OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SBURAOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SBZJgOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SDXfcOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SDcX8OEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://RFI-ACC#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://RFI-ACC_PROFILE/rfiacc.profile.uml#_LL370BTCEemW1fIkJDjBiQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SDrogOEfEe6FH5kJMvCk1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SDwhAOEfEe6FH5kJMvCk1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://RFI-ACC#//Testing"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://RFI-ACC_PROFILE/rfiacc.profile.uml#_yXuEsIDqEeu9XK_wpQaTGw"/>
+    </profileApplication>
+  </uml:Model>
+  <Core:CHESS xmi:id="_RrEUMOEfEe6FH5kJMvCk1w" base_Model="_Qn8qUeEfEe6FH5kJMvCk1w" psmView="_R04-kOEfEe6FH5kJMvCk1w">
+    <analysisView xmi:type="CHESSViews:AnalysisView" xmi:id="_Ry2-QOEfEe6FH5kJMvCk1w" base_Package="_Ryd8sOEfEe6FH5kJMvCk1w" depanalysisview="_Rz4R8OEfEe6FH5kJMvCk1w">
+      <rtanalysisview xmi:type="CHESSViews:RTAnalysisView" xmi:id="_R0f9AOEfEe6FH5kJMvCk1w" base_Package="_R0Bb4OEfEe6FH5kJMvCk1w"/>
+    </analysisView>
+    <deploymentView xmi:type="CHESSViews:DeploymentView" xmi:id="_RxDAYOEfEe6FH5kJMvCk1w" base_Package="_RwpXwOEfEe6FH5kJMvCk1w"/>
+    <requirementView xmi:type="CHESSViews:RequirementView" xmi:id="_Rr7P0OEfEe6FH5kJMvCk1w" base_Package="_RrTkwOEfEe6FH5kJMvCk1w"/>
+    <componentView xmi:type="CHESSViews:ComponentView" xmi:id="_Ru6SYOEfEe6FH5kJMvCk1w" base_Package="_RugpwOEfEe6FH5kJMvCk1w"/>
+    <systemView xmi:type="CHESSViews:SystemView" xmi:id="_RspBgOEfEe6FH5kJMvCk1w" base_Package="_RsLHcOEfEe6FH5kJMvCk1w"/>
+  </Core:CHESS>
+  <CHESSViews:DependabilityAnalysisView xmi:id="_Rz4R8OEfEe6FH5kJMvCk1w" base_Package="_RzKgQOEfEe6FH5kJMvCk1w"/>
+  <CHESSViews:PSMView xmi:id="_R04-kOEfEe6FH5kJMvCk1w" base_Package="_R0f9AeEfEe6FH5kJMvCk1w"/>
+</xmi:XMI>

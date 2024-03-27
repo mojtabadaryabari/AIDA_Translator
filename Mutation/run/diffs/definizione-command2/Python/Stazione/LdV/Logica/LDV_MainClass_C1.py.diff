@@ -1,0 +1,11 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdV\Logica\LDV_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\Python\Stazione\LdV\Logica\LDV_MainClass_C1.py
+@@ -114,5 +114,8 @@
+ 
+     # setters for comandi al piazzale
++    def set_ldv_mainclass_c1_output_1(self, ldv_mainclass_c1_output_1):
++        self.memory.set_var(self.station_name,self.name,self.instance_name,"ldv_mainclass_c1_output_1",ldv_mainclass_c1_output_1)
+ 
++
+     # getters for controlli dal piazzale
+ 

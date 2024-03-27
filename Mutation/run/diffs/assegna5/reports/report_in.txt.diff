@@ -1,0 +1,22 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\assegna5\out\reports\report_in.txt
+@@ -46,4 +46,5 @@
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m5' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m6' nella classe 'LDS_MainClass_C1', line 49
+ LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m6' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m5' nella classe 'LDS_MainClass_C1', line 51
++LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'lds_mainclass_c1_comando_c5' non viene mai scritto, line 37
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'lds_mainclass_c1_comando_c7' non viene mai scritto, line 39
+ LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm10 della classe LDS_MainClass_C1 non viene mai ricevuto, line 58
+@@ -67,13 +68,4 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 93
+ LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' dovrebbe avere accessibilità privata, line 21
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 103
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 109
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 134
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 146
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 156
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 160
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 81
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 87
+-LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 88
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' dovrebbe avere accessibilità privata, line 33
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' non viene mai letto, line 33

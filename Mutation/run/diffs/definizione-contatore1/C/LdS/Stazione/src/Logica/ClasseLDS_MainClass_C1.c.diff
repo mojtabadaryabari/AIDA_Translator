@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore1\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -137,4 +137,6 @@
+     Counter_AggmInit(L_P1__GetLds_m19(my_id), true, CLASS_L_P1_C1_ID, my_id, L_P1__lds_m19_ID);
+     Counter_Init(L_P1__GetLds_m19(my_id));
++    Counter_AggmInit(L_P1__GetNabcc(my_id), true, CLASS_L_P1_C1_ID, my_id, L_P1__nabcc_ID);
++    Counter_Init(L_P1__GetNabcc(my_id));
+     // init response
+     L_P1_C1_SetResponse(my_id, LDS_SCHED_NOP);

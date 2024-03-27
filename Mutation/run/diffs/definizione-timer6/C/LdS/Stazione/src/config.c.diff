@@ -1,0 +1,12 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\config.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-timer6\out\C\LdS\Stazione\src\config.c
+@@ -70,4 +70,9 @@
+ }
+ 
++Timer* L_P1__GetNabcc(instance_id_t const my_id)
++{
++    return &(lds_Stazione_data->L_P1_C1[my_id].nabcc);
++}
++
+ Counter* L_P1__GetLds_m16(instance_id_t const my_id)
+ {

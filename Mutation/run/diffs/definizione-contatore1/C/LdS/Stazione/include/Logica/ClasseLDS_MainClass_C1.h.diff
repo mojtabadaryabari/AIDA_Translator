@@ -1,0 +1,14 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-contatore1\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -46,4 +46,5 @@
+ #define L_P1__lds_m18_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__lds_m19_ID  /* NABCC: ID removed for comparison */
++#define L_P1__nabcc_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Controlli dal piazzale
+@@ -121,4 +122,5 @@
+ Counter* L_P1__GetLds_m18(instance_id_t const my_id);    
+ Counter* L_P1__GetLds_m19(instance_id_t const my_id);    
++Counter* L_P1__GetNabcc(instance_id_t const my_id);    
+ 
+ // comandi manuali

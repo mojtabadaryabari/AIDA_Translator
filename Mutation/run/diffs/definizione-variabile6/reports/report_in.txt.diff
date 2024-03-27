@@ -1,0 +1,10 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-variabile6\out\reports\report_in.txt
+@@ -111,4 +111,7 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v1' dovrebbe avere accessibilità protetta, line 13
+ LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v7' dovrebbe avere accessibilità protetta, line 14
++LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'nabcc_mainclass_c1_variabile_v3' dovrebbe avere accessibilità privata, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'nabcc_mainclass_c1_variabile_v3' non viene mai letta, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'nabcc_mainclass_c1_variabile_v3' non viene mai scritta, line 11
+ LDS_MainClass_C1.rfisrf_sheet - warning: Il contatore 'lds_mainclass_c1_contatore_co5' non viene mai verificato, line 22
+ LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_comando_c2' è molto simile a 'lds_subclass_c2_comando_c4' e 'lds_subclass_c2_comando_c5' e 'lds_subclass_c2_comando_c7' nella classe 'LDS_SubClass_C2', line 40

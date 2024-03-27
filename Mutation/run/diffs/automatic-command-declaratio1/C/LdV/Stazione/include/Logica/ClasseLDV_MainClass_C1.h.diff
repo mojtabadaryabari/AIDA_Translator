@@ -1,0 +1,77 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1.h
+@@ -10,11 +10,11 @@
+ 
+ typedef struct {
+-    bool event11;
+     bool event12;
++    bool event13;
+ } L_P1_C3_Comandi_Man;
+ 
+ typedef struct {
+-    ManCmdResponse event14;
+     ManCmdResponse event15;
++    ManCmdResponse event16;
+ } L_P1_C3_Ack_Comandi_Man;
+ 
+@@ -48,10 +48,10 @@
+ 
+ // ID Comandi manuali
+-#define L_P1__event11_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event12_ID  /* NABCC: ID removed for comparison */
++#define L_P1__event13_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Risposte ai comandi manuali
+-#define L_P1__event14Reply_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event15Reply_ID  /* NABCC: ID removed for comparison */
++#define L_P1__event16Reply_ID  /* NABCC: ID removed for comparison */
+ 
+ 
+@@ -116,22 +116,22 @@
+ 
+ // comandi manuali
+-/* bool L_P1__GetInEvent11(instance_id_t const my_id); */
+-#define L_P1__GetInEvent11(my_id)  \
+-    (bool) \
+-    LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event11_ID)
+ /* bool L_P1__GetInEvent12(instance_id_t const my_id); */
+ #define L_P1__GetInEvent12(my_id)  \
+     (bool) \
+     LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event12_ID)
++/* bool L_P1__GetInEvent13(instance_id_t const my_id); */
++#define L_P1__GetInEvent13(my_id)  \
++    (bool) \
++    LogicGetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event13_ID)
+ 
+ // risposte ai comandi manuali
+-/* void L_P1__SetOutEvent14(instance_id_t const my_id, ManCmdResponse const value); */
+-#define L_P1__SetOutEvent14(my_id, value)  \
+-    CHECK_LE((value), TAGGM_MAX); \
+-    LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event14Reply_ID, (Taggm) (value))
+ /* void L_P1__SetOutEvent15(instance_id_t const my_id, ManCmdResponse const value); */
+ #define L_P1__SetOutEvent15(my_id, value)  \
+     CHECK_LE((value), TAGGM_MAX); \
+     LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event15Reply_ID, (Taggm) (value))
++/* void L_P1__SetOutEvent16(instance_id_t const my_id, ManCmdResponse const value); */
++#define L_P1__SetOutEvent16(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C3_ID, (my_id), L_P1__event16Reply_ID, (Taggm) (value))
+ 
+ // controlli dal piazzale
+@@ -161,11 +161,11 @@
+ 
+ // Macro di verifica
+-bool L_P1__Macro23(instance_id_t const my_id , bool argom39, C3_Enumerat4 argom40, bool argom41, C3_Enumerat1 argom42);
+-bool L_P1__Macro24(instance_id_t const my_id , C3_Enumerat1 argom43, C3_Enumerat4 argom44, bool argom45, C3_Enumerat4 argom46, C3_Enumerat4 argom47, C3_Enumerat1 argom48, bool argom49);
+-bool L_P1__Macro25(instance_id_t const my_id , C3_Enumerat3 argom50, C3_Enumerat4 argom51, C3_Enumerat3 argom52, C3_Enumerat1 argom53, bool argom54, C3_Enumerat3 argom55, C3_Enumerat4 argom56);
++bool L_P1__Macro23(instance_id_t const my_id , bool argom41, C3_Enumerat4 argom42, bool argom43, C3_Enumerat1 argom44);
++bool L_P1__Macro24(instance_id_t const my_id , C3_Enumerat1 argom45, C3_Enumerat4 argom46, bool argom47, C3_Enumerat4 argom48, C3_Enumerat4 argom49, C3_Enumerat1 argom50, bool argom51);
++bool L_P1__Macro25(instance_id_t const my_id , C3_Enumerat3 argom52, C3_Enumerat4 argom53, C3_Enumerat3 argom54, C3_Enumerat1 argom55, bool argom56, C3_Enumerat3 argom57, C3_Enumerat4 argom58);
+ 
+ // Macro valorizzate
+-bool L_P1__Macro21(instance_id_t const my_id , bool argom33, C3_Enumerat1 argom34, C3_Enumerat4 argom35, C3_Enumerat1 argom36);
+-bool L_P1__Macro22(instance_id_t const my_id , bool argom37, C3_Enumerat4 argom38);
++bool L_P1__Macro21(instance_id_t const my_id , bool argom35, C3_Enumerat1 argom36, C3_Enumerat4 argom37, C3_Enumerat1 argom38);
++bool L_P1__Macro22(instance_id_t const my_id , bool argom39, C3_Enumerat4 argom40);
+ 
+ 

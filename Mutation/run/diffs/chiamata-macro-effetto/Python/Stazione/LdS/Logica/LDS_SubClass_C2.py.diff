@@ -1,0 +1,34 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\chiamata-macro-effetto\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -523,5 +523,5 @@
+          commento: {38,}  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  commento: {54,} 13 commento: {38,} o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  commento: {53,} 1215 e  se il parametro ConsDef è uguale a FALSE  commento: {34,} o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, commento: {67,} Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+         
+-         ,altrimenti  commento: {69,}Disattiva il timer LDS_SubClass_C2_timer_T4
++         ,altrimenti  commento: {68,}Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2
+         
+         
+@@ -641,5 +641,5 @@
+                             DIStatement("""ITEStatementImpl\n/*38,*/  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  /*54,*/ 13 /*38,*/ o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  /*53,*/ 1215 e  se il parametro ConsDef è uguale a FALSE  /*34,*/ o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, /*67,*/ Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+ 
+- ,altrimenti  /*69,*/Disattiva il timer LDS_SubClass_C2_timer_T4""", [
++ ,altrimenti  /*68,*/Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2""", [
+                             DIBoolExpr("""NAryLogicOP (OR)\n/*38,*/  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  /*54,*/ 13 /*38,*/ o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  /*53,*/ 1215 e  se il parametro ConsDef è uguale a FALSE  /*34,*/ o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x""", [
+                             DIBoolExpr("""NAryLogicOP (OR)\n( negazione di ((lds_subclass_c2_contatore_co10)  è maggiore di  (13)) )  o  
+@@ -663,4 +663,5 @@
+                             ]),#1
+                             ]),#0
++                            DIEffectMacro("""Chiamata Macro Effetti\n/*68,*/Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2"""),#1
+                             ]),#4
+                 ])
+@@ -689,9 +690,9 @@
+             self.get_lds_subclass_c2_contatore_co10().incrementa()
+         #  /*38,*/  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  /*54,*/ 13 /*38,*/ o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  /*53,*/ 1215 e  se il parametro ConsDef è uguale a FALSE  /*34,*/ o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, /*67,*/ Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+-        #   ,altrimenti  /*69,*/Disattiva il timer LDS_SubClass_C2_timer_T4
++        #   ,altrimenti  /*68,*/Applica gli effetti   della macro LDS_SubClass_C2_macroef_M2
+         if db((db((db(not db(self.get_lds_subclass_c2_contatore_co10().get_valore() > 13, di_ctx.subs[4].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[4].subs[0].subs[0].subs[0]) or db((db(not db(self.get_lds_subclass_c2_contatore_co2().get_valore() == 1215, di_ctx.subs[4].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[4].subs[0].subs[0].subs[1].subs[0]) and db(self.get_consdef() == False, di_ctx.subs[4].subs[0].subs[0].subs[1].subs[1])), di_ctx.subs[4].subs[0].subs[0].subs[1])), di_ctx.subs[4].subs[0].subs[0]) or db(self.get_lds_subclass_c2_parametro_p4() == GlobalEnumeration.c120x, di_ctx.subs[4].subs[0].subs[1])), di_ctx.subs[4].subs[0]):
+             self.set_lds_subclass_c2_variabile_v3(1)
+         else:
+-            self.get_lds_subclass_c2_timer_t4().disattiva()
++            self.macroLds_subclass_c2_macroef_m2(di_ctx.subs[4].subs[1])
+     
+     def macroLds_subclass_c2_macroef_m7(self, di_ctx: DIEffectMacro):

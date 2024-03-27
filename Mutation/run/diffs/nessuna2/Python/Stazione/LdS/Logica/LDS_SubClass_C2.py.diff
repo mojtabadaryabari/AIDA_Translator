@@ -1,0 +1,14 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\nessuna2\out\Python\Stazione\LdS\Logica\LDS_SubClass_C2.py
+@@ -388,9 +388,8 @@
+          
+         {
+-        Incrementa il contatore LDS_SubClass_C2_contatore_Co10
++          Nessuna  
+         }
+         """
+-        #  Incrementa il contatore LDS_SubClass_C2_contatore_Co10
+-        self.get_lds_subclass_c2_contatore_co10().incrementa()
++        pass
+     
+     def effect_NOMINAL_ACTUATION_state1_000(self):

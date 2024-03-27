@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-parametro3\out\reports\report_in.txt
+@@ -88,4 +88,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'rosso' dell'enumeratore 'Enumerator_2' non viene mai usato, line 65
+ LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
++LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'nabcc_mainclass_c1_parametro_p8' dovrebbe avere accessibilità privata, line 11
++LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'nabcc_mainclass_c1_parametro_p8' non viene mai letto, line 11
+ LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t1' dovrebbe avere accessibilità privata, line 29
+ LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t1' non viene mai attivato/disattivato, line 136

@@ -1,0 +1,29 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-timer3\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -78,6 +78,7 @@
+         self.set_lds_mainclass_c1_timer_t3(1000)
+         self.set_lds_mainclass_c1_timer_t8(1430000)
++        self.set_nabcc_mainclass_c1_restoreti_ti1(42000)
+ 
+-        self.timers = [self.lds_mainclass_c1_timer_t1,self.lds_mainclass_c1_timer_t2,self.lds_mainclass_c1_timer_t3,self.lds_mainclass_c1_timer_t8,]
++        self.timers = [self.lds_mainclass_c1_timer_t1,self.lds_mainclass_c1_timer_t2,self.lds_mainclass_c1_timer_t3,self.lds_mainclass_c1_timer_t8,self.nabcc_mainclass_c1_restoreti_ti1,]
+ 
+         # initialize the counters
+@@ -174,5 +175,8 @@
+         self.lds_mainclass_c1_timer_t8 = Timer(timerDuration, self.station_name, self.name, self.instance_name, "lds_mainclass_c1_timer_t8", self.memory)
+ 
++    def set_nabcc_mainclass_c1_restoreti_ti1(self, timerDuration):
++        self.nabcc_mainclass_c1_restoreti_ti1 = Timer(timerDuration, self.station_name, self.name, self.instance_name, "nabcc_mainclass_c1_restoreti_ti1", self.memory)
+ 
++
+     # getters for timers
+     def get_lds_mainclass_c1_timer_t1(self):
+@@ -188,5 +192,8 @@
+         return self.lds_mainclass_c1_timer_t8
+ 
++    def get_nabcc_mainclass_c1_restoreti_ti1(self):
++        return self.nabcc_mainclass_c1_restoreti_ti1
+ 
++
+     # setters for counters
+     def set_lds_mainclass_c1_contatore_co5(self, counterInitValue):

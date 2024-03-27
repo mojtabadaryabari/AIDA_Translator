@@ -1,0 +1,27 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\heavy-manual-command-declaration1\out\C\LdV\Stazione\include\Logica\ClasseLDV_MainClass_C1_priv.h
+@@ -9,5 +9,5 @@
+ 
+ typedef struct {
+-    bool event13;
++    bool event15;
+     bool argom31;
+     bool argom32;
+@@ -44,6 +44,6 @@
+ 
+ // comandi automatici
+-/* bool L_P1__GetCAEvent13(instance_id_t const my_id); */
+-#define L_P1__GetCAEvent13(my_id) (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event13)
++/* bool L_P1__GetCAEvent15(instance_id_t const my_id); */
++#define L_P1__GetCAEvent15(my_id) (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event15)
+ 
+ /* bool L_P1__GetCAArgom31(instance_id_t const my_id); */
+@@ -53,6 +53,6 @@
+ #define L_P1__GetCAArgom32(my_id)  (ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.argom32)
+ 
+-/* void L_P1__SetCAEvent13(instance_id_t const my_id, bool const value); */
+-#define L_P1__SetCAEvent13(my_id, value)   ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event13 = (value)
++/* void L_P1__SetCAEvent15(instance_id_t const my_id, bool const value); */
++#define L_P1__SetCAEvent15(my_id, value)   ldv_Stazione_data->L_P1_C3[my_id].comandi_automatici.event15 = (value)
+ 
+ /* void L_P1__SetCAArgom31(instance_id_t const my_id, bool const value); */

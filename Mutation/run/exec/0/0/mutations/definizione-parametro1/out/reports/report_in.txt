@@ -1,0 +1,308 @@
+			Test Report on in: SUCCESS
+			Thu Mar 07 18:31:22 CET 2024
+
+
+projectPath:		in/
+srfSheetsFolderPath:	in/Sheets/
+dictionaryFilePath:	in/Dizionario.rfisrf_dictionary
+
+
+Phase:		Create Complete AIDA Model
+Message:	No problems detected in model generation
+
+
+Phase:		Run Checkers
+Message:	No problems in executing checkers
+
+
+Phase:		Checkers Output
+Message:	Checkers results reported below
+Details:
+LDS_MainClass_C1.rfisrf_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_0' non viene mai scritto, line 63
+LDS_MainClass_C1.rfisrf_definition - info: Il literal 'verde' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 67
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'eventLds_mainclass_c1_command_comm10' è molto simile a 'eventLds_mainclass_c1_command_comm11' nella classe 'LDS_MainClass_C1', line 58
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'eventLds_mainclass_c1_command_comm11' è molto simile a 'eventLds_mainclass_c1_command_comm10' nella classe 'LDS_MainClass_C1', line 59
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_comando_c4' è molto simile a 'lds_mainclass_c1_comando_c5' e 'lds_mainclass_c1_comando_c7' nella classe 'LDS_MainClass_C1', line 38
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_comando_c5' è molto simile a 'lds_mainclass_c1_comando_c4' e 'lds_mainclass_c1_comando_c7' nella classe 'LDS_MainClass_C1', line 37
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_comando_c7' è molto simile a 'lds_mainclass_c1_comando_c4' e 'lds_mainclass_c1_comando_c5' nella classe 'LDS_MainClass_C1', line 39
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_contatore_co5' è molto simile a 'lds_mainclass_c1_contatore_co6' e 'lds_mainclass_c1_contatore_co8' e 'lds_mainclass_c1_contatore_co9' nella classe 'LDS_MainClass_C1', line 23
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_contatore_co6' è molto simile a 'lds_mainclass_c1_contatore_co5' e 'lds_mainclass_c1_contatore_co8' e 'lds_mainclass_c1_contatore_co9' nella classe 'LDS_MainClass_C1', line 24
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_contatore_co8' è molto simile a 'lds_mainclass_c1_contatore_co5' e 'lds_mainclass_c1_contatore_co6' e 'lds_mainclass_c1_contatore_co9' nella classe 'LDS_MainClass_C1', line 22
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_contatore_co9' è molto simile a 'lds_mainclass_c1_contatore_co5' e 'lds_mainclass_c1_contatore_co6' e 'lds_mainclass_c1_contatore_co8' nella classe 'LDS_MainClass_C1', line 21
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_controllo_c2' è molto simile a 'lds_mainclass_c1_controllo_c6' e 'lds_mainclass_c1_controllo_c9' nella classe 'LDS_MainClass_C1', line 34
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_controllo_c6' è molto simile a 'lds_mainclass_c1_controllo_c2' e 'lds_mainclass_c1_controllo_c9' nella classe 'LDS_MainClass_C1', line 31
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_controllo_c9' è molto simile a 'lds_mainclass_c1_controllo_c2' e 'lds_mainclass_c1_controllo_c6' nella classe 'LDS_MainClass_C1', line 32
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_parametro_p2' è molto simile a 'lds_mainclass_c1_parametro_p3' e 'lds_mainclass_c1_parametro_p5' nella classe 'LDS_MainClass_C1', line 9
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_parametro_p3' è molto simile a 'lds_mainclass_c1_parametro_p2' e 'lds_mainclass_c1_parametro_p5' nella classe 'LDS_MainClass_C1', line 10
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_parametro_p5' è molto simile a 'lds_mainclass_c1_parametro_p2' e 'lds_mainclass_c1_parametro_p3' nella classe 'LDS_MainClass_C1', line 8
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_timer_t1' è molto simile a 'lds_mainclass_c1_timer_t2' e 'lds_mainclass_c1_timer_t3' e 'lds_mainclass_c1_timer_t8' nella classe 'LDS_MainClass_C1', line 29
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_timer_t2' è molto simile a 'lds_mainclass_c1_timer_t1' e 'lds_mainclass_c1_timer_t3' e 'lds_mainclass_c1_timer_t8' nella classe 'LDS_MainClass_C1', line 27
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_timer_t3' è molto simile a 'lds_mainclass_c1_timer_t1' e 'lds_mainclass_c1_timer_t2' e 'lds_mainclass_c1_timer_t8' nella classe 'LDS_MainClass_C1', line 26
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_timer_t8' è molto simile a 'lds_mainclass_c1_timer_t1' e 'lds_mainclass_c1_timer_t2' e 'lds_mainclass_c1_timer_t3' nella classe 'LDS_MainClass_C1', line 28
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_variabile_v1' è molto simile a 'lds_mainclass_c1_variabile_v7' nella classe 'LDS_MainClass_C1', line 13
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'lds_mainclass_c1_variabile_v7' è molto simile a 'lds_mainclass_c1_variabile_v1' nella classe 'LDS_MainClass_C1', line 14
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m2' è molto simile a 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m5' e 'macroLds_mainclass_c1_macrove_m6' nella classe 'LDS_MainClass_C1', line 45
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m4' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m5' e 'macroLds_mainclass_c1_macrove_m6' nella classe 'LDS_MainClass_C1', line 47
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m5' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m6' nella classe 'LDS_MainClass_C1', line 49
+LDS_MainClass_C1.rfisrf_definition - info: Il termine 'macroLds_mainclass_c1_macrove_m6' è molto simile a 'macroLds_mainclass_c1_macrove_m2' e 'macroLds_mainclass_c1_macrove_m4' e 'macroLds_mainclass_c1_macrove_m5' nella classe 'LDS_MainClass_C1', line 51
+LDS_MainClass_C1.rfisrf_definition - warning: Il comando al piazzale 'lds_mainclass_c1_comando_c7' non viene mai scritto, line 39
+LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm10 della classe LDS_MainClass_C1 non viene mai ricevuto, line 58
+LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm11 della classe LDS_MainClass_C1 non viene mai ricevuto, line 59
+LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm5 della classe LDS_MainClass_C1 non viene mai ricevuto, line 57
+LDS_MainClass_C1.rfisrf_definition - warning: Il comando self.Lds_mainclass_c1_command_comm9DaSender4db07f5e della classe LDS_MainClass_C1 non viene mai ricevuto, line 56
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co5' dovrebbe avere accessibilità privata, line 23
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co5' non viene mai letto, line 23
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co5' non viene mai verificato, line 148
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' dovrebbe avere accessibilità privata, line 24
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 109
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 133
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 151
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 156
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 81
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co6' non viene mai incrementato/decrementato/resettato, line 93
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' dovrebbe avere accessibilità privata, line 22
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 88
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co8' non viene mai incrementato/decrementato/resettato, line 93
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' dovrebbe avere accessibilità privata, line 21
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 103
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 109
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 134
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 146
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 156
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 160
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 81
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 87
+LDS_MainClass_C1.rfisrf_definition - warning: Il contatore 'lds_mainclass_c1_contatore_co9' non viene mai incrementato/decrementato/resettato, line 88
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' dovrebbe avere accessibilità privata, line 33
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c10' non viene mai letto, line 33
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c2' dovrebbe avere accessibilità privata, line 34
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c2' non viene mai letto, line 34
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c6' dovrebbe avere accessibilità privata, line 31
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c6' non viene mai letto, line 31
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' dovrebbe avere accessibilità privata, line 32
+LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' non viene mai letto, line 32
+LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallogiallo' dell'enumeratore 'Enumerator_1' non viene mai usato, line 64
+LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai usato, line 66
+LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'rosso' dell'enumeratore 'Enumerator_2' non viene mai usato, line 65
+LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
+LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'nabcc_mainclass_c1_parametro_p7' dovrebbe avere accessibilità privata, line 11
+LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'nabcc_mainclass_c1_parametro_p7' non viene mai letto, line 11
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t1' dovrebbe avere accessibilità privata, line 29
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t1' non viene mai attivato/disattivato, line 136
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t2' dovrebbe avere accessibilità privata, line 27
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t2' non viene mai attivato/disattivato, line 111
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t2' non viene mai attivato/disattivato, line 141
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t3' dovrebbe avere accessibilità protetta, line 26
+LDS_MainClass_C1.rfisrf_definition - warning: Il timer 'lds_mainclass_c1_timer_t8' dovrebbe avere accessibilità protetta, line 28
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 71
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_a9' non viene mai utilizzato nella macro, line 71
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave2' non viene mai utilizzato nella macro, line 100
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave3' non viene mai utilizzato nella macro, line 100
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave6' non viene mai utilizzato nella macro, line 100
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave8' non viene mai utilizzato nella macro, line 100
+LDS_MainClass_C1.rfisrf_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 100
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macroef_m8' non viene mai utilizzata, line 54
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrova_m10' dovrebbe avere accessibilità privata, line 42
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m2' non viene mai utilizzata, line 45
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m4' dovrebbe avere accessibilità privata, line 47
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m4' non viene mai utilizzata, line 47
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m5' non viene mai utilizzata, line 49
+LDS_MainClass_C1.rfisrf_definition - warning: La macro 'macroLds_mainclass_c1_macrove_m6' non viene mai utilizzata, line 51
+LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v1' dovrebbe avere accessibilità protetta, line 13
+LDS_MainClass_C1.rfisrf_definition - warning: La variabile 'lds_mainclass_c1_variabile_v7' dovrebbe avere accessibilità protetta, line 14
+LDS_MainClass_C1.rfisrf_sheet - warning: Il contatore 'lds_mainclass_c1_contatore_co5' non viene mai verificato, line 22
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_comando_c2' è molto simile a 'lds_subclass_c2_comando_c4' e 'lds_subclass_c2_comando_c5' e 'lds_subclass_c2_comando_c7' nella classe 'LDS_SubClass_C2', line 40
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_comando_c4' è molto simile a 'lds_subclass_c2_comando_c2' e 'lds_subclass_c2_comando_c5' e 'lds_subclass_c2_comando_c7' nella classe 'LDS_SubClass_C2', line 42
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_comando_c5' è molto simile a 'lds_subclass_c2_comando_c2' e 'lds_subclass_c2_comando_c4' e 'lds_subclass_c2_comando_c7' nella classe 'LDS_SubClass_C2', line 41
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_comando_c7' è molto simile a 'lds_subclass_c2_comando_c2' e 'lds_subclass_c2_comando_c4' e 'lds_subclass_c2_comando_c5' nella classe 'LDS_SubClass_C2', line 43
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_contatore_co2' è molto simile a 'lds_subclass_c2_contatore_co3' e 'lds_subclass_c2_contatore_co8' e 'lds_subclass_c2_contatore_co9' nella classe 'LDS_SubClass_C2', line 27
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_contatore_co3' è molto simile a 'lds_subclass_c2_contatore_co2' e 'lds_subclass_c2_contatore_co8' e 'lds_subclass_c2_contatore_co9' nella classe 'LDS_SubClass_C2', line 28
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_contatore_co8' è molto simile a 'lds_subclass_c2_contatore_co2' e 'lds_subclass_c2_contatore_co3' e 'lds_subclass_c2_contatore_co9' nella classe 'LDS_SubClass_C2', line 30
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_contatore_co9' è molto simile a 'lds_subclass_c2_contatore_co2' e 'lds_subclass_c2_contatore_co3' e 'lds_subclass_c2_contatore_co8' nella classe 'LDS_SubClass_C2', line 29
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_controllo_c1' è molto simile a 'lds_subclass_c2_controllo_c6' e 'lds_subclass_c2_controllo_c9' nella classe 'LDS_SubClass_C2', line 34
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_controllo_c6' è molto simile a 'lds_subclass_c2_controllo_c1' e 'lds_subclass_c2_controllo_c9' nella classe 'LDS_SubClass_C2', line 35
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_controllo_c9' è molto simile a 'lds_subclass_c2_controllo_c1' e 'lds_subclass_c2_controllo_c6' nella classe 'LDS_SubClass_C2', line 36
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_lista_l1' è molto simile a 'lds_subclass_c2_lista_l4' e 'lds_subclass_c2_lista_l7' nella classe 'LDS_SubClass_C2', line 11
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_lista_l4' è molto simile a 'lds_subclass_c2_lista_l1' e 'lds_subclass_c2_lista_l7' nella classe 'LDS_SubClass_C2', line 10
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_lista_l7' è molto simile a 'lds_subclass_c2_lista_l1' e 'lds_subclass_c2_lista_l4' nella classe 'LDS_SubClass_C2', line 12
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_variabile_v1' è molto simile a 'lds_subclass_c2_variabile_v10' e 'lds_subclass_c2_variabile_v2' e 'lds_subclass_c2_variabile_v3' e 'lds_subclass_c2_variabile_v7' nella classe 'LDS_SubClass_C2', line 15
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_variabile_v10' è molto simile a 'lds_subclass_c2_variabile_v1' nella classe 'LDS_SubClass_C2', line 17
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_variabile_v2' è molto simile a 'lds_subclass_c2_variabile_v1' e 'lds_subclass_c2_variabile_v3' e 'lds_subclass_c2_variabile_v7' nella classe 'LDS_SubClass_C2', line 18
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_variabile_v3' è molto simile a 'lds_subclass_c2_variabile_v1' e 'lds_subclass_c2_variabile_v2' e 'lds_subclass_c2_variabile_v7' nella classe 'LDS_SubClass_C2', line 14
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'lds_subclass_c2_variabile_v7' è molto simile a 'lds_subclass_c2_variabile_v1' e 'lds_subclass_c2_variabile_v2' e 'lds_subclass_c2_variabile_v3' nella classe 'LDS_SubClass_C2', line 16
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macroef_m2' è molto simile a 'macroLds_subclass_c2_macroef_m5' e 'macroLds_subclass_c2_macroef_m7' nella classe 'LDS_SubClass_C2', line 64
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macroef_m5' è molto simile a 'macroLds_subclass_c2_macroef_m2' e 'macroLds_subclass_c2_macroef_m7' nella classe 'LDS_SubClass_C2', line 66
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macroef_m7' è molto simile a 'macroLds_subclass_c2_macroef_m2' e 'macroLds_subclass_c2_macroef_m5' nella classe 'LDS_SubClass_C2', line 62
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrova_m4' è molto simile a 'macroLds_subclass_c2_macrova_m5' e 'macroLds_subclass_c2_macrova_m6' e 'macroLds_subclass_c2_macrova_m8' nella classe 'LDS_SubClass_C2', line 46
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrova_m5' è molto simile a 'macroLds_subclass_c2_macrova_m4' e 'macroLds_subclass_c2_macrova_m6' e 'macroLds_subclass_c2_macrova_m8' nella classe 'LDS_SubClass_C2', line 48
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrova_m6' è molto simile a 'macroLds_subclass_c2_macrova_m4' e 'macroLds_subclass_c2_macrova_m5' e 'macroLds_subclass_c2_macrova_m8' nella classe 'LDS_SubClass_C2', line 50
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrova_m8' è molto simile a 'macroLds_subclass_c2_macrova_m4' e 'macroLds_subclass_c2_macrova_m5' e 'macroLds_subclass_c2_macrova_m6' nella classe 'LDS_SubClass_C2', line 52
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrove_m1' è molto simile a 'macroLds_subclass_c2_macrove_m3' e 'macroLds_subclass_c2_macrove_m9' nella classe 'LDS_SubClass_C2', line 59
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrove_m3' è molto simile a 'macroLds_subclass_c2_macrove_m1' e 'macroLds_subclass_c2_macrove_m9' nella classe 'LDS_SubClass_C2', line 57
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'macroLds_subclass_c2_macrove_m9' è molto simile a 'macroLds_subclass_c2_macrove_m1' e 'macroLds_subclass_c2_macrove_m3' nella classe 'LDS_SubClass_C2', line 55
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled1' è molto simile a 'recordfiled13' e 'recordfiled2' e 'recordfiled18' nella classe 'RecordHeaderR2', line 82
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled13' è molto simile a 'recordfiled18' e 'recordfiled1' nella classe 'RecordHeaderR2', line 82
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled18' è molto simile a 'recordfiled13' e 'recordfiled1' nella classe 'RecordHeaderR2', line 82
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled2' è molto simile a 'recordfiled1' nella classe 'RecordHeaderR2', line 82
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled4' è molto simile a 'recordfiled6' nella classe 'RecordHeaderR9', line 81
+LDS_SubClass_C2.rfisrf_definition - info: Il termine 'recordfiled6' è molto simile a 'recordfiled4' nella classe 'RecordHeaderR9', line 81
+LDS_SubClass_C2.rfisrf_definition - warning: Il comando al piazzale 'lds_subclass_c2_comando_c5' non viene mai scritto, line 41
+LDS_SubClass_C2.rfisrf_definition - warning: Il comando self.Lds_subclass_c2_command_comm6 della classe LDS_SubClass_C2 non viene mai ricevuto, line 68
+LDS_SubClass_C2.rfisrf_definition - warning: Il comando self.Lds_subclass_c2_command_comm7DaSender8d9d9a68 della classe LDS_SubClass_C2 non viene mai ricevuto, line 69
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co10' dovrebbe avere accessibilità privata, line 26
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co3' non viene mai letto, line 28
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' dovrebbe avere accessibilità privata, line 30
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 170
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co9' dovrebbe avere accessibilità privata, line 29
+LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co9' non viene mai letto, line 29
+LDS_SubClass_C2.rfisrf_definition - warning: Il controllo dal piazzale 'lds_subclass_c2_controllo_c1' non viene mai letto, line 34
+LDS_SubClass_C2.rfisrf_definition - warning: Il controllo dal piazzale 'lds_subclass_c2_controllo_c6' dovrebbe avere accessibilità privata, line 35
+LDS_SubClass_C2.rfisrf_definition - warning: Il controllo dal piazzale 'lds_subclass_c2_controllo_c6' non viene mai letto, line 35
+LDS_SubClass_C2.rfisrf_definition - warning: Il controllo dal piazzale 'lds_subclass_c2_controllo_c9' non viene mai letto, line 36
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'avanzamentox' dell'enumeratore 'Enumerator_4' non viene mai usato, line 78
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'c180x' dell'enumeratore 'Enumerator_3' non viene mai usato, line 77
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'c75giallo' dell'enumeratore 'Enumerator_0' non viene mai usato, line 74
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'gialloaverdea' dell'enumeratore 'Enumerator_1' non viene mai usato, line 75
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'rossogialloaverdea' dell'enumeratore 'Enumerator_0' non viene mai usato, line 74
+LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'rossogiallox' dell'enumeratore 'Enumerator_2' non viene mai usato, line 76
+LDS_SubClass_C2.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a1' non viene mai utilizzato nella macro, line 89
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a2' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a3' non viene mai utilizzato nella macro, line 89
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a3' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a4' non viene mai utilizzato nella macro, line 89
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a5' non viene mai utilizzato nella macro, line 89
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a6' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a7' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a8' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a9' non viene mai utilizzato nella macro, line 93
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave1' non viene mai utilizzato nella macro, line 103
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave10' non viene mai utilizzato nella macro, line 103
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave2' non viene mai utilizzato nella macro, line 103
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave3' non viene mai utilizzato nella macro, line 114
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave4' non viene mai utilizzato nella macro, line 103
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave4' non viene mai utilizzato nella macro, line 114
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave5' non viene mai utilizzato nella macro, line 114
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave7' non viene mai utilizzato nella macro, line 114
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave8' non viene mai utilizzato nella macro, line 114
+LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 103
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m2' non viene mai utilizzata, line 64
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m5' non viene mai utilizzata, line 66
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m7' non viene mai utilizzata, line 62
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrova_m4' dovrebbe avere accessibilità privata, line 46
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrova_m4' non viene mai utilizzata, line 46
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrova_m5' non viene mai utilizzata, line 48
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrova_m6' dovrebbe avere accessibilità privata, line 50
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrova_m6' non viene mai utilizzata, line 50
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrove_m1' non viene mai utilizzata, line 59
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrove_m3' non viene mai utilizzata, line 57
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrove_m9' dovrebbe avere accessibilità privata, line 55
+LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macrove_m9' non viene mai utilizzata, line 55
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v1' dovrebbe avere accessibilità privata, line 15
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v1' non viene mai scritta, line 15
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v10' dovrebbe avere accessibilità privata, line 17
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v10' non viene mai scritta, line 17
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v2' dovrebbe avere accessibilità privata, line 18
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v2' non viene mai scritta, line 18
+LDS_SubClass_C2.rfisrf_definition - warning: La variabile 'lds_subclass_c2_variabile_v7' dovrebbe avere accessibilità privata, line 16
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'avvio' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 68
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'c180' dell'enumeratore 'Enumerator_4' non viene mai scritto, line 68
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il literal 'rossogiallogiallo' dell'enumeratore 'Enumerator_1' non viene mai scritto, line 65
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'eventLdv_mainclass_c1_command_comm2' è molto simile a 'eventLdv_mainclass_c1_command_comm8' nella classe 'LDV_MainClass_C1', line 57
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'eventLdv_mainclass_c1_command_comm8' è molto simile a 'eventLdv_mainclass_c1_command_comm2' nella classe 'LDV_MainClass_C1', line 58
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_contatore_co1' è molto simile a 'ldv_mainclass_c1_contatore_co4' e 'ldv_mainclass_c1_contatore_co6' e 'ldv_mainclass_c1_contatore_co7' nella classe 'LDV_MainClass_C1', line 26
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_contatore_co4' è molto simile a 'ldv_mainclass_c1_contatore_co1' e 'ldv_mainclass_c1_contatore_co6' e 'ldv_mainclass_c1_contatore_co7' nella classe 'LDV_MainClass_C1', line 25
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_contatore_co6' è molto simile a 'ldv_mainclass_c1_contatore_co1' e 'ldv_mainclass_c1_contatore_co4' e 'ldv_mainclass_c1_contatore_co7' nella classe 'LDV_MainClass_C1', line 24
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_contatore_co7' è molto simile a 'ldv_mainclass_c1_contatore_co1' e 'ldv_mainclass_c1_contatore_co4' e 'ldv_mainclass_c1_contatore_co6' nella classe 'LDV_MainClass_C1', line 27
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_parametro_p1' è molto simile a 'ldv_mainclass_c1_parametro_p7' e 'ldv_mainclass_c1_parametro_p9' nella classe 'LDV_MainClass_C1', line 8
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_parametro_p7' è molto simile a 'ldv_mainclass_c1_parametro_p1' e 'ldv_mainclass_c1_parametro_p9' nella classe 'LDV_MainClass_C1', line 10
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_parametro_p9' è molto simile a 'ldv_mainclass_c1_parametro_p1' e 'ldv_mainclass_c1_parametro_p7' nella classe 'LDV_MainClass_C1', line 9
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_variabile_v3' è molto simile a 'ldv_mainclass_c1_variabile_v8' e 'ldv_mainclass_c1_variabile_v9' nella classe 'LDV_MainClass_C1', line 15
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_variabile_v8' è molto simile a 'ldv_mainclass_c1_variabile_v3' e 'ldv_mainclass_c1_variabile_v9' nella classe 'LDV_MainClass_C1', line 13
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'ldv_mainclass_c1_variabile_v9' è molto simile a 'ldv_mainclass_c1_variabile_v3' e 'ldv_mainclass_c1_variabile_v8' nella classe 'LDV_MainClass_C1', line 14
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macroef_m2' è molto simile a 'macroLdv_mainclass_c1_macroef_m3' e 'macroLdv_mainclass_c1_macroef_m5' e 'macroLdv_mainclass_c1_macroef_m7' e 'macroLdv_mainclass_c1_macroef_m8' nella classe 'LDV_MainClass_C1', line 55
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macroef_m3' è molto simile a 'macroLdv_mainclass_c1_macroef_m2' e 'macroLdv_mainclass_c1_macroef_m5' e 'macroLdv_mainclass_c1_macroef_m7' e 'macroLdv_mainclass_c1_macroef_m8' nella classe 'LDV_MainClass_C1', line 51
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macroef_m5' è molto simile a 'macroLdv_mainclass_c1_macroef_m2' e 'macroLdv_mainclass_c1_macroef_m3' e 'macroLdv_mainclass_c1_macroef_m7' e 'macroLdv_mainclass_c1_macroef_m8' nella classe 'LDV_MainClass_C1', line 47
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macroef_m7' è molto simile a 'macroLdv_mainclass_c1_macroef_m2' e 'macroLdv_mainclass_c1_macroef_m3' e 'macroLdv_mainclass_c1_macroef_m5' e 'macroLdv_mainclass_c1_macroef_m8' nella classe 'LDV_MainClass_C1', line 53
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macroef_m8' è molto simile a 'macroLdv_mainclass_c1_macroef_m2' e 'macroLdv_mainclass_c1_macroef_m3' e 'macroLdv_mainclass_c1_macroef_m5' e 'macroLdv_mainclass_c1_macroef_m7' nella classe 'LDV_MainClass_C1', line 49
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrova_m1' è molto simile a 'macroLdv_mainclass_c1_macrova_m7' nella classe 'LDV_MainClass_C1', line 35
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrova_m7' è molto simile a 'macroLdv_mainclass_c1_macrova_m1' nella classe 'LDV_MainClass_C1', line 37
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrove_m2' è molto simile a 'macroLdv_mainclass_c1_macrove_m4' nella classe 'LDV_MainClass_C1', line 42
+LDV_MainClass_C1.rfisrf_ldv_definition - info: Il termine 'macroLdv_mainclass_c1_macrove_m4' è molto simile a 'macroLdv_mainclass_c1_macrove_m2' nella classe 'LDV_MainClass_C1', line 44
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando self.Ldv_mainclass_c1_command_comm1DaSender59cfb9d8 della classe LDV_MainClass_C1 non viene mai ricevuto, line 59
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando self.Ldv_mainclass_c1_command_comm2 della classe LDV_MainClass_C1 non viene mai ricevuto, line 57
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il comando self.Ldv_mainclass_c1_command_comm8 della classe LDV_MainClass_C1 non viene mai ricevuto, line 58
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co1' non viene mai incrementato/decrementato/resettato, line 114
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co1' non viene mai incrementato/decrementato/resettato, line 208
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co1' non viene mai incrementato/decrementato/resettato, line 242
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co1' non viene mai incrementato/decrementato/resettato, line 248
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co1' non viene mai incrementato/decrementato/resettato, line 92
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' dovrebbe avere accessibilità privata, line 25
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 117
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 136
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 162
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 208
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 248
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 81
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co4' non viene mai incrementato/decrementato/resettato, line 93
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' dovrebbe avere accessibilità privata, line 27
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 129
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 153
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 169
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 188
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 222
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 239
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 239
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 242
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il contatore 'ldv_mainclass_c1_contatore_co7' non viene mai incrementato/decrementato/resettato, line 93
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'ac' dell'enumeratore 'Enumerator_2' non viene mai usato, line 66
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'avviox' dell'enumeratore 'Enumerator_1' non viene mai usato, line 65
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'c270' dell'enumeratore 'Enumerator_3' non viene mai usato, line 67
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'gialloverde' dell'enumeratore 'Enumerator_2' non viene mai usato, line 66
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'rossogialloverde' dell'enumeratore 'Enumerator_0' non viene mai usato, line 64
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il literal 'rossogialloxverdex' dell'enumeratore 'Enumerator_0' non viene mai usato, line 64
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il parametro 'ldv_mainclass_c1_parametro_p1' dovrebbe avere accessibilità privata, line 8
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: Il timer 'ldv_mainclass_c1_timer_t3' dovrebbe avere accessibilità privata, line 29
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a2' non viene mai utilizzato nella macro, line 72
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a3' non viene mai utilizzato nella macro, line 76
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a5' non viene mai utilizzato nella macro, line 76
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a6' non viene mai utilizzato nella macro, line 72
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a7' non viene mai utilizzato nella macro, line 72
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_a8' non viene mai utilizzato nella macro, line 72
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave1' non viene mai utilizzato nella macro, line 90
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave10' non viene mai utilizzato nella macro, line 80
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave10' non viene mai utilizzato nella macro, line 90
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave2' non viene mai utilizzato nella macro, line 128
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave4' non viene mai utilizzato nella macro, line 90
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave6' non viene mai utilizzato nella macro, line 128
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave8' non viene mai utilizzato nella macro, line 128
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 128
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 80
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macroef_m2' non viene mai utilizzata, line 55
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macroef_m5' non viene mai utilizzata, line 47
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macrova_m7' dovrebbe avere accessibilità privata, line 37
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macrova_m7' non viene mai utilizzata, line 37
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macrove_m10' non viene mai utilizzata, line 40
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macrove_m2' non viene mai utilizzata, line 42
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La macro 'macroLdv_mainclass_c1_macrove_m4' non viene mai utilizzata, line 44
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La variabile 'ldv_mainclass_c1_variabile_v3' dovrebbe avere accessibilità privata, line 15
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La variabile 'ldv_mainclass_c1_variabile_v3' non viene mai scritta, line 15
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La variabile 'ldv_mainclass_c1_variabile_v8' dovrebbe avere accessibilità privata, line 13
+LDV_MainClass_C1.rfisrf_ldv_definition - warning: La variabile 'ldv_mainclass_c1_variabile_v9' dovrebbe avere accessibilità privata, line 14
+in.uml - info: Il termine 'eventLds_mainclass_c1_command_comm10_response' è molto simile a 'eventLds_mainclass_c1_command_comm11_response' nella classe 'LDS_MainClass_C1'
+in.uml - info: Il termine 'eventLds_mainclass_c1_command_comm11_response' è molto simile a 'eventLds_mainclass_c1_command_comm10_response' nella classe 'LDS_MainClass_C1'
+in.uml - warning: La variabile 'stato_restore' dovrebbe avere accessibilità privata
+in.uml - warning: La variabile 'stato_restore' dovrebbe avere accessibilità privata
+in.uml - warning: La variabile 'stato_restore' dovrebbe avere accessibilità privata
+in.uml - warning: La variabile 'stato_restore' non viene mai letta
+in.uml - warning: La variabile 'stato_restore' non viene mai letta
+in.uml - warning: La variabile 'stato_restore' non viene mai letta
+
+
+Phase:		Code Creation
+Message:	No problems in generating source code

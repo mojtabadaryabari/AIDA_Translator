@@ -1,0 +1,68 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio1\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -13,11 +13,4 @@
+ 
+     // for each manual command of L_P1_C2
+-    if (L_P1__GetInEvent7(my_id)) {
+-        #define IS_STATE_ACCEPTING_Event7 false // no state is accepting this command!
+-        L_P1__SetOutEvent9(my_id, IS_STATE_ACCEPTING_Event7 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+-        isCommandPresent |= true;		
+-    } else {
+-        L_P1__SetOutEvent9(my_id, LDS_MANCMD_NOOP);
+-    }
+     if (L_P1__GetInEvent8(my_id)) {
+         #define IS_STATE_ACCEPTING_Event8 false // no state is accepting this command!
+@@ -27,4 +20,11 @@
+         L_P1__SetOutEvent10(my_id, LDS_MANCMD_NOOP);
+     }
++    if (L_P1__GetInEvent9(my_id)) {
++        #define IS_STATE_ACCEPTING_Event9 false // no state is accepting this command!
++        L_P1__SetOutEvent11(my_id, IS_STATE_ACCEPTING_Event9 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        isCommandPresent |= true;		
++    } else {
++        L_P1__SetOutEvent11(my_id, LDS_MANCMD_NOOP);
++    }
+     
+     return isCommandPresent;
+@@ -712,5 +712,5 @@
+     }
+ */
+-bool L_P1__Macro14(instance_id_t const my_id , C2_Enumerat4 argom19, C2_Enumerat2 argom20, C2_Enumerat3 argom21, C2_Enumerat3 argom22, bool argom23, bool argom24)
++bool L_P1__Macro14(instance_id_t const my_id , C2_Enumerat4 argom21, C2_Enumerat2 argom22, C2_Enumerat3 argom23, C2_Enumerat3 argom24, bool argom25, bool argom26)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -735,5 +735,5 @@
+     bool res_OrLogicOP_5 = false;
+     bool res_AndLogicOP_6 = true;
+-    res_AndLogicOP_6 = (res_AndLogicOP_6 && (argom22 == c270x));
++    res_AndLogicOP_6 = (res_AndLogicOP_6 && (argom24 == c270x));
+     res_AndLogicOP_6 = (res_AndLogicOP_6 && (L_P1__GetParamLds_s11(my_id) == c120x));
+     
+@@ -775,5 +775,5 @@
+     }
+ */
+-bool L_P1__Macro15(instance_id_t const my_id , bool argom25, bool argom26, C2_Enumerat2 argom27, C2_Enumerat4 argom28, bool argom29, bool argom30)
++bool L_P1__Macro15(instance_id_t const my_id , bool argom27, bool argom28, C2_Enumerat2 argom29, C2_Enumerat4 argom30, bool argom31, bool argom32)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -803,5 +803,5 @@
+     res_OrLogicOP_8 = (res_OrLogicOP_8 || (L_P1__GetParamLds_s11(my_id) == c120x));
+     bool res_NotLogicOP_9 = true;
+-    res_NotLogicOP_9 = (res_NotLogicOP_9 && ! (argom29 == false));
++    res_NotLogicOP_9 = (res_NotLogicOP_9 && ! (argom31 == false));
+     res_OrLogicOP_8 = (res_OrLogicOP_8 || res_NotLogicOP_9);
+     
+@@ -890,5 +890,5 @@
+     }
+ */
+-C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id , C2_Enumerat1 argom8, bool argom9, C2_Enumerat1 argom10, C2_Enumerat4 argom11)
++C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id , C2_Enumerat1 argom10, bool argom11, C2_Enumerat1 argom12, C2_Enumerat4 argom13)
+ {
+ return rossogiallo1;
+@@ -903,5 +903,5 @@
+     }
+ */
+-bool L_P1__Macro11(instance_id_t const my_id , C2_Enumerat4 argom12, C2_Enumerat1 argom13, C2_Enumerat4 argom14, C2_Enumerat1 argom15, C2_Enumerat1 argom16, C2_Enumerat2 argom17, C2_Enumerat3 argom18)
++bool L_P1__Macro11(instance_id_t const my_id , C2_Enumerat4 argom14, C2_Enumerat1 argom15, C2_Enumerat4 argom16, C2_Enumerat1 argom17, C2_Enumerat1 argom18, C2_Enumerat2 argom19, C2_Enumerat3 argom20)
+ {
+ bool res_macro_val;

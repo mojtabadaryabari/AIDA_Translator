@@ -1,0 +1,21 @@
+Logica,ID Classe,Classe,Nome enumerazione,Tipologia,Valori
+Stazione.LdS,1,LDS_MainClass_C1,Enumerator_0,insieme,{avvio=0;spento=1}
+Stazione.LdS,1,LDS_MainClass_C1,Enumerator_1,insieme,{giallogiallo=6;avanzamento=7}
+Stazione.LdS,1,LDS_MainClass_C1,Enumerator_2,insieme,{rosso=12;c120=13}
+Stazione.LdS,1,LDS_MainClass_C1,Enumerator_3,insieme,{giallox=18;rossoverde=19}
+Stazione.LdS,1,LDS_MainClass_C1,Enumerator_4,insieme,{verde=24;gialloxverdex=25}
+Stazione.LdS,2,LDS_SubClass_C2,Enumerator_0,insieme,{rossogialloaverdea=2;c75giallo=3}
+Stazione.LdS,2,LDS_SubClass_C2,Enumerator_1,insieme,{gialloaverdea=8;rossogiallo=9}
+Stazione.LdS,2,LDS_SubClass_C2,Enumerator_2,insieme,{rossogiallox=14;c120x=15}
+Stazione.LdS,2,LDS_SubClass_C2,Enumerator_3,insieme,{c180x=20;c270x=21}
+Stazione.LdS,2,LDS_SubClass_C2,Enumerator_4,insieme,{avanzamentox=26;spento=1}
+Stazione.LdV,3,LDV_MainClass_C1,Enumerator_0,insieme,{rossogialloxverdex=4;rossogialloverde=5}
+Stazione.LdV,3,LDV_MainClass_C1,Enumerator_1,insieme,{avviox=10;rossogiallogiallo=11}
+Stazione.LdV,3,LDV_MainClass_C1,Enumerator_2,insieme,{ac=16;gialloverde=17}
+Stazione.LdV,3,LDV_MainClass_C1,Enumerator_3,insieme,{c270=22;c270xx=23}
+Stazione.LdV,3,LDV_MainClass_C1,Enumerator_4,insieme,{c180=27;avvio=0}
+,,CommandResponse,Enum_response,insieme,{LDS_MANCMD_NOOP=0;LDS_MANCMD_PROCESSED=1;LDS_MANCMD_UNEXPECTED=2;LDS_MANCMD_BLOCKED=3}
+Stazione.LdS,1,LDS_MainClass_C1,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+Stazione.LdS,2,LDS_SubClass_C2,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+Stazione.LdV,3,LDV_MainClass_C1,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+,,Timer,TimerState,insieme,{Disattivo=0;Attivo=1;Scaduto=2}

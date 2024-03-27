@@ -1,0 +1,31 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\disuguaglianza-valore4\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -276,5 +276,5 @@
+      ,altrimenti  commento: {66,} Assegna al comando LDS_MainClass_C1_comando_C4 il valore  False 
+     
+-    
++    se  il parametro LDS_MainClass_C1_parametro_P2 è  uguale a  contatore LDS_MainClass_C1_contatore_Co6 o 
+       se il parametro ConsDef è uguale a FALSE  commento: {37,} e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, commento: {68,}Attiva il timer LDS_MainClass_C1_timer_T3
+     
+@@ -389,12 +389,17 @@
+     L_P1__SetOutLds_m(my_id,false);
+     }
++    //  se  il parametro LDS_MainClass_C1_parametro_P2 è  uguale a  contatore LDS_MainClass_C1_contatore_Co6 o 
+     //  se il parametro ConsDef è uguale a FALSE  *37,* e  se la variabile LDS_MainClass_C1_variabile_V1 è  uguale a variabile LDS_MainClass_C1_variabile_V1, *68,*Attiva il timer LDS_MainClass_C1_timer_T3
+     // ,altrimenti  *68,*Attiva il timer LDS_MainClass_C1_timer_T3
+-    bool res_AndLogicOP_21 = true;
+-    res_AndLogicOP_21 = (res_AndLogicOP_21 && (L_P1__GetParamConsd(my_id) == false));
+-    res_AndLogicOP_21 = (res_AndLogicOP_21 && (L_P1__GetLds_m10(my_id) == L_P1__GetLds_m10(my_id)));
++    bool res_OrLogicOP_21 = false;
++    res_OrLogicOP_21 = (res_OrLogicOP_21 || (L_P1__GetParamLds_m7(my_id) == Counter_GetValore(L_P1__GetLds_m17(my_id))));
++    bool res_AndLogicOP_22 = true;
++    res_AndLogicOP_22 = (res_AndLogicOP_22 && (L_P1__GetParamConsd(my_id) == false));
++    res_AndLogicOP_22 = (res_AndLogicOP_22 && (L_P1__GetLds_m10(my_id) == L_P1__GetLds_m10(my_id)));
+     
+-    if(res_AndLogicOP_21){
++    res_OrLogicOP_21 = (res_OrLogicOP_21 || res_AndLogicOP_22);
+     
++    if(res_OrLogicOP_21){
++    
+     Timer_Attiva(L_P1__GetLds_m14(my_id));
+     }else{

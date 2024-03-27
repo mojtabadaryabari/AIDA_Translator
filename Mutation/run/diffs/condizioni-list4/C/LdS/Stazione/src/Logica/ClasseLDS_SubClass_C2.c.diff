@@ -1,0 +1,104 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizioni-list4\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -265,5 +265,5 @@
+     { commento: {43,}  se LDS_MainClass_C1_timer_T3 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L1 è attivo commento: {37,} e  se la variabile LDS_SubClass_C2_variabile_V3 non è  maggiore di  commento: {54,} 4 commento: {36,} o  se il timer LDS_SubClass_C2_timer_T4 è disattivo, commento: {66,} Assegna al comando LDS_SubClass_C2_comando_C10 il valore c120x
+     
+-       
++    se  LDS_MainClass_C1_variabile_V1 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  commento: {105,} è  diverso da c120 e 
+      commento: {41,}  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  commento: {105,} è  diverso da  False  commento: {38,} e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  commento: {53,} 135 o  se il parametro ConsDef  è  uguale a FALSE , commento: {66,} Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
+     
+@@ -301,23 +301,39 @@
+     L_P1__SetOutLds_s(my_id,c120x);
+     }
+-    //  *41,*  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  *105,* è  diverso da  False  *38,* e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  *53,* 135 o  se il parametro ConsDef  è  uguale a FALSE , *66,* Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
++    //  se  LDS_MainClass_C1_variabile_V1 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  *105,* è  diverso da c120 e 
++    // *41,*  se LDS_MainClass_C1_parametro_P5 del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L7 esiste e  *105,* è  diverso da  False  *38,* e  se il contatore LDS_SubClass_C2_contatore_Co8 non è  uguale a  *53,* 135 o  se il parametro ConsDef  è  uguale a FALSE , *66,* Assegna al comando LDS_SubClass_C2_comando_C2 il valore spento
+     bool res_OrLogicOP_5 = false;
+     bool res_AndLogicOP_6 = true;
+-    bool res_ForAllPredicateNotEmpty_7 = false;
++    bool res_AndLogicOP_7 = true;
++    bool res_ForAllPredicateNotEmpty_8 = false;
+     for (index_t i = 0; i < L_P1__GetParamLds_s10Length(my_id); ++i)
+     {
+     const L_P1__Recor1 * it = L_P1__GetRecLds_s10(my_id,i);
+-    bool res_ImpliesLogicOp_8 = true;
+-    bool res_NotLogicOP_9 = true;
+-    res_NotLogicOP_9 = (res_NotLogicOP_9 && ! (L_P1__GetParamLds_m9(it->lds_m21) == false));
+-    res_ImpliesLogicOp_8 = (res_ImpliesLogicOp_8 && res_NotLogicOP_9);
+-    res_ForAllPredicateNotEmpty_7 = res_ImpliesLogicOp_8;
+-    if(!res_ForAllPredicateNotEmpty_7) {break;}
+-    }
+-    res_AndLogicOP_6 = (res_AndLogicOP_6 && res_ForAllPredicateNotEmpty_7);
++    bool res_ImpliesLogicOp_9 = true;
+     bool res_NotLogicOP_10 = true;
+-    res_NotLogicOP_10 = (res_NotLogicOP_10 && ! (Counter_GetValore(L_P1__GetLds_s21(my_id)) == 135u));
+-    res_AndLogicOP_6 = (res_AndLogicOP_6 && res_NotLogicOP_10);
++    res_NotLogicOP_10 = (res_NotLogicOP_10 && ! (L_P1__GetLds_m10(it->lds_m21) == c120));
++    res_ImpliesLogicOp_9 = (res_ImpliesLogicOp_9 && res_NotLogicOP_10);
++    res_ForAllPredicateNotEmpty_8 = res_ImpliesLogicOp_9;
++    if(!res_ForAllPredicateNotEmpty_8) {break;}
++    }
++    res_AndLogicOP_7 = (res_AndLogicOP_7 && res_ForAllPredicateNotEmpty_8);
++    bool res_ForAllPredicateNotEmpty_11 = false;
++    for (index_t i = 0; i < L_P1__GetParamLds_s10Length(my_id); ++i)
++    {
++    const L_P1__Recor1 * it = L_P1__GetRecLds_s10(my_id,i);
++    bool res_ImpliesLogicOp_12 = true;
++    bool res_NotLogicOP_13 = true;
++    res_NotLogicOP_13 = (res_NotLogicOP_13 && ! (L_P1__GetParamLds_m9(it->lds_m21) == false));
++    res_ImpliesLogicOp_12 = (res_ImpliesLogicOp_12 && res_NotLogicOP_13);
++    res_ForAllPredicateNotEmpty_11 = res_ImpliesLogicOp_12;
++    if(!res_ForAllPredicateNotEmpty_11) {break;}
++    }
++    res_AndLogicOP_7 = (res_AndLogicOP_7 && res_ForAllPredicateNotEmpty_11);
+     
++    res_AndLogicOP_6 = (res_AndLogicOP_6 && res_AndLogicOP_7);
++    bool res_NotLogicOP_14 = true;
++    res_NotLogicOP_14 = (res_NotLogicOP_14 && ! (Counter_GetValore(L_P1__GetLds_s21(my_id)) == 135u));
++    res_AndLogicOP_6 = (res_AndLogicOP_6 && res_NotLogicOP_14);
++    
+     res_OrLogicOP_5 = (res_OrLogicOP_5 || res_AndLogicOP_6);
+     res_OrLogicOP_5 = (res_OrLogicOP_5 || (L_P1__GetParamConsd1(my_id) == false));
+@@ -328,25 +344,25 @@
+     }
+     //  *37,*  se la variabile LDS_SubClass_C2_variabile_V3 è  maggiore di  *54,* 3 e  se il parametro ConsDef è uguale a FALSE  *38,* e  se il contatore LDS_SubClass_C2_contatore_Co10 è  uguale a  *53,* 122 *34,* e  se il parametro LDS_SubClass_C2_parametro_P4 non è  uguale a c120x *37,* o  se la variabile LDS_SubClass_C2_variabile_V7 è  diverso da c270x, *66,* Assegna al comando LDS_SubClass_C2_comando_C10 il valore c120x
+-    bool res_OrLogicOP_11 = false;
+-    bool res_AndLogicOP_12 = true;
+-    bool res_AndLogicOP_13 = true;
+-    bool res_AndLogicOP_14 = true;
+-    res_AndLogicOP_14 = (res_AndLogicOP_14 && (L_P1__GetLds_s15(my_id) > 3u));
+-    res_AndLogicOP_14 = (res_AndLogicOP_14 && (L_P1__GetParamConsd1(my_id) == false));
++    bool res_OrLogicOP_15 = false;
++    bool res_AndLogicOP_16 = true;
++    bool res_AndLogicOP_17 = true;
++    bool res_AndLogicOP_18 = true;
++    res_AndLogicOP_18 = (res_AndLogicOP_18 && (L_P1__GetLds_s15(my_id) > 3u));
++    res_AndLogicOP_18 = (res_AndLogicOP_18 && (L_P1__GetParamConsd1(my_id) == false));
+     
+-    res_AndLogicOP_13 = (res_AndLogicOP_13 && res_AndLogicOP_14);
+-    res_AndLogicOP_13 = (res_AndLogicOP_13 && (Counter_GetValore(L_P1__GetLds_s18(my_id)) == 122u));
++    res_AndLogicOP_17 = (res_AndLogicOP_17 && res_AndLogicOP_18);
++    res_AndLogicOP_17 = (res_AndLogicOP_17 && (Counter_GetValore(L_P1__GetLds_s18(my_id)) == 122u));
+     
+-    res_AndLogicOP_12 = (res_AndLogicOP_12 && res_AndLogicOP_13);
+-    bool res_NotLogicOP_15 = true;
+-    res_NotLogicOP_15 = (res_NotLogicOP_15 && ! (L_P1__GetParamLds_s11(my_id) == c120x));
+-    res_AndLogicOP_12 = (res_AndLogicOP_12 && res_NotLogicOP_15);
++    res_AndLogicOP_16 = (res_AndLogicOP_16 && res_AndLogicOP_17);
++    bool res_NotLogicOP_19 = true;
++    res_NotLogicOP_19 = (res_NotLogicOP_19 && ! (L_P1__GetParamLds_s11(my_id) == c120x));
++    res_AndLogicOP_16 = (res_AndLogicOP_16 && res_NotLogicOP_19);
+     
+-    res_OrLogicOP_11 = (res_OrLogicOP_11 || res_AndLogicOP_12);
+-    bool res_NotLogicOP_16 = true;
+-    res_NotLogicOP_16 = (res_NotLogicOP_16 && ! (L_P1__GetLds_s16(my_id) == c270x));
+-    res_OrLogicOP_11 = (res_OrLogicOP_11 || res_NotLogicOP_16);
++    res_OrLogicOP_15 = (res_OrLogicOP_15 || res_AndLogicOP_16);
++    bool res_NotLogicOP_20 = true;
++    res_NotLogicOP_20 = (res_NotLogicOP_20 && ! (L_P1__GetLds_s16(my_id) == c270x));
++    res_OrLogicOP_15 = (res_OrLogicOP_15 || res_NotLogicOP_20);
+     
+-    if(res_OrLogicOP_11){
++    if(res_OrLogicOP_15){
+     
+     L_P1__SetOutLds_s(my_id,c120x);

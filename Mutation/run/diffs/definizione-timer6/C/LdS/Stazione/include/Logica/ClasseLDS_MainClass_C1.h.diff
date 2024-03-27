@@ -1,0 +1,14 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-timer6\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -40,4 +40,5 @@
+ #define L_P1__lds_m14_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__lds_m15_ID  /* NABCC: ID removed for comparison */
++#define L_P1__nabcc_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Counter
+@@ -115,4 +116,5 @@
+ Timer* L_P1__GetLds_m14(instance_id_t const my_id);
+ Timer* L_P1__GetLds_m15(instance_id_t const my_id);
++Timer* L_P1__GetNabcc(instance_id_t const my_id);
+ 
+ // counter

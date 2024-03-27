@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-variabile6\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -119,4 +119,5 @@
+     L_P1__SetLds_m10(my_id, rosso);
+     L_P1__SetLds_m11(my_id, giallox);
++    L_P1__SetNabcc(my_id, 0);
+     L_P1__SetStato1(my_id, 0);
+     // init Timer e Counter

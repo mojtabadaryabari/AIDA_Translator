@@ -1,0 +1,29 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-verifica4\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2.h
+@@ -222,18 +222,18 @@
+ 
+ // Macro di effetto
+-void L_P1__Macro6(instance_id_t const my_id );
+ void L_P1__Macro7(instance_id_t const my_id );
+ void L_P1__Macro8(instance_id_t const my_id );
++void L_P1__Macro9(instance_id_t const my_id );
+ 
+ // Macro di verifica
+-bool L_P1__Macro13(instance_id_t const my_id );
+-bool L_P1__Macro14(instance_id_t const my_id , C2_Enumerat4 argom19, C2_Enumerat2 argom20, C2_Enumerat3 argom21, C2_Enumerat3 argom22, bool argom23, bool argom24);
+-bool L_P1__Macro15(instance_id_t const my_id , bool argom25, bool argom26, C2_Enumerat2 argom27, C2_Enumerat4 argom28, bool argom29, bool argom30);
++bool L_P1__Macro14(instance_id_t const my_id );
++bool L_P1__Macro15(instance_id_t const my_id , C2_Enumerat4 argom20, C2_Enumerat2 argom21, C2_Enumerat3 argom22, C2_Enumerat3 argom23, bool argom24, bool argom25);
++bool L_P1__Macro16(instance_id_t const my_id , bool argom26, bool argom27, C2_Enumerat2 argom28, C2_Enumerat4 argom29, bool argom30, bool argom31);
+ 
+ // Macro valorizzate
+-C2_Enumerat1 L_P1__Macro9(instance_id_t const my_id );
+-C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id , C2_Enumerat1 argom8, bool argom9, C2_Enumerat1 argom10, C2_Enumerat4 argom11);
+-bool L_P1__Macro11(instance_id_t const my_id , C2_Enumerat4 argom12, C2_Enumerat1 argom13, C2_Enumerat4 argom14, C2_Enumerat1 argom15, C2_Enumerat1 argom16, C2_Enumerat2 argom17, C2_Enumerat3 argom18);
+-C2_Enumerat4 L_P1__Macro12(instance_id_t const my_id );
++C2_Enumerat1 L_P1__Macro10(instance_id_t const my_id );
++C2_Enumerat1 L_P1__Macro11(instance_id_t const my_id , C2_Enumerat1 argom9, bool argom10, C2_Enumerat1 argom11, C2_Enumerat4 argom12);
++bool L_P1__Macro12(instance_id_t const my_id , C2_Enumerat4 argom13, C2_Enumerat1 argom14, C2_Enumerat4 argom15, C2_Enumerat1 argom16, C2_Enumerat1 argom17, C2_Enumerat2 argom18, C2_Enumerat3 argom19);
++C2_Enumerat4 L_P1__Macro13(instance_id_t const my_id );
+ 
+ 

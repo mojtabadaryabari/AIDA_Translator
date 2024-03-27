@@ -1,0 +1,22 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-variabile2\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1.h
+@@ -33,4 +33,5 @@
+ #define L_P1__lds_m10_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__lds_m11_ID  /* NABCC: ID removed for comparison */
++#define L_P1__nabcc_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__stato1_ID  /* NABCC: ID removed for comparison */
+ 
+@@ -100,4 +101,13 @@
+     LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__lds_m11_ID, (Taggm) (value))
+ 
++/* Intero L_P1__GetNabcc(instance_id_t const my_id); */
++#define L_P1__GetNabcc(my_id)  \
++    (Intero) \
++    LogicGetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__nabcc_ID)
++/* void L_P1__SetNabcc(instance_id_t const my_id, Intero const value); */
++#define L_P1__SetNabcc(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C1_ID, (my_id), L_P1__nabcc_ID, (Taggm) (value))
++
+ /* C1_Stateenu L_P1__GetStato1(instance_id_t const my_id); */
+ #define L_P1__GetStato1(my_id)  \

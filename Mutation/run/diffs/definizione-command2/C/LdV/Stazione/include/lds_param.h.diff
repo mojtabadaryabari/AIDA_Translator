@@ -1,0 +1,13 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\lds_param.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-command2\out\C\LdV\Stazione\include\lds_param.h
+@@ -22,7 +22,7 @@
+ typedef struct Classe_L_P1_C3_Param {
+     bool consd2;
+-    bool ldv_m;
+-    Intero ldv_m1;
+-    C3_Enumerat1 ldv_m2;
++    bool ldv_m1;
++    Intero ldv_m2;
++    C3_Enumerat1 ldv_m3;
+ } Classe_L_P1_C3_Param;
+ 

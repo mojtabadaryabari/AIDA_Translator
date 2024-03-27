@@ -1,0 +1,107 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\src\Logica\ClasseLDV_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-verifica3\out\C\LdV\Stazione\src\Logica\ClasseLDV_MainClass_C1.c
+@@ -298,5 +298,5 @@
+     }
+ */
+-void L_P1__Macro16(instance_id_t const my_id )
++void L_P1__Macro17(instance_id_t const my_id )
+ {
+ //  *36,*  se il timer LDV_MainClass_C1_timer_T3 è scaduto e  se il parametro ConsDef  è  uguale a FALSE  *36,* e  se il timer LDV_MainClass_C1_timer_T3 non è scaduto *36,* e  se il timer LDV_MainClass_C1_timer_T3 non è disattivo, *67,* Assegna alla variabile LDV_MainClass_C1_variabile_V9 il valore c270xx
+@@ -330,5 +330,5 @@
+     if((L_P1__GetParamConsd2(my_id) == false)){
+     
+-    L_P1__Macro17(my_id);
++    L_P1__Macro18(my_id);
+     }else{
+     
+@@ -382,5 +382,5 @@
+     }else{
+     
+-    L_P1__Macro19(my_id);
++    L_P1__Macro20(my_id);
+     }
+     //  *73,*
+@@ -414,5 +414,5 @@
+     if(res_OrLogicOP_16){
+     
+-    L_P1__Macro20(my_id);
++    L_P1__Macro21(my_id);
+     }else{
+     
+@@ -438,5 +438,5 @@
+     }
+ */
+-void L_P1__Macro17(instance_id_t const my_id )
++void L_P1__Macro18(instance_id_t const my_id )
+ {
+ //  se il parametro ConsDef è uguale a FALSE  e  se il parametro ConsDef è uguale a FALSE , *71,*Decrementa il contatore LDV_MainClass_C1_contatore_Co6
+@@ -496,5 +496,5 @@
+     }
+ */
+-void L_P1__Macro18(instance_id_t const my_id )
++void L_P1__Macro19(instance_id_t const my_id )
+ {
+ //  *37,*  se la variabile LDV_MainClass_C1_variabile_V3 è  diverso da  *56,* 9 *37,* o  se la variabile LDV_MainClass_C1_variabile_V3 non è  minore di  *55,* 8 o  se il parametro ConsDef  è  uguale a FALSE  o  se il parametro ConsDef è uguale a FALSE , *68,*Attiva il timer LDV_MainClass_C1_timer_T3
+@@ -578,5 +578,5 @@
+     }
+ */
+-void L_P1__Macro19(instance_id_t const my_id )
++void L_P1__Macro20(instance_id_t const my_id )
+ {
+ //  se il parametro ConsDef è uguale a FALSE  *37,* o  se la variabile LDV_MainClass_C1_variabile_V9 non è  uguale a c270xx *38,* o  se il contatore LDV_MainClass_C1_contatore_Co4 non è  diverso da  *56,* contatore LDV_MainClass_C1_contatore_Co1, *69,*Disattiva il timer LDV_MainClass_C1_timer_T3
+@@ -623,5 +623,5 @@
+     }else{
+     
+-    L_P1__Macro17(my_id);
++    L_P1__Macro18(my_id);
+     }
+     //  *73,*
+@@ -671,5 +671,5 @@
+     }
+ */
+-void L_P1__Macro20(instance_id_t const my_id )
++void L_P1__Macro21(instance_id_t const my_id )
+ {
+ //  se il parametro ConsDef è uguale a FALSE  *38,* e  se il contatore LDV_MainClass_C1_contatore_Co7 è  uguale a  *53,* 1215, *69,*Disattiva il timer LDV_MainClass_C1_timer_T3
+@@ -700,5 +700,5 @@
+     }
+ */
+-bool L_P1__Macro23(instance_id_t const my_id , bool argom39, C3_Enumerat4 argom40, bool argom41, C3_Enumerat1 argom42)
++bool L_P1__Macro24(instance_id_t const my_id , bool argom39, C3_Enumerat4 argom40, bool argom41, C3_Enumerat1 argom42)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -823,5 +823,5 @@
+     }
+ */
+-bool L_P1__Macro24(instance_id_t const my_id , C3_Enumerat1 argom43, C3_Enumerat4 argom44, bool argom45, C3_Enumerat4 argom46, C3_Enumerat4 argom47, C3_Enumerat1 argom48, bool argom49)
++bool L_P1__Macro25(instance_id_t const my_id , C3_Enumerat1 argom43, C3_Enumerat4 argom44, bool argom45, C3_Enumerat4 argom46, C3_Enumerat4 argom47, C3_Enumerat1 argom48, bool argom49)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -1152,5 +1152,5 @@
+     }
+ */
+-bool L_P1__Macro25(instance_id_t const my_id , C3_Enumerat3 argom50, C3_Enumerat4 argom51, C3_Enumerat3 argom52, C3_Enumerat1 argom53, bool argom54, C3_Enumerat3 argom55, C3_Enumerat4 argom56)
++bool L_P1__Macro26(instance_id_t const my_id , C3_Enumerat3 argom50, C3_Enumerat4 argom51, C3_Enumerat3 argom52, C3_Enumerat1 argom53, bool argom54, C3_Enumerat3 argom55, C3_Enumerat4 argom56)
+ {
+ bool res_AndLogicOP_0 = true;
+@@ -1261,5 +1261,5 @@
+     bool res_NotLogicOP_33 = true;
+     bool res_NotLogicOP_34 = true;
+-    res_NotLogicOP_34 = (res_NotLogicOP_34 && ! (L_P1__Macro21(my_id,true,rossogiallo5,c180,rossogiallo5) == true));
++    res_NotLogicOP_34 = (res_NotLogicOP_34 && ! (L_P1__Macro22(my_id,true,rossogiallo5,c180,rossogiallo5) == true));
+     res_NotLogicOP_33 = (res_NotLogicOP_33 && ! res_NotLogicOP_34);
+     res_AndLogicOP_32 = (res_AndLogicOP_32 && res_NotLogicOP_33);
+@@ -1478,5 +1478,5 @@
+     }
+ */
+-bool L_P1__Macro21(instance_id_t const my_id , bool argom33, C3_Enumerat1 argom34, C3_Enumerat4 argom35, C3_Enumerat1 argom36)
++bool L_P1__Macro22(instance_id_t const my_id , bool argom33, C3_Enumerat1 argom34, C3_Enumerat4 argom35, C3_Enumerat1 argom36)
+ {
+ return false;
+@@ -1490,5 +1490,5 @@
+     }
+ */
+-bool L_P1__Macro22(instance_id_t const my_id , bool argom37, C3_Enumerat4 argom38)
++bool L_P1__Macro23(instance_id_t const my_id , bool argom37, C3_Enumerat4 argom38)
+ {
+ return false;

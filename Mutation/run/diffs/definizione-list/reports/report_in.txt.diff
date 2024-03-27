@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-list\out\reports\report_in.txt
+@@ -189,4 +189,5 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave8' non viene mai utilizzato nella macro, line 114
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 103
++LDS_SubClass_C2.rfisrf_definition - warning: La lista 'nabcc_lds_subclass_c2_lista_l4' non viene mai utilizzata, line 9
+ LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m2' non viene mai utilizzata, line 64
+ LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m5' non viene mai utilizzata, line 66

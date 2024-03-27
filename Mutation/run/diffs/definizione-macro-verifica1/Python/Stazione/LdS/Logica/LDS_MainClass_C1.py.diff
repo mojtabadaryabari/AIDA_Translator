@@ -1,0 +1,22 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-effetto1\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -538,4 +538,19 @@
+             self.get_lds_mainclass_c1_timer_t3().attiva()
+     
++    def macroNabcc_lds_mainclass_c1_macroef_m8(self, di_ctx: DIEffectMacro):
++        """
++        CNL corrispondente:
++         {Attiva il timer LDS_MainClass_C1_timer_T3}
++        """
++        def populate_macroNabcc_lds_mainclass_c1_macroef_m8_SrfMacroDefInfo(macroDebInfo: DIEffectMacro):
++            #if macroDebInfo is not yet populated
++            if not macroDebInfo.is_initialized() :
++                macroDebInfo.initialize([
++                ])
++
++        populate_macroNabcc_lds_mainclass_c1_macroef_m8_SrfMacroDefInfo(di_ctx)
++        #  Attiva il timer LDS_MainClass_C1_timer_T3
++        self.get_lds_mainclass_c1_timer_t3().attiva()
++    
+     # verify macros
+     @srf_value_macro("macroLds_mainclass_c1_macrove_m2")

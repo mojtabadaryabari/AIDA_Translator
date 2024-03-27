@@ -1,0 +1,9 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-complex-type\out\reports\report_in.txt
+@@ -86,4 +86,6 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallogiallo' dell'enumeratore 'Enumerator_1' non viene mai usato, line 64
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai usato, line 66
++LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'nabcc_enumvalue1' dell'enumeratore 'Enumerator_nabcc' non viene mai usato, line 69
++LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'nabcc_enumvalue2' dell'enumeratore 'Enumerator_nabcc' non viene mai usato, line 69
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'rosso' dell'enumeratore 'Enumerator_2' non viene mai usato, line 65
+ LDS_MainClass_C1.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7

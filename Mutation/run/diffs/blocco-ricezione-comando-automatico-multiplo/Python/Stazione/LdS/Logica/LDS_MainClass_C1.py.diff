@@ -1,0 +1,81 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-ricezione-comando-automatico-multiplo\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -27,5 +27,5 @@
+ 
+         self._expected_commands_map = {
+-            Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1 : set([]),
++            Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1 : set(['eventLds_mainclass_c1_command_comm10',]),
+         }
+ 
+@@ -33,5 +33,5 @@
+         # for each manual command of LDS_MainClass_C1
+         if self.is_triggered('eventLds_mainclass_c1_command_comm10'):
+-            IS_STATE_ACCEPTING_eventLds_mainclass_c1_command_comm10 = false # no state is accepting this command!
++            IS_STATE_ACCEPTING_eventLds_mainclass_c1_command_comm10 = self.is_current_state(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1)
+             self.set_man_cmd_response('eventLds_mainclass_c1_command_comm10',self.ManCmdResponse.BLOCKED if IS_STATE_ACCEPTING_eventLds_mainclass_c1_command_comm10 else self.ManCmdResponse.UNEXPECTED)
+         else:
+@@ -229,5 +229,6 @@
+                     DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
+                     ]),#0
+-                    DIBoolExpr("""NAryLogicOP (AND)\nNessuna""", [
++                    DIBoolExpr("""NAryLogicOP (AND)\nAlmeno una delle seguenti {Ricezione del  comando manuale   LDS_MainClass_C1_command_comm10 }""", [
++                    EventDebInfo("""Ricezione Comando Manuale\ncomando manuale   LDS_MainClass_C1_command_comm10"""),#0
+                     ]),#1
+                      )
+@@ -240,10 +241,10 @@
+                          ),
+             # transizioni della fase manuale
+-            # transizioni della fase di stato
+             TransDebInfo(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1,Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1,
+                          guard=(self.dbs[1], ),
+                          effect=(),
+-                         phase = TransPhase.Stato
++                         phase = TransPhase.Manuale
+                          ),
++            # transizioni della fase di stato
+             # transizioni della fase automatica
+         ]))
+@@ -270,5 +271,5 @@
+             self.set_fsmState(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1)
+             self.effect_INITIALIZATION_StatoIniziale_state1_000()
+-            self.response_wait()
++            self.response_done()
+ 
+ 
+@@ -284,5 +285,6 @@
+             self.set_expected_cmds_response()
+             if self.is_current_state(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1):
+-                pass #return ERROR("the current state variable is not set (command: %s)" % command)
++                if(self.guard_PERMANENCE_state1_000()):
++                    self.curr_transition = self.Transition._State1__State1__stateSheet_0__permanence
+             else:
+                 # if the current state variable is not set, an exception will be raised
+@@ -291,6 +293,5 @@
+         if self.is_state_phase():
+             if self.is_current_state(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1):
+-                if(self.guard_PERMANENCE_state1_000()):
+-                    self.curr_transition = self.Transition._State1__State1__stateSheet_0__permanence
++                pass #return ERROR("the current state variable is not set (command: %s)" % command)
+             else:
+                 # if the current state variable is not set, an exception will be raised
+@@ -312,5 +313,5 @@
+             self.set_fsmState(Stazione.LdS.Logica.Enumeratives.LDS_MainClass_C1.Stateenumerator.state1)
+             self.effect_PERMANENCE_state1_000()
+-            self.response_wait()
++            self.response_done()
+   
+         return self.end_execute()
+@@ -331,8 +332,11 @@
+          
+         {
+-        Nessuna
++          Almeno una delle seguenti {Ricezione del  comando manuale   LDS_MainClass_C1_command_comm10 } 
+         }
+         """
+-        return db((True), self.dbs[1])
++        res_manCmdCondition_0 = (db(self.is_triggered('eventLds_mainclass_c1_command_comm10'), self.dbs[1].subs[0]))
++        if res_manCmdCondition_0:
++            self.set_man_cmd_response('eventLds_mainclass_c1_command_comm10',self.ManCmdResponse.PROCESSED)
++        return db(res_manCmdCondition_0, self.dbs[1])
+     
+     # for each effect, the corresponding method is created

@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\enumeratives.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-complex-type\out\Python\enumeratives.csv
+@@ -5,4 +5,5 @@
+ Stazione.LdS,1,LDS_MainClass_C1,Enumerator_3,insieme,{giallox=18;rossoverde=19}
+ Stazione.LdS,1,LDS_MainClass_C1,Enumerator_4,insieme,{verde=24;gialloxverdex=25}
++Stazione.LdS,1,LDS_MainClass_C1,Enumerator_nabcc,insieme,{nabcc_enumvalue1=28;nabcc_enumvalue2=29}
+ Stazione.LdS,2,LDS_SubClass_C2,Enumerator_0,insieme,{rossogialloaverdea=2;c75giallo=3}
+ Stazione.LdS,2,LDS_SubClass_C2,Enumerator_1,insieme,{gialloaverdea=8;rossogiallo=9}

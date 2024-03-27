@@ -1,0 +1,12 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\heavy-manual-command-declaration1\out\Python\attributes.csv
+@@ -27,7 +27,9 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando manuale leggero,eventLds_mainclass_c1_command_comm11,,pubblico,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando manuale pesante,eventLds_mainclass_c1_command_comm9DaSender4db07f5e,,pubblico,si,,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando manuale pesante,eventNabcc_lds_mainclass_c1_command_comm9DaSenderfg07f5e,,pubblico,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",risposta comando manuale,eventLds_mainclass_c1_command_comm10_response,CommandReponse:Enum_response,privato,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",risposta comando manuale,eventLds_mainclass_c1_command_comm11_response,CommandReponse:Enum_response,privato,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",risposta comando manuale,eventLds_mainclass_c1_command_comm9DaSender4db07f5e_response,CommandReponse:Enum_response,privato,si,,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",risposta comando manuale,eventNabcc_lds_mainclass_c1_command_comm9DaSenderfg07f5e_response,CommandReponse:Enum_response,privato,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro verifica,macroLds_mainclass_c1_macrove_m2,BasicType:Boolean,privato,no,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",macro verifica,macroLds_mainclass_c1_macrove_m4,BasicType:Boolean,pubblico,no,"NABCC: References Removed for Comparison"

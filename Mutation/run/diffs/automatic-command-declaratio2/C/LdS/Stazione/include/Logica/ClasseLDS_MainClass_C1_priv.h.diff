@@ -1,0 +1,28 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1_priv.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio2\out\C\LdS\Stazione\include\Logica\ClasseLDS_MainClass_C1_priv.h
+@@ -10,7 +10,8 @@
+ typedef struct {
+     bool event2;
++    bool event4;
+ } L_P1_C1_Comandi_Auto;
+ 
+-#define L_P1_C1_NUM_COMANDI_AUTO 1
++#define L_P1_C1_NUM_COMANDI_AUTO 2
+ 
+ 
+@@ -48,9 +49,15 @@
+ #define L_P1__GetCAEvent2(my_id) (lds_Stazione_data->L_P1_C1[my_id].comandi_automatici.event2)
+ 
++/* bool L_P1__GetCAEvent4(instance_id_t const my_id); */
++#define L_P1__GetCAEvent4(my_id) (lds_Stazione_data->L_P1_C1[my_id].comandi_automatici.event4)
++
+ /* void L_P1__SetCAEvent2(instance_id_t const my_id, bool const value); */
+ #define L_P1__SetCAEvent2(my_id, value)   lds_Stazione_data->L_P1_C1[my_id].comandi_automatici.event2 = (value)
+ 
++/* void L_P1__SetCAEvent4(instance_id_t const my_id, bool const value); */
++#define L_P1__SetCAEvent4(my_id, value)   lds_Stazione_data->L_P1_C1[my_id].comandi_automatici.event4 = (value)
+ 
+ 
++
+ // response
+ ExecResponse L_P1_C1_GetResponse(instance_id_t const my_id);

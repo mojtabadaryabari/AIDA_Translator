@@ -1,0 +1,28 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\assegna6\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -370,5 +370,5 @@
+           se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento commento: {40,}  commento: {38,} o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  commento: {55,} contatore LDS_MainClass_C1_contatore_Co6 commento: {38,} e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  commento: {56,} contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  commento: {67,} Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 commento: {67,}
+         
+-         ,altrimenti  commento: {66,} Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex
++         ,altrimenti  commento: {68,}Decrementa  il contatore LDS_MainClass_C1_contatore_Co9
+         
+         
+@@ -414,5 +414,5 @@
+                             DIStatement("""ITEStatementImpl\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
+ 
+- ,altrimenti  /*66,*/ Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex""", [
++ ,altrimenti  /*68,*/Decrementa  il contatore LDS_MainClass_C1_contatore_Co9""", [
+                             DIBoolExpr("""NAryLogicOP (OR)\nse la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE""", [
+                             DIBoolExpr("""NAryLogicOP (OR)\n( negazione di ((chiamata alla macro valorizzata 'macroLds_mainclass_c1_macrova_m10')  è uguale a  (avanzamento)) )  o  
+@@ -514,9 +514,9 @@
+             self.get_lds_mainclass_c1_contatore_co5().resetta()
+         #  se la macro  LDS_MainClass_C1_macrova_M10 ( con argomento_a10   uguale a True  e argomento_a9   uguale a Verde )   è  diverso da avanzamento /*40,*/  /*38,*/ o  se il contatore LDS_MainClass_C1_contatore_Co8 non è  minore di  /*55,*/ contatore LDS_MainClass_C1_contatore_Co6 /*38,*/ e  se il contatore LDS_MainClass_C1_contatore_Co8 non è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co8 o  se il parametro ConsDef  è  uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V1 il valore c120 /*67,*/
+-        #   ,altrimenti  /*66,*/ Assegna al comando LDS_MainClass_C1_comando_C5 il valore GialloxVerdex
++        #   ,altrimenti  /*68,*/Decrementa  il contatore LDS_MainClass_C1_contatore_Co9
+         if db((db((db(not db(db(self.macroLds_mainclass_c1_macrova_m10(True,GlobalEnumeration.verde, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0].subs[0]) == GlobalEnumeration.avanzamento, di_ctx.subs[1].subs[0].subs[0].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[0]) or db((db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() < self.get_lds_mainclass_c1_contatore_co6().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[0]) and db(not db(not db(self.get_lds_mainclass_c1_contatore_co8().get_valore() == self.get_lds_mainclass_c1_contatore_co8().get_valore(), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1].subs[0]), di_ctx.subs[1].subs[0].subs[0].subs[1].subs[1])), di_ctx.subs[1].subs[0].subs[0].subs[1])), di_ctx.subs[1].subs[0].subs[0]) or db(self.get_consdef() == False, di_ctx.subs[1].subs[0].subs[1])), di_ctx.subs[1].subs[0]):
+             self.set_lds_mainclass_c1_variabile_v1(GlobalEnumeration.c120)
+         else:
+-            self.set_lds_mainclass_c1_comando_c5(GlobalEnumeration.gialloxverdex)
++            self.get_lds_mainclass_c1_contatore_co9().decrementa()
+         #  /*38,*/  se il contatore LDS_MainClass_C1_contatore_Co9 è  diverso da  /*56,*/ contatore LDS_MainClass_C1_contatore_Co6 o  se il parametro ConsDef  è  uguale a FALSE  e  se il parametro ConsDef è uguale a FALSE ,  /*67,*/ Assegna alla variabile LDS_MainClass_C1_variabile_V7 il valore RossoVerde /*67,*/
+         #   ,altrimenti  /*69,*/Disattiva il timer LDS_MainClass_C1_timer_T8

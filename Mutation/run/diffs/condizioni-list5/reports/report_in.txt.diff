@@ -1,0 +1,16 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizioni-list5\out\reports\report_in.txt
+@@ -82,6 +82,4 @@
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c6' dovrebbe avere accessibilità privata, line 31
+ LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c6' non viene mai letto, line 31
+-LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' dovrebbe avere accessibilità privata, line 32
+-LDS_MainClass_C1.rfisrf_definition - warning: Il controllo dal piazzale 'lds_mainclass_c1_controllo_c9' non viene mai letto, line 32
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallogiallo' dell'enumeratore 'Enumerator_1' non viene mai usato, line 64
+ LDS_MainClass_C1.rfisrf_definition - warning: Il literal 'giallox' dell'enumeratore 'Enumerator_3' non viene mai usato, line 66
+@@ -153,5 +151,5 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co3' non viene mai letto, line 28
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' dovrebbe avere accessibilità privata, line 30
+-LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 151
++LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 150
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co8' non viene mai incrementato/decrementato/resettato, line 170
+ LDS_SubClass_C2.rfisrf_definition - warning: Il contatore 'lds_subclass_c2_contatore_co9' dovrebbe avere accessibilità privata, line 29

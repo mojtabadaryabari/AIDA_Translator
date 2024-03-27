@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\attributes.csv
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-variabile5\out\C\attributes.csv
+@@ -7,4 +7,5 @@
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,lds_mainclass_c1_variabile_v1,Enumerator:Enumerator_2,pubblico,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,lds_mainclass_c1_variabile_v7,Enumerator:Enumerator_3,pubblico,si,,,"NABCC: References Removed for Comparison"
++classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile,nabcc_mainclass_c1_variabile_v3,BasicType:Integer,protetto,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",variabile ripristino,stato_restore,Enumerator:Stateenumerator,protetto,si,,,"NABCC: References Removed for Comparison"
+ classe,Stazione.LdS,1,LDS_MainClass_C1,"NABCC: ID Removed for Comparison",comando output,lds_mainclass_c1_comando_c4,BasicType:Boolean,privato,si,,"NABCC: References Removed for Comparison"

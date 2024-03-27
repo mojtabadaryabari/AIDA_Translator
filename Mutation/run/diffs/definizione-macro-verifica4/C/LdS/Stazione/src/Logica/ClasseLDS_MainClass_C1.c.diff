@@ -1,0 +1,25 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-macro-verifica4\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -856,5 +856,22 @@
+ }
+ 
++/*
++    CNL corrispondente:
++     {Verifica che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120}
++*/
++bool L_P1__Macro6(instance_id_t const my_id , C1_Enumerat2 argom8)
++{
++bool res_AndLogicOP_0 = true;
++    
++    //  che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
++    res_AndLogicOP_0 = (res_AndLogicOP_0 && (L_P1__GetLds_m10(my_id) == c120));
++    
++    
++    
++    
++    return res_AndLogicOP_0;
++}
+ 
++
+ // Macro valorizzate
+ 

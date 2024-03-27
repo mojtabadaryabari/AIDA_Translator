@@ -1,0 +1,11 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\include\envdt.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-complex-type\out\C\LdV\Stazione\include\envdt.h
+@@ -43,5 +43,7 @@
+     gialloxverd = 25,
+     avanzamento1 = 26,
+-    c180 = 27
++    c180 = 27,
++    nabcc_enumv = 28,
++    nabcc_enumv1 = 29
+ } GlobalEnumeration;
+ 

@@ -1,0 +1,33 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdV\Stazione\src\Logica\ClasseLDV_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio2\out\C\LdV\Stazione\src\Logica\ClasseLDV_MainClass_C1.c
+@@ -10,5 +10,5 @@
+ {
+     size_t n = 0u;
+-    if (L_P1__GetCAEvent13(my_id)) {
++    if (L_P1__GetCAEvent14(my_id)) {
+         ++n;
+     }
+@@ -24,11 +24,4 @@
+ 
+     // for each manual command of L_P1_C3
+-    if (L_P1__GetInEvent11(my_id)) {
+-        #define IS_STATE_ACCEPTING_Event11 false // no state is accepting this command!
+-        L_P1__SetOutEvent14(my_id, IS_STATE_ACCEPTING_Event11 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+-        isCommandPresent |= true;		
+-    } else {
+-        L_P1__SetOutEvent14(my_id, LDS_MANCMD_NOOP);
+-    }
+     if (L_P1__GetInEvent12(my_id)) {
+         #define IS_STATE_ACCEPTING_Event12 false // no state is accepting this command!
+@@ -38,4 +31,11 @@
+         L_P1__SetOutEvent15(my_id, LDS_MANCMD_NOOP);
+     }
++    if (L_P1__GetInEvent13(my_id)) {
++        #define IS_STATE_ACCEPTING_Event13 false // no state is accepting this command!
++        L_P1__SetOutEvent16(my_id, IS_STATE_ACCEPTING_Event13 ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
++        isCommandPresent |= true;		
++    } else {
++        L_P1__SetOutEvent16(my_id, LDS_MANCMD_NOOP);
++    }
+     
+     return isCommandPresent;

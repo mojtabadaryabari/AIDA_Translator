@@ -1,0 +1,22 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\reports\report_in.txt
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\chiamata-macro-effetto\out\reports\report_in.txt
+@@ -168,4 +168,13 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: Il literal 'rossogiallox' dell'enumeratore 'Enumerator_2' non viene mai usato, line 76
+ LDS_SubClass_C2.rfisrf_definition - warning: Il parametro 'consdef' dovrebbe avere accessibilità privata, line 7
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 106
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 110
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 136
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 137
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 148
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 160
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 160
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 85
++LDS_SubClass_C2.rfisrf_definition - warning: Il timer 'lds_subclass_c2_timer_t4' non viene mai attivato/disattivato, line 85
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a1' non viene mai utilizzato nella macro, line 89
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_a10' non viene mai utilizzato nella macro, line 93
+@@ -189,5 +198,4 @@
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave8' non viene mai utilizzato nella macro, line 114
+ LDS_SubClass_C2.rfisrf_definition - warning: L'argomento 'argomento_ave9' non viene mai utilizzato nella macro, line 103
+-LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m2' non viene mai utilizzata, line 64
+ LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m5' non viene mai utilizzata, line 66
+ LDS_SubClass_C2.rfisrf_definition - warning: La macro 'macroLds_subclass_c2_macroef_m7' non viene mai utilizzata, line 62

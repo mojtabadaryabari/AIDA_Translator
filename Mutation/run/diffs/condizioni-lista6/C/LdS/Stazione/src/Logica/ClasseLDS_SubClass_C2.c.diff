@@ -1,0 +1,55 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizioni-lista6\out\C\LdS\Stazione\src\Logica\ClasseLDS_SubClass_C2.c
+@@ -374,5 +374,5 @@
+      ,altrimenti  commento: {70,}Incrementa il contatore LDS_SubClass_C2_contatore_Co10
+     
+-    
++     se lo stato del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4 è  diverso da state1 o 
+      commento: {38,}  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  commento: {54,} 13 commento: {38,} o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  commento: {53,} 1215 e  se il parametro ConsDef è uguale a FALSE  commento: {34,} o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, commento: {67,} Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+     
+@@ -511,19 +511,35 @@
+     Counter_Incr(L_P1__GetLds_s18(my_id));
+     }
+-    //  *38,*  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  *54,* 13 *38,* o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  *53,* 1215 e  se il parametro ConsDef è uguale a FALSE  *34,* o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, *67,* Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
++    //  se lo stato del campo LDS_MainClass_C1  di LDS_SubClass_C2_lista_L4 è  diverso da state1 o 
++    // *38,*  se il contatore LDS_SubClass_C2_contatore_Co10 non è  maggiore di  *54,* 13 *38,* o  se il contatore LDS_SubClass_C2_contatore_Co2 non è  uguale a  *53,* 1215 e  se il parametro ConsDef è uguale a FALSE  *34,* o  se il parametro LDS_SubClass_C2_parametro_P4 è  uguale a c120x, *67,* Assegna alla variabile LDS_SubClass_C2_variabile_V3 il valore 1
+     // ,altrimenti  *69,*Disattiva il timer LDS_SubClass_C2_timer_T4
+     bool res_OrLogicOP_29 = false;
+     bool res_OrLogicOP_30 = false;
+-    bool res_NotLogicOP_31 = true;
+-    res_NotLogicOP_31 = (res_NotLogicOP_31 && ! (Counter_GetValore(L_P1__GetLds_s18(my_id)) > 13u));
+-    res_OrLogicOP_30 = (res_OrLogicOP_30 || res_NotLogicOP_31);
+-    bool res_AndLogicOP_32 = true;
+-    bool res_NotLogicOP_33 = true;
+-    res_NotLogicOP_33 = (res_NotLogicOP_33 && ! (Counter_GetValore(L_P1__GetLds_s19(my_id)) == 1215u));
+-    res_AndLogicOP_32 = (res_AndLogicOP_32 && res_NotLogicOP_33);
+-    res_AndLogicOP_32 = (res_AndLogicOP_32 && (L_P1__GetParamConsd1(my_id) == false));
++    bool res_OrLogicOP_31 = false;
++    bool res_ForAllPredicate_32 = true;
++    for (index_t i = 0; i < L_P1__GetParamLds_s9Length(my_id); ++i)
++    {
++    const L_P1__Recor1 * it = L_P1__GetRecLds_s9(my_id,i);
++    bool res_ImpliesLogicOp_33 = true;
++    bool res_NotLogicOP_34 = true;
++    res_NotLogicOP_34 = (res_NotLogicOP_34 && ! (L_P1_C1_GetState(it->lds_m21) == C1_St_state));
++    res_ImpliesLogicOp_33 = (res_ImpliesLogicOp_33 && res_NotLogicOP_34);
++    res_ForAllPredicate_32 = res_ImpliesLogicOp_33;
++    if(!res_ForAllPredicate_32) {break;}
++    }
++    res_OrLogicOP_31 = (res_OrLogicOP_31 || res_ForAllPredicate_32);
++    bool res_NotLogicOP_35 = true;
++    res_NotLogicOP_35 = (res_NotLogicOP_35 && ! (Counter_GetValore(L_P1__GetLds_s18(my_id)) > 13u));
++    res_OrLogicOP_31 = (res_OrLogicOP_31 || res_NotLogicOP_35);
+     
+-    res_OrLogicOP_30 = (res_OrLogicOP_30 || res_AndLogicOP_32);
++    res_OrLogicOP_30 = (res_OrLogicOP_30 || res_OrLogicOP_31);
++    bool res_AndLogicOP_36 = true;
++    bool res_NotLogicOP_37 = true;
++    res_NotLogicOP_37 = (res_NotLogicOP_37 && ! (Counter_GetValore(L_P1__GetLds_s19(my_id)) == 1215u));
++    res_AndLogicOP_36 = (res_AndLogicOP_36 && res_NotLogicOP_37);
++    res_AndLogicOP_36 = (res_AndLogicOP_36 && (L_P1__GetParamConsd1(my_id) == false));
+     
++    res_OrLogicOP_30 = (res_OrLogicOP_30 || res_AndLogicOP_36);
++    
+     res_OrLogicOP_29 = (res_OrLogicOP_29 || res_OrLogicOP_30);
+     res_OrLogicOP_29 = (res_OrLogicOP_29 || (L_P1__GetParamLds_s11(my_id) == c120x));

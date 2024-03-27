@@ -1,0 +1,63 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\condizione-verifica4\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -430,6 +430,6 @@
+      commento: {104,} e  che   il parametro ConsDef  sia  uguale a FALSE 
+      commento: {104,} o  che  commento: {34,}  il parametro LDS_MainClass_C1_parametro_P3 sia  uguale a  True 
++     o  che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120  
+     
+-    
+     }
+ */
+@@ -512,30 +512,35 @@
+     //   *104,* o  che  *,*  la variabile LDS_MainClass_C1_variabile_V1 non sia  uguale a c120
+     //   *104,* e  che   il parametro ConsDef  sia  uguale a FALSE 
+-    //   *104,* o  che  *34,*  il parametro LDS_MainClass_C1_parametro_P3 sia  uguale a  True
++    //   *104,* o  che  *34,*  il parametro LDS_MainClass_C1_parametro_P3 sia  uguale a  True 
++    //   o  che la variabile LDS_MainClass_C1_variabile_V1 sia  uguale a c120
+     bool res_OrLogicOP_17 = false;
+     bool res_OrLogicOP_18 = false;
+     bool res_OrLogicOP_19 = false;
+-    res_OrLogicOP_19 = (res_OrLogicOP_19 || (L_P1__GetParamConsd(my_id) == false));
+-    bool res_AndLogicOP_20 = true;
+-    bool res_NotLogicOP_21 = true;
+-    res_NotLogicOP_21 = (res_NotLogicOP_21 && ! (L_P1__GetParamLds_m7(my_id) == 10u));
+-    res_AndLogicOP_20 = (res_AndLogicOP_20 && res_NotLogicOP_21);
++    bool res_OrLogicOP_20 = false;
++    res_OrLogicOP_20 = (res_OrLogicOP_20 || (L_P1__GetParamConsd(my_id) == false));
++    bool res_AndLogicOP_21 = true;
+     bool res_NotLogicOP_22 = true;
+-    res_NotLogicOP_22 = (res_NotLogicOP_22 && ! (Counter_GetValore(L_P1__GetLds_m18(my_id)) < Counter_GetValore(L_P1__GetLds_m17(my_id))));
+-    res_AndLogicOP_20 = (res_AndLogicOP_20 && res_NotLogicOP_22);
++    res_NotLogicOP_22 = (res_NotLogicOP_22 && ! (L_P1__GetParamLds_m7(my_id) == 10u));
++    res_AndLogicOP_21 = (res_AndLogicOP_21 && res_NotLogicOP_22);
++    bool res_NotLogicOP_23 = true;
++    res_NotLogicOP_23 = (res_NotLogicOP_23 && ! (Counter_GetValore(L_P1__GetLds_m18(my_id)) < Counter_GetValore(L_P1__GetLds_m17(my_id))));
++    res_AndLogicOP_21 = (res_AndLogicOP_21 && res_NotLogicOP_23);
+     
+-    res_OrLogicOP_19 = (res_OrLogicOP_19 || res_AndLogicOP_20);
++    res_OrLogicOP_20 = (res_OrLogicOP_20 || res_AndLogicOP_21);
+     
+-    res_OrLogicOP_18 = (res_OrLogicOP_18 || res_OrLogicOP_19);
+-    bool res_AndLogicOP_23 = true;
+-    bool res_NotLogicOP_24 = true;
+-    res_NotLogicOP_24 = (res_NotLogicOP_24 && ! (L_P1__GetLds_m10(my_id) == c120));
+-    res_AndLogicOP_23 = (res_AndLogicOP_23 && res_NotLogicOP_24);
+-    res_AndLogicOP_23 = (res_AndLogicOP_23 && (L_P1__GetParamConsd(my_id) == false));
++    res_OrLogicOP_19 = (res_OrLogicOP_19 || res_OrLogicOP_20);
++    bool res_AndLogicOP_24 = true;
++    bool res_NotLogicOP_25 = true;
++    res_NotLogicOP_25 = (res_NotLogicOP_25 && ! (L_P1__GetLds_m10(my_id) == c120));
++    res_AndLogicOP_24 = (res_AndLogicOP_24 && res_NotLogicOP_25);
++    res_AndLogicOP_24 = (res_AndLogicOP_24 && (L_P1__GetParamConsd(my_id) == false));
+     
+-    res_OrLogicOP_18 = (res_OrLogicOP_18 || res_AndLogicOP_23);
++    res_OrLogicOP_19 = (res_OrLogicOP_19 || res_AndLogicOP_24);
+     
++    res_OrLogicOP_18 = (res_OrLogicOP_18 || res_OrLogicOP_19);
++    res_OrLogicOP_18 = (res_OrLogicOP_18 || (L_P1__GetParamLds_m8(my_id) == true));
++    
+     res_OrLogicOP_17 = (res_OrLogicOP_17 || res_OrLogicOP_18);
+-    res_OrLogicOP_17 = (res_OrLogicOP_17 || (L_P1__GetParamLds_m8(my_id) == true));
++    res_OrLogicOP_17 = (res_OrLogicOP_17 || (L_P1__GetLds_m10(my_id) == c120));
+     
+     res_AndLogicOP_0 = (res_AndLogicOP_0 && res_OrLogicOP_17);

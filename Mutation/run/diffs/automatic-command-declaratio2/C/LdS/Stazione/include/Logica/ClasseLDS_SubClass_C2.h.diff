@@ -1,0 +1,60 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2.h
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\automatic-command-declaratio2\out\C\LdS\Stazione\include\Logica\ClasseLDS_SubClass_C2.h
+@@ -10,11 +10,11 @@
+ 
+ typedef struct {
+-    bool event7;
+     bool event8;
++    bool event9;
+ } L_P1_C2_Comandi_Man;
+ 
+ typedef struct {
+-    ManCmdResponse event9;
+     ManCmdResponse event10;
++    ManCmdResponse event11;
+ } L_P1_C2_Ack_Comandi_Man;
+ 
+@@ -59,10 +59,10 @@
+ 
+ // ID Comandi manuali
+-#define L_P1__event7_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event8_ID  /* NABCC: ID removed for comparison */
++#define L_P1__event9_ID  /* NABCC: ID removed for comparison */
+ 
+ // ID Risposte ai comandi manuali
+-#define L_P1__event9Reply_ID  /* NABCC: ID removed for comparison */
+ #define L_P1__event10Reply_ID  /* NABCC: ID removed for comparison */
++#define L_P1__event11Reply_ID  /* NABCC: ID removed for comparison */
+ 
+ 
+@@ -146,22 +146,22 @@
+ 
+ // comandi manuali
+-/* bool L_P1__GetInEvent7(instance_id_t const my_id); */
+-#define L_P1__GetInEvent7(my_id)  \
+-    (bool) \
+-    LogicGetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event7_ID)
+ /* bool L_P1__GetInEvent8(instance_id_t const my_id); */
+ #define L_P1__GetInEvent8(my_id)  \
+     (bool) \
+     LogicGetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event8_ID)
++/* bool L_P1__GetInEvent9(instance_id_t const my_id); */
++#define L_P1__GetInEvent9(my_id)  \
++    (bool) \
++    LogicGetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event9_ID)
+ 
+ // risposte ai comandi manuali
+-/* void L_P1__SetOutEvent9(instance_id_t const my_id, ManCmdResponse const value); */
+-#define L_P1__SetOutEvent9(my_id, value)  \
+-    CHECK_LE((value), TAGGM_MAX); \
+-    LogicSetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event9Reply_ID, (Taggm) (value))
+ /* void L_P1__SetOutEvent10(instance_id_t const my_id, ManCmdResponse const value); */
+ #define L_P1__SetOutEvent10(my_id, value)  \
+     CHECK_LE((value), TAGGM_MAX); \
+     LogicSetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event10Reply_ID, (Taggm) (value))
++/* void L_P1__SetOutEvent11(instance_id_t const my_id, ManCmdResponse const value); */
++#define L_P1__SetOutEvent11(my_id, value)  \
++    CHECK_LE((value), TAGGM_MAX); \
++    LogicSetAggmVar(CLASS_L_P1_C2_ID, (my_id), L_P1__event11Reply_ID, (Taggm) (value))
+ 
+ // controlli dal piazzale

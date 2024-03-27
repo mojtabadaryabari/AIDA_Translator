@@ -1,0 +1,58 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\blocco-ricezione-comando-automatico-singolo\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -26,5 +26,5 @@
+     // for each manual command of L_P1_C1
+     if (L_P1__GetInEvent(my_id)) {
+-        #define IS_STATE_ACCEPTING_Event false // no state is accepting this command!
++        #define IS_STATE_ACCEPTING_Event (C1_St_state == state)
+         L_P1__SetOutEvent4(my_id, IS_STATE_ACCEPTING_Event ? LDS_MANCMD_BLOCKED : LDS_MANCMD_UNEXPECTED);
+         isCommandPresent |= true;		
+@@ -70,10 +70,24 @@
+      
+     {
+-    Nessuna
++       Almeno una delle seguenti { Tutte le seguenti { Ricezione del  comando manuale   LDS_MainClass_C1_command_comm10 }} 
+     }
+ */
+ static inline bool L_P1__Guard1(instance_id_t const my_id)
+ {
+-    return true;
++    bool res_AndLogicOP_0 = true;
++    
++    //  comando manuale   LDS_MainClass_C1_command_comm10
++    res_AndLogicOP_0 = (res_AndLogicOP_0 && L_P1__GetInEvent(my_id));
++    
++    if(res_AndLogicOP_0){
++    L_P1__SetOutEvent4(my_id,LDS_MANCMD_PROCESSED);
++    }
++    else{
++    
++    }
++    
++    
++    
++    return res_AndLogicOP_0;
+ }
+ 
+@@ -161,4 +175,10 @@
+ 
+ 	        case C1_St_state:
++            if (L_P1__Guard1(my_id)) {
++	                L_P1_C1_SetState(my_id, C1_St_state);
++	                L_P1__Effec1(my_id);				
++	                L_P1_C1_SetResponse(my_id, LDS_SCHED_DONE);
++	            }
++	            else
+ 	                { } // fine transizioni da state nella fase LDS_PHASE_MANUAL
+ 	            break;
+@@ -177,10 +197,4 @@
+ 
+         case C1_St_state:
+-            if (L_P1__Guard1(my_id)) {
+-                L_P1_C1_SetState(my_id, C1_St_state);
+-                L_P1__Effec1(my_id);				
+-                L_P1_C1_SetResponse(my_id, LDS_SCHED_WAIT);
+-            }
+-            else
+                 {STOP_EXECUTION(LOGIC_ERROR); } // fine transizioni da state nella fase LDS_PHASE_STATE
+             break;

@@ -1,0 +1,11 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-commando-piazzale\out\Python\Stazione\LdS\Logica\LDS_MainClass_C1.py
+@@ -129,5 +129,8 @@
+         self.memory.set_var(self.station_name,self.name,self.instance_name,"lds_mainclass_c1_comando_c7",lds_mainclass_c1_comando_c7)
+ 
++    def set_nabcc_mainclass_c1_comando_c5(self, nabcc_mainclass_c1_comando_c5):
++        self.memory.set_var(self.station_name,self.name,self.instance_name,"nabcc_mainclass_c1_comando_c5",nabcc_mainclass_c1_comando_c5)
+ 
++
+     # getters for controlli dal piazzale
+     def get_lds_mainclass_c1_controllo_c10(self):

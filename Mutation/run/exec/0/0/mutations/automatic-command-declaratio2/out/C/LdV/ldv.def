@@ -1,0 +1,4 @@
+LIBRARY ldv
+EXPORTS
+ldv_LogicInit
+ldv_LogicExec

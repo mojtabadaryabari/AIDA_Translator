@@ -1,0 +1,8 @@
+--- C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\original\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
++++ C:\Users\thesi\GitLab\nabucco\run\.\exec\0\0\mutations\definizione-commando-piazzale\out\C\LdS\Stazione\src\Logica\ClasseLDS_MainClass_C1.c
+@@ -248,4 +248,5 @@
+     L_P1__SetOutLds_m1(my_id, gialloxverd);
+     L_P1__SetOutLds_m2(my_id, true);
++    L_P1__SetOutNabcc(my_id, verde);
+ }
+ 
