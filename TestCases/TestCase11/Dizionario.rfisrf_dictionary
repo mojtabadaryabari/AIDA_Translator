@@ -1,0 +1,14 @@
+Dizionario del progetto TestCase11
+{ Alias {
+	Stazione {
+		LdS { 
+			MainClass_C1 { MainClass_C1 }
+			SubClass_C2 { SubClass_C2 }
+			SubClass_C3 { SubClass_C3 }
+			SubClass_C4 { SubClass_C4 }
+
+			
+			}
+		LdV { }
+	}
+	} Identificatori { Stazione { LdS { } LdV { } } } }

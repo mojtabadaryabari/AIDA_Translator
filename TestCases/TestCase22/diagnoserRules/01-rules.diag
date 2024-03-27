@@ -1,0 +1,11 @@
+// Regole di diagnostica globali, non editare
+
+nelle transizioni imposta :
+- abilitata a falsa
+dove :
+- la fase è in {automatica}
+
+nelle verifiche imposta :
+- abilitata a falsa
+dove :
+- la categoria delle variabili è in {parametro}

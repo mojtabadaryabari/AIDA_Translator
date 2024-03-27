@@ -1,0 +1,9 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{30}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p1,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p10,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p4,Enumerator:Enumerator_1,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p8,BasicType:Boolean,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p9,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,44,comando manuale leggero,eventMainclass_c1_command_comm10,,pubblico,si,,,{45}
+classe,Stazione.LdS,1,MainClass_C1,45,risposta comando manuale,eventMainclass_c1_command_comm10_response,CommandReponse:Enum_response,privato,si,,,{44}

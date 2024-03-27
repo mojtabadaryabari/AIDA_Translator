@@ -1,0 +1,12 @@
+Dizionario del progetto TestCase13
+{ Alias {
+	Stazione {
+		LdS { 
+			MainClass_C1 { MainClass_C1 }
+
+
+			
+			}
+		LdV { }
+	}
+	} Identificatori { Stazione { LdS { } LdV { } } } }

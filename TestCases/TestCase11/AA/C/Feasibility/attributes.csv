@@ -1,0 +1,28 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{34}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p1,Enumerator:Enumerator_1,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p2,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p9,BasicType:Boolean,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,46,comando manuale leggero,eventMainclass_c1_command_comm10,,pubblico,si,,,{47}
+classe,Stazione.LdS,1,MainClass_C1,48,comando manuale leggero,eventMainclass_c1_command_comm3DaSender216acb09,,pubblico,si,,,{49}
+classe,Stazione.LdS,1,MainClass_C1,50,comando manuale leggero,eventMainclass_c1_command_comm5,,pubblico,si,,,{51}
+classe,Stazione.LdS,1,MainClass_C1,52,comando manuale leggero,eventMainclass_c1_command_comm7,,pubblico,si,,,{53}
+classe,Stazione.LdS,1,MainClass_C1,47,risposta comando manuale,eventMainclass_c1_command_comm10_response,CommandReponse:Enum_response,privato,si,,,{46}
+classe,Stazione.LdS,1,MainClass_C1,49,risposta comando manuale,eventMainclass_c1_command_comm3DaSender216acb09_response,CommandReponse:Enum_response,privato,si,,,{48}
+classe,Stazione.LdS,1,MainClass_C1,51,risposta comando manuale,eventMainclass_c1_command_comm5_response,CommandReponse:Enum_response,privato,si,,,{50}
+classe,Stazione.LdS,1,MainClass_C1,53,risposta comando manuale,eventMainclass_c1_command_comm7_response,CommandReponse:Enum_response,privato,si,,,{52}
+classe,Stazione.LdS,2,SubClass_C2,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p3,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p6,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,3,SubClass_C3,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p10,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p4,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p5,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p7,BasicType:Boolean,pubblico,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p8,Enumerator:Enumerator_3,privato,no,,,
+classe,Stazione.LdS,3,SubClass_C3,39,comando manuale pesante,eventSubclass_c3_command_comm4DaSender41f3f0dc,,pubblico,si,,,{40}
+classe,Stazione.LdS,3,SubClass_C3,40,risposta comando manuale,eventSubclass_c3_command_comm4DaSender41f3f0dc_response,CommandReponse:Enum_response,privato,si,,,{39}
+classe,Stazione.LdS,4,SubClass_C4,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,4,SubClass_C4,,parametro locale,subclass_c4_parametro_p1,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,4,SubClass_C4,,parametro locale,subclass_c4_parametro_p2,BasicType:Boolean,pubblico,no,,,
+classe,Stazione.LdS,4,SubClass_C4,,parametro locale,subclass_c4_parametro_p9,BasicType:Integer,privato,no,,,

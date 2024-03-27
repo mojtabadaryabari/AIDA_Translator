@@ -1,0 +1,10 @@
+Dizionario del progetto TestCase9
+{ Alias {
+	Stazione {
+		LdS { 
+			MainClass_C1 { MainClass_C1 }
+
+			}
+		LdV { }
+	}
+	} Identificatori { Stazione { LdS { } LdV { } } } }

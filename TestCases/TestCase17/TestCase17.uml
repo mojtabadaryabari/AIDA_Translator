@@ -1,0 +1,2077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:CHESSViews="http://CHESS/Core/Views" xmlns:Core="http://CHESS/Core" xmlns:RFI-ACC="http://RFI-ACC" xmlns:StateMachines="http://CHESS/StateMachines" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://CHESS/Core/Views http://CHESS/Core#//CHESSViews">
+  <uml:Model xmi:id="_85E_sL6zEe6KbbyE8MMJSg" name="model">
+    <packagedElement xmi:type="uml:Package" xmi:id="_89j3EL6zEe6KbbyE8MMJSg" name="modelRequirementView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-YWcL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-YWcb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-YWcr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-YWc76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_89oIgL6zEe6KbbyE8MMJSg" name="modelSystemView">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JTeq4L60Ee6KbbyE8MMJSg" name="GlobalTypes">
+        <packagedElement xmi:type="uml:Class" xmi:id="_JUORwb60Ee6KbbyE8MMJSg" name="Timer">
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_NpHOYL60Ee6KbbyE8MMJSg" name="redefinableTemplateSignature" parameter="_NpHOYb60Ee6KbbyE8MMJSg">
+            <ownedParameter xmi:type="uml:TemplateParameter" xmi:id="_NpHOYb60Ee6KbbyE8MMJSg" default="_NpHOYr60Ee6KbbyE8MMJSg" parameteredElement="_NpHOYr60Ee6KbbyE8MMJSg">
+              <ownedParameteredElement xmi:type="uml:LiteralString" xmi:id="_NpHOYr60Ee6KbbyE8MMJSg" name="Duration" templateParameter="_NpHOYb60Ee6KbbyE8MMJSg" value="0"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JUQG9b60Ee6KbbyE8MMJSg" name="stato" visibility="private" type="_JUQG8L60Ee6KbbyE8MMJSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUO41b60Ee6KbbyE8MMJSg" name="decrementaValore"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUO41r60Ee6KbbyE8MMJSg" name="attiva"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUPf4L60Ee6KbbyE8MMJSg" name="disattiva"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUPf4b60Ee6KbbyE8MMJSg" name="resettaValore"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUPf4r60Ee6KbbyE8MMJSg" name="isDisattivato"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUPf4760Ee6KbbyE8MMJSg" name="isScaduto"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUPf5L60Ee6KbbyE8MMJSg" name="isAttivato"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_JUQG8L60Ee6KbbyE8MMJSg" name="TimerState">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUQG8b60Ee6KbbyE8MMJSg" name="Disattivo"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUQG8r60Ee6KbbyE8MMJSg" name="Attivo"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUQG8760Ee6KbbyE8MMJSg" name="Scaduto"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JUewcL60Ee6KbbyE8MMJSg" name="Counter">
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_NpUpwL60Ee6KbbyE8MMJSg" name="redefinableTemplateSignature" parameter="_NpUpwb60Ee6KbbyE8MMJSg">
+            <ownedParameter xmi:type="uml:TemplateParameter" xmi:id="_NpUpwb60Ee6KbbyE8MMJSg" default="_NpUpwr60Ee6KbbyE8MMJSg" parameteredElement="_NpUpwr60Ee6KbbyE8MMJSg">
+              <ownedParameteredElement xmi:type="uml:LiteralString" xmi:id="_NpUpwr60Ee6KbbyE8MMJSg" name="initialValue" templateParameter="_NpUpwb60Ee6KbbyE8MMJSg" value="0"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUfXhL60Ee6KbbyE8MMJSg" name="decrementa"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUfXhb60Ee6KbbyE8MMJSg" name="incrementa"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_JUfXhr60Ee6KbbyE8MMJSg" name="resetta"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JUjo8L60Ee6KbbyE8MMJSg" name="CommandResponse"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_JUk3EL60Ee6KbbyE8MMJSg" name="Enum_response">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUk3Eb60Ee6KbbyE8MMJSg" name="LDS_MANCMD_NOOP"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUk3Er60Ee6KbbyE8MMJSg" name="LDS_MANCMD_PROCESSED"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUk3E760Ee6KbbyE8MMJSg" name="LDS_MANCMD_UNEXPECTED"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JUleIL60Ee6KbbyE8MMJSg" name="LDS_MANCMD_BLOCKED"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JTf5Ab60Ee6KbbyE8MMJSg" name="Stazione">
+        <packagedElement xmi:type="uml:Package" xmi:id="_JThuML60Ee6KbbyE8MMJSg" name="LdS">
+          <packagedElement xmi:type="uml:Package" xmi:id="_JThuMr60Ee6KbbyE8MMJSg" name="Viste"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_JThuNL60Ee6KbbyE8MMJSg" name="Logica">
+            <packagedElement xmi:type="uml:Package" xmi:id="_JT0pIL60Ee6KbbyE8MMJSg" name="MainClass_C1">
+              <packagedElement xmi:type="uml:Package" xmi:id="_JT1QML60Ee6KbbyE8MMJSg" name="Types">
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_NozFUL60Ee6KbbyE8MMJSg" name="Enumerator_0">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NozsYL60Ee6KbbyE8MMJSg" name="c270x"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NozsYb60Ee6KbbyE8MMJSg" name="giallox"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_No0TcL60Ee6KbbyE8MMJSg" name="Enumerator_1">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No0Tcb60Ee6KbbyE8MMJSg" name="c120"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No06gL60Ee6KbbyE8MMJSg" name="c75giallo"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_No1hkL60Ee6KbbyE8MMJSg" name="Enumerator_2">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No1hkb60Ee6KbbyE8MMJSg" name="rossoverde"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No1hkr60Ee6KbbyE8MMJSg" name="ac"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_No2IoL60Ee6KbbyE8MMJSg" name="Enumerator_3">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No2Iob60Ee6KbbyE8MMJSg" name="avviox"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No2Ior60Ee6KbbyE8MMJSg" name="c120x"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_No2vsb60Ee6KbbyE8MMJSg" name="Enumerator_4">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No3WwL60Ee6KbbyE8MMJSg" name="rossogialloverde"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No3Wwb60Ee6KbbyE8MMJSg" name="avanzamento"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Enumeration" xmi:id="_No3Ww760Ee6KbbyE8MMJSg" name="Stateenumerator">
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No390L60Ee6KbbyE8MMJSg" name="state1"/>
+                  <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_No390b60Ee6KbbyE8MMJSg" name="StatoIniziale"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_JT1QMb60Ee6KbbyE8MMJSg" name="Events">
+                <packagedElement xmi:type="uml:CallEvent" xmi:id="_NpXtEL60Ee6KbbyE8MMJSg" name="eventMainclass_c1_command_comm10" operation="_NpXGAb60Ee6KbbyE8MMJSg"/>
+                <packagedElement xmi:type="uml:CallEvent" xmi:id="_NpYUIr60Ee6KbbyE8MMJSg" name="eventMainclass_c1_command_comm3" operation="_NpYUIL60Ee6KbbyE8MMJSg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_JT13QL60Ee6KbbyE8MMJSg" name="MainClass_C1">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No8PQL60Ee6KbbyE8MMJSg" name="consdef" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No82UL60Ee6KbbyE8MMJSg" name="mainclass_c1_comando_c2" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No82Ur60Ee6KbbyE8MMJSg" name="mainclass_c1_comando_c3" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No9dYL60Ee6KbbyE8MMJSg" name="mainclass_c1_comando_c6" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No9dYr60Ee6KbbyE8MMJSg" name="mainclass_c1_comando_c7" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No-EcL60Ee6KbbyE8MMJSg" name="mainclass_c1_comando_c9" visibility="private" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No-Ecr60Ee6KbbyE8MMJSg" name="mainclass_c1_controllo_c10" visibility="private" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No-rgL60Ee6KbbyE8MMJSg" name="mainclass_c1_controllo_c4" visibility="private" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No-rgr60Ee6KbbyE8MMJSg" name="mainclass_c1_controllo_c5" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No_Skb60Ee6KbbyE8MMJSg" name="mainclass_c1_parametro_p1" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No_Sk760Ee6KbbyE8MMJSg" name="mainclass_c1_parametro_p10" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No_5oL60Ee6KbbyE8MMJSg" name="mainclass_c1_parametro_p4" visibility="public" type="_No0TcL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No_5or60Ee6KbbyE8MMJSg" name="mainclass_c1_parametro_p8" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_No_5pL60Ee6KbbyE8MMJSg" name="mainclass_c1_parametro_p9" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpAgsL60Ee6KbbyE8MMJSg" name="mainclass_c1_previousco_c8" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpAgsr60Ee6KbbyE8MMJSg" name="mainclass_c1_previousco_c8_prev" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpBHwL60Ee6KbbyE8MMJSg" name="mainclass_c1_previousva_pv1" visibility="private" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpBHwr60Ee6KbbyE8MMJSg" name="mainclass_c1_previousva_pv1_prev" visibility="private" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpBu0L60Ee6KbbyE8MMJSg" name="mainclass_c1_previousva_pv2" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpBu0r60Ee6KbbyE8MMJSg" name="mainclass_c1_previousva_pv2_prev" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpCV4L60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv1" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpCV4r60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv1_restore" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpC88b60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv2" visibility="protected" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpDkAL60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv2_restore" visibility="protected" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpDkAr60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv3" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpDkBL60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv3_restore" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpELEb60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv4" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpELE760Ee6KbbyE8MMJSg" name="mainclass_c1_restoreva_rv4_restore" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpEyIb60Ee6KbbyE8MMJSg" name="mainclass_c1_variabile_v10" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpFZML60Ee6KbbyE8MMJSg" name="mainclass_c1_variabile_v2" visibility="protected" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpFZMr60Ee6KbbyE8MMJSg" name="mainclass_c1_variabile_v3" visibility="protected" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpGAQL60Ee6KbbyE8MMJSg" name="mainclass_c1_variabile_v8" visibility="protected">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpGAQr60Ee6KbbyE8MMJSg" name="mainclass_c1_variabile_v9" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpGnUL60Ee6KbbyE8MMJSg" name="stato" visibility="protected" type="_No3Ww760Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpGnUr60Ee6KbbyE8MMJSg" name="stato_restore" visibility="protected" type="_No3Ww760Ee6KbbyE8MMJSg"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpH1cL60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti1" visibility="private" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpJDkb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="5421000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpJDk760Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti1_restore" visibility="private" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpJDlL60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="5421000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpKRsL60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti2" visibility="private" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpK4wb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="33000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpLf0b60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti2_restore" visibility="private" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpLf0r60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="33000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpMG4L60Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti3" visibility="public" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpNVAb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="40000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpNVA760Ee6KbbyE8MMJSg" name="mainclass_c1_restoreti_ti3_restore" visibility="protected" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpNVBL60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="40000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpN8Eb60Ee6KbbyE8MMJSg" name="mainclass_c1_timer_t1" visibility="public" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpPKMb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="2000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpPKM760Ee6KbbyE8MMJSg" name="mainclass_c1_timer_t4" visibility="public" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpPxQb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="354000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpQYUb60Ee6KbbyE8MMJSg" name="mainclass_c1_timer_t5" visibility="public" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpQ_Yb60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="1000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpRmcb60Ee6KbbyE8MMJSg" name="mainclass_c1_timer_t8" visibility="protected" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpS0kL60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="32130000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpS0kr60Ee6KbbyE8MMJSg" name="mainclass_c1_timer_t9" visibility="public" type="_JUORwb60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpUCsL60Ee6KbbyE8MMJSg" name="Duration" type="_JUORwb60Ee6KbbyE8MMJSg" value="55000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpUpw760Ee6KbbyE8MMJSg" name="mainclass_c1_contatore_co2" visibility="public" type="_JUewcL60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpVQ0b60Ee6KbbyE8MMJSg" name="initialValue" type="_JUewcL60Ee6KbbyE8MMJSg" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpV34b60Ee6KbbyE8MMJSg" name="mainclass_c1_contatore_co5" visibility="public" type="_JUewcL60Ee6KbbyE8MMJSg">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_NpWe8b60Ee6KbbyE8MMJSg" name="initialValue" type="_JUewcL60Ee6KbbyE8MMJSg" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_NpXtEb60Ee6KbbyE8MMJSg" name="eventMainclass_c1_command_comm10_response" visibility="private" type="_JUjo8L60Ee6KbbyE8MMJSg"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpY7Mb60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m3_behavior" specification="_NpYUI760Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body> &#xD;
+{ /*34,*/  se lo stato  è  uguale a  /*53,*/  state1  /*106,*/ /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 è  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non è  minore di  /*55,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 è  minore di  /*55,*/ 10 /*34,*/ o  se il parametro MainClass_C1_parametro_P10 è  uguale a  /*53,*/ 5,  Applica gli effetti&#xD;
+       della macro MainClass_C1_macroef_M8( con argomento_af3   uguale a c75Giallo ,argomento_af8   uguale a c75Giallo ) /*73,*/&#xD;
+&#xD;
+   &#xD;
+  se il controllo ConsDef è uguale a FALSE , /*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True &#xD;
+&#xD;
+   &#xD;
+  se il controllo ConsDef  è  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 è  minore di  /*55,*/ 154 o  se il controllo ConsDef  è  uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T4 non è attivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 non è  minore di  /*55,*/ 1221, /*68,*/Attiva il timer MainClass_C1_timer_T8&#xD;
+&#xD;
+   &#xD;
+&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroEffettiDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macroef_m3&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;body>&#xD;
+    &lt;statements xsi:type=&quot;ASTElements_1:ITStatement&quot; text=&quot;/*34,*/  se lo stato  &amp;#xe8;  uguale a  /*53,*/  state1  /*106,*/ /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  minore di  /*55,*/ 10 /*34,*/ o  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  uguale a  /*53,*/ 5,  Applica gli effetti&amp;#xD;&amp;#xA;       della macro MainClass_C1_macroef_M8( con argomento_af3   uguale a c75Giallo ,argomento_af8   uguale a c75Giallo )&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*34,*/  se lo stato  &amp;#xe8;  uguale a  /*53,*/  state1  /*106,*/ /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  minore di  /*55,*/ 10 /*34,*/ o  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  uguale a  /*53,*/ 5&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*34,*/  se lo stato  &amp;#xe8;  uguale a  /*53,*/  state1  /*106,*/ /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  minore di  /*55,*/ 10&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;lo stato  &amp;#xe8;  uguale a  /*53,*/  state1&quot;>&#xD;
+            &lt;left xsi:type=&quot;ASTElements:StateGetter&quot; text=&quot;lo stato&quot;>&#xD;
+              &lt;instance xsi:type=&quot;ASTElements_1:Variable&quot;>&#xD;
+                &lt;ctx/>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+              &lt;/instance>&#xD;
+            &lt;/left>&#xD;
+            &lt;right xsi:type=&quot;ASTElements_1:StateLiteral&quot; text=&quot;/*53,*/  state1&quot;>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;state1&quot;/>&#xD;
+            &lt;/right>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  minore di  /*55,*/ 10&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2&quot;>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  uguale a  /*53,*/ 123&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:Counter&quot; text=&quot;contatore MainClass_C1_contatore_Co5&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_contatore_co5&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*53,*/ 123&quot; value=&quot;123&quot;/>&#xD;
+              &lt;/operands>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 2&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+                  &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V10&quot;>&#xD;
+                    &lt;ctx>&#xD;
+                      &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                    &lt;/ctx>&#xD;
+                    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v10&quot;/>&#xD;
+                  &lt;/left>&#xD;
+                  &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 2&quot; value=&quot;2&quot;/>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/operands>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:LessThan&quot; text=&quot;il parametro MainClass_C1_parametro_P10 &amp;#xe8;  minore di  /*55,*/ 10&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P10&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p10&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 10&quot; value=&quot;10&quot;/>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il parametro MainClass_C1_parametro_P10 &amp;#xe8;  uguale a  /*53,*/ 5&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P10&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p10&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*53,*/ 5&quot; value=&quot;5&quot;/>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:MacroCallEffetti&quot; text=&quot;Applica gli effetti&amp;#xD;&amp;#xA;       della macro MainClass_C1_macroef_M8( con argomento_af3   uguale a c75Giallo ,argomento_af8   uguale a c75Giallo )&quot;>&#xD;
+          &lt;macro>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macroef_m8&quot;/>&#xD;
+          &lt;/macro>&#xD;
+          &lt;args>&#xD;
+            &lt;key>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_af3&quot;/>&#xD;
+            &lt;/key>&#xD;
+            &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+            &lt;/value>&#xD;
+          &lt;/args>&#xD;
+          &lt;args>&#xD;
+            &lt;key>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_af8&quot;/>&#xD;
+            &lt;/key>&#xD;
+            &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+            &lt;/value>&#xD;
+          &lt;/args>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/statements>&#xD;
+    &lt;statements xsi:type=&quot;ASTElements_1:ITStatement&quot; text=&quot;/*73,*/&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;   &amp;#xD;&amp;#xA;  se il controllo ConsDef &amp;#xe8; uguale a FALSE , /*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il controllo ConsDef &amp;#xe8; uguale a FALSE&quot;>&#xD;
+        &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo ConsDef&quot;>&#xD;
+          &lt;ctx>&#xD;
+            &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+          &lt;/ctx>&#xD;
+          &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;consdef&quot;/>&#xD;
+        &lt;/left>&#xD;
+        &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;FALSE&quot;/>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements_1:AssignStatement&quot; text=&quot;/*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True&quot;>&#xD;
+          &lt;rhs xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+          &lt;lhs xsi:type=&quot;ASTElements:PlantCommand&quot; text=&quot;comando MainClass_C1_comando_C2&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_comando_c2&quot;/>&#xD;
+          &lt;/lhs>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/statements>&#xD;
+    &lt;statements xsi:type=&quot;ASTElements_1:ITStatement&quot; text=&quot;se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154 o  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T4 non &amp;#xe8; attivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 non &amp;#xe8;  minore di  /*55,*/ 1221, /*68,*/Attiva il timer MainClass_C1_timer_T8&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154 o  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T4 non &amp;#xe8; attivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 non &amp;#xe8;  minore di  /*55,*/ 1221&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154 o  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T4 non &amp;#xe8; attivo&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154 o  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se il controllo ConsDef  &amp;#xe8;  uguale a FALSE  /*38,*/ o  se il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154&quot;>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il controllo ConsDef  &amp;#xe8;  uguale a FALSE&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo ConsDef&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;consdef&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;FALSE&quot;/>&#xD;
+              &lt;/operands>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:LessThan&quot; text=&quot;il contatore MainClass_C1_contatore_Co5 &amp;#xe8;  minore di  /*55,*/ 154&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:Counter&quot; text=&quot;contatore MainClass_C1_contatore_Co5&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_contatore_co5&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 154&quot; value=&quot;154&quot;/>&#xD;
+              &lt;/operands>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il controllo ConsDef  &amp;#xe8;  uguale a FALSE&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo ConsDef&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;consdef&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;FALSE&quot;/>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il timer MainClass_C1_timer_T4 non &amp;#xe8; attivo&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements:TimerIsActive&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t4&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il contatore MainClass_C1_contatore_Co5 non &amp;#xe8;  minore di  /*55,*/ 1221&quot;>&#xD;
+          &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+            &lt;left xsi:type=&quot;ASTElements:Counter&quot; text=&quot;contatore MainClass_C1_contatore_Co5&quot;>&#xD;
+              &lt;ctx>&#xD;
+                &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+              &lt;/ctx>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_contatore_co5&quot;/>&#xD;
+            &lt;/left>&#xD;
+            &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 1221&quot; value=&quot;1221&quot;/>&#xD;
+          &lt;/expr>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:TimerActivate&quot; text=&quot;/*68,*/Attiva il timer MainClass_C1_timer_T8&quot;>&#xD;
+          &lt;object xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t8&quot;/>&#xD;
+          &lt;/object>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/statements>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroEffettiDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpY7NL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m4_behavior" specification="_NpY7Mr60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*34,*/  se il parametro MainClass_C1_parametro_P10 è  maggiore di  /*54,*/ 4 e  se il controllo ConsDef  è  uguale a FALSE ,  Applica gli effetti&#xD;
+       della macro MainClass_C1_macroef_M3   /*73,*/&#xD;
+&#xD;
+   &#xD;
+&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroEffettiDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macroef_m4&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;body>&#xD;
+    &lt;statements xsi:type=&quot;ASTElements_1:ITStatement&quot; text=&quot;/*34,*/  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 4 e  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE ,  Applica gli effetti&amp;#xD;&amp;#xA;       della macro MainClass_C1_macroef_M3&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*34,*/  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 4 e  se il controllo ConsDef  &amp;#xe8;  uguale a FALSE&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:GreaterThan&quot; text=&quot;il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 4&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P10&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p10&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*54,*/ 4&quot; value=&quot;4&quot;/>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il controllo ConsDef  &amp;#xe8;  uguale a FALSE&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo ConsDef&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;consdef&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;FALSE&quot;/>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:MacroCallEffetti&quot; text=&quot;Applica gli effetti&amp;#xD;&amp;#xA;       della macro MainClass_C1_macroef_M3&quot;>&#xD;
+          &lt;macro>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macroef_m3&quot;/>&#xD;
+          &lt;/macro>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/statements>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroEffettiDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpZiQL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m8_behavior" specification="_NpY7Nb60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{  se l'argomento argomento_af3 non  è  diverso da c75Giallo /*39,*/  /*38,*/ e  se il contatore MainClass_C1_contatore_Co2 non è  minore di  /*55,*/ 111 /*34,*/ o  se il parametro MainClass_C1_parametro_P8 è  diverso da  True  /*36,*/ o  se il timer MainClass_C1_timer_T5 è attivo, /*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True &#xD;
+&#xD;
+ ,altrimenti  /*68,*/Attiva il timer MainClass_C1_timer_T4&#xD;
+&#xD;
+&#xD;
+&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroEffettiDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macroef_m8&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_af3&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_af3&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_af8&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_af8&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body>&#xD;
+    &lt;statements xsi:type=&quot;ASTElements_1:ITEStatement&quot; text=&quot;se l'argomento argomento_af3 non  &amp;#xe8;  diverso da c75Giallo /*39,*/  /*38,*/ e  se il contatore MainClass_C1_contatore_Co2 non &amp;#xe8;  minore di  /*55,*/ 111 /*34,*/ o  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  diverso da  True  /*36,*/ o  se il timer MainClass_C1_timer_T5 &amp;#xe8; attivo, /*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True &amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; ,altrimenti  /*68,*/Attiva il timer MainClass_C1_timer_T4&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se l'argomento argomento_af3 non  &amp;#xe8;  diverso da c75Giallo /*39,*/  /*38,*/ e  se il contatore MainClass_C1_contatore_Co2 non &amp;#xe8;  minore di  /*55,*/ 111 /*34,*/ o  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  diverso da  True  /*36,*/ o  se il timer MainClass_C1_timer_T5 &amp;#xe8; attivo&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;se l'argomento argomento_af3 non  &amp;#xe8;  diverso da c75Giallo /*39,*/  /*38,*/ e  se il contatore MainClass_C1_contatore_Co2 non &amp;#xe8;  minore di  /*55,*/ 111 /*34,*/ o  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  diverso da  True&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;se l'argomento argomento_af3 non  &amp;#xe8;  diverso da c75Giallo /*39,*/  /*38,*/ e  se il contatore MainClass_C1_contatore_Co2 non &amp;#xe8;  minore di  /*55,*/ 111&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;l'argomento argomento_af3 non  &amp;#xe8;  diverso da c75Giallo&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:NotLogicOP&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+                  &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_af3&quot;>&#xD;
+                    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_af3&quot;/>&#xD;
+                  &lt;/left>&#xD;
+                  &lt;right xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+                    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+                  &lt;/right>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il contatore MainClass_C1_contatore_Co2 non &amp;#xe8;  minore di  /*55,*/ 111&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:Counter&quot; text=&quot;contatore MainClass_C1_contatore_Co2&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_contatore_co2&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 111&quot; value=&quot;111&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il parametro MainClass_C1_parametro_P8 &amp;#xe8;  diverso da  True&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P8&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p8&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements:TimerIsActive&quot; text=&quot;il timer MainClass_C1_timer_T5 &amp;#xe8; attivo&quot;>&#xD;
+          &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t5&quot;/>&#xD;
+          &lt;/expr>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements_1:AssignStatement&quot; text=&quot;/*66,*/ Assegna al comando MainClass_C1_comando_C2 il valore  True&quot;>&#xD;
+          &lt;rhs xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+          &lt;lhs xsi:type=&quot;ASTElements:PlantCommand&quot; text=&quot;comando MainClass_C1_comando_C2&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_comando_c2&quot;/>&#xD;
+          &lt;/lhs>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+      &lt;else>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:TimerActivate&quot; text=&quot;/*68,*/Attiva il timer MainClass_C1_timer_T4&quot;>&#xD;
+          &lt;object xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t4&quot;/>&#xD;
+          &lt;/object>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/else>&#xD;
+    &lt;/statements>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroEffettiDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpawYr60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m1_behavior" specification="_NpawYL60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*[*/&#xD;
+ /*46,*/ assegna alla macro il valore c75Giallo /*],*/&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroValorizzataDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrova_m1&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_a6&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a6&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a9&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a9&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a10&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a10&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body text=&quot;{ /*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore c75Giallo /*],*/&amp;#xD;&amp;#xA;}&quot;>&#xD;
+    &lt;defaultCase text=&quot;/*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore c75Giallo&quot;>&#xD;
+      &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+        &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+      &lt;/value>&#xD;
+    &lt;/defaultCase>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroValorizzataDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Npclkr60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m4_behavior" specification="_NpclkL60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*[*/&#xD;
+ /*46,*/ assegna alla macro il valore c75Giallo /*],*/&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroValorizzataDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrova_m4&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_a5&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a5&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a3&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a3&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a8&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a8&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a2&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a2&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a4&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a4&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a1&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a1&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body text=&quot;{ /*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore c75Giallo /*],*/&amp;#xD;&amp;#xA;}&quot;>&#xD;
+    &lt;defaultCase text=&quot;/*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore c75Giallo&quot;>&#xD;
+      &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+        &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+      &lt;/value>&#xD;
+    &lt;/defaultCase>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroValorizzataDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Npfo4760Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m5_behavior" specification="_Npfo4b60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*[*/  se l'argomento argomento_a7 è  uguale a  False  /*39,*/  , assegna alla macro il valore c75Giallo&#xD;
+&#xD;
+ /*46,*/ assegna alla macro il valore c75Giallo /*],*/&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroValorizzataDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrova_m5&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_a7&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a7&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a6&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a6&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a9&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a9&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a10&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a10&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body text=&quot;{ /*[*/  se l'argomento argomento_a7 &amp;#xe8;  uguale a  False  /*39,*/  , assegna alla macro il valore c75Giallo&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore c75Giallo /*],*/&amp;#xD;&amp;#xA;}&quot;>&#xD;
+    &lt;defaultCase text=&quot;/*46,*/ assegna alla macro il valore c75Giallo&quot;>&#xD;
+      &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+        &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+      &lt;/value>&#xD;
+    &lt;/defaultCase>&#xD;
+    &lt;switchCases text=&quot;/*[*/  se l'argomento argomento_a7 &amp;#xe8;  uguale a  False  /*39,*/  , assegna alla macro il valore c75Giallo&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;l'argomento argomento_a7 &amp;#xe8;  uguale a  False&quot;>&#xD;
+        &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_a7&quot;>&#xD;
+          &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a7&quot;/>&#xD;
+        &lt;/left>&#xD;
+        &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;False&quot;/>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:ReturnStatement&quot; text=&quot;assegna alla macro il valore c75Giallo&quot;>&#xD;
+          &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;c75Giallo&quot;>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;c75giallo&quot;/>&#xD;
+          &lt;/value>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/switchCases>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroValorizzataDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpiFI760Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m6_behavior" specification="_NpiFIb60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 è scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 è  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 è  uguale a  False  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non è  minore di  /*55,*/ 7 /*110,*/ o  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non è disattivo /*34,*/ e  se lo stato  è  diverso da  /*56,*/  state1  /*106,*/ , assegna alla macro il valore  True &#xD;
+&#xD;
+ /*46,*/ assegna alla macro il valore  True  /*],*/&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroValorizzataDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrova_m6&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_a1&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a1&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a7&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a7&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body text=&quot;{ /*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 7 /*110,*/ o  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; disattivo /*34,*/ e  se lo stato  &amp;#xe8;  diverso da  /*56,*/  state1  /*106,*/ , assegna alla macro il valore  True &amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore  True  /*],*/&amp;#xD;&amp;#xA;}&quot;>&#xD;
+    &lt;defaultCase text=&quot;/*46,*/ assegna alla macro il valore  True&quot;>&#xD;
+      &lt;value xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+    &lt;/defaultCase>&#xD;
+    &lt;switchCases text=&quot;/*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 7 /*110,*/ o  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; disattivo /*34,*/ e  se lo stato  &amp;#xe8;  diverso da  /*56,*/  state1  /*106,*/ , assegna alla macro il valore  True&quot;>&#xD;
+      &lt;condition xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 7 /*110,*/ o  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; disattivo /*34,*/ e  se lo stato  &amp;#xe8;  diverso da  /*56,*/  state1&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 7&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2 /*34,*/ e  se il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*[*/ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2&quot;>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements:TimerIsExpired&quot; text=&quot;il ripristino del timer  MainClass_C1_restoreTI_TI2 &amp;#xe8; scaduto&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_restoreti_ti2_restore&quot;/>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/operands>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:GreaterThan&quot; text=&quot;il parametro MainClass_C1_parametro_P10 &amp;#xe8;  maggiore di  /*54,*/ 2&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P10&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p10&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*54,*/ 2&quot; value=&quot;2&quot;/>&#xD;
+              &lt;/operands>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;il parametro MainClass_C1_parametro_P8 &amp;#xe8;  uguale a  False&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P8&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p8&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;False&quot;/>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;la variabile MainClass_C1_variabile_V10 non &amp;#xe8;  minore di  /*55,*/ 7&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V10&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v10&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 7&quot; value=&quot;7&quot;/>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; disattivo /*34,*/ e  se lo stato  &amp;#xe8;  diverso da  /*56,*/  state1&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; disattivo&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements:TimerIsInactive&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_restoreti_ti1_restore&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;lo stato  &amp;#xe8;  diverso da  /*56,*/  state1&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements:StateGetter&quot; text=&quot;lo stato&quot;>&#xD;
+                &lt;instance xsi:type=&quot;ASTElements_1:Variable&quot;>&#xD;
+                  &lt;ctx/>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/instance>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:StateLiteral&quot;>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;state1&quot;/>&#xD;
+              &lt;/right>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/condition>&#xD;
+      &lt;then>&#xD;
+        &lt;statements xsi:type=&quot;ASTElements:ReturnStatement&quot; text=&quot;assegna alla macro il valore  True&quot;>&#xD;
+          &lt;value xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+        &lt;/statements>&#xD;
+      &lt;/then>&#xD;
+    &lt;/switchCases>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroValorizzataDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpjTQr60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m7_behavior" specification="_NpjTQL60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*[*/&#xD;
+ /*46,*/ assegna alla macro il valore AC /*],*/&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroValorizzataDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrova_m7&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args text=&quot;argomento_a5&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a5&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a3&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a3&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a8&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a8&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a2&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a2&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args text=&quot;argomento_a4&quot;>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_a4&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body text=&quot;{ /*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore AC /*],*/&amp;#xD;&amp;#xA;}&quot;>&#xD;
+    &lt;defaultCase text=&quot;/*[*/&amp;#xD;&amp;#xA; /*46,*/ assegna alla macro il valore AC&quot;>&#xD;
+      &lt;value xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;AC&quot;>&#xD;
+        &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;ac&quot;/>&#xD;
+      &lt;/value>&#xD;
+    &lt;/defaultCase>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroValorizzataDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpmWkL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrove_m10_behavior" specification="_Nplvgr60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*61,*/ /*37,*/  se la variabile MainClass_C1_variabile_V9 è  diverso da  False , Tutte le seguenti { &#xD;
+ /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non è scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 è attivo o  se l'argomento argomento_ave9 è  uguale a avanzamento /*39,*/  /*36,*/ o  se il timer MainClass_C1_timer_T8 non è disattivo, Verifica che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &#xD;
+ /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&#xD;
+ /*104,*/ e  che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&#xD;
+&#xD;
+&#xD;
+ } Verifica che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True  /*,*/ &#xD;
+ /*104,*/ o  che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&#xD;
+ /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False &#xD;
+ /*104,*/ o  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  diverso da  False &#xD;
+ /*104,*/ o  che   l'argomento argomento_ave6 sia  diverso da  True  /*39,*/ &#xD;
+&#xD;
+&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroVerificaDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrove_m10&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave6&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave9&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*61,*/ /*37,*/  se la variabile MainClass_C1_variabile_V9 &amp;#xe8;  diverso da  False , Tutte le seguenti { &amp;#xD;&amp;#xA; /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo o  se l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento /*39,*/  /*36,*/ o  se il timer MainClass_C1_timer_T8 non &amp;#xe8; disattivo, Verifica che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; } Verifica che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&amp;#xD;&amp;#xA; /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False &amp;#xD;&amp;#xA; /*104,*/ o  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  diverso da  False &amp;#xD;&amp;#xA; /*104,*/ o  che   l'argomento argomento_ave6 sia  diverso da  True&quot;>&#xD;
+    &lt;operands xsi:type=&quot;ASTElements_1:ImpliesLogicOp&quot; text=&quot;/*61,*/ /*37,*/  se la variabile MainClass_C1_variabile_V9 &amp;#xe8;  diverso da  False , Tutte le seguenti { &amp;#xD;&amp;#xA; /*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo o  se l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento /*39,*/  /*36,*/ o  se il timer MainClass_C1_timer_T8 non &amp;#xe8; disattivo, Verifica che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA; }&quot;>&#xD;
+      &lt;left xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;la variabile MainClass_C1_variabile_V9 &amp;#xe8;  diverso da  False&quot;>&#xD;
+        &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V9&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v9&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;False&quot;/>&#xD;
+        &lt;/expr>&#xD;
+      &lt;/left>&#xD;
+      &lt;right xsi:type=&quot;ASTElements_1:ImpliesLogicOp&quot; text=&quot;/*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo o  se l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento /*39,*/  /*36,*/ o  se il timer MainClass_C1_timer_T8 non &amp;#xe8; disattivo, Verifica che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&quot;>&#xD;
+        &lt;left xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo o  se l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento /*39,*/  /*36,*/ o  se il timer MainClass_C1_timer_T8 non &amp;#xe8; disattivo&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo o  se l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;/*110,*/  se il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto /*36,*/ o  se il timer MainClass_C1_timer_T4 &amp;#xe8; attivo&quot;>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il ripristino del timer  MainClass_C1_restoreTI_TI1 non &amp;#xe8; scaduto&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements:TimerIsExpired&quot;>&#xD;
+                  &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                    &lt;ctx>&#xD;
+                      &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                    &lt;/ctx>&#xD;
+                    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_restoreti_ti1_restore&quot;/>&#xD;
+                  &lt;/expr>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/operands>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements:TimerIsActive&quot; text=&quot;il timer MainClass_C1_timer_T4 &amp;#xe8; attivo&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t4&quot;/>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/operands>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;l'argomento argomento_ave9 &amp;#xe8;  uguale a avanzamento&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave9&quot;>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave9&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;avanzamento&quot;>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;avanzamento&quot;/>&#xD;
+              &lt;/right>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il timer MainClass_C1_timer_T8 non &amp;#xe8; disattivo&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements:TimerIsInactive&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t8&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/left>&#xD;
+        &lt;right xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave6 non  sia  uguale a  True&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave6&quot;>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave6&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che  /*,*/  la variabile MainClass_C1_variabile_V8 non sia  minore di  /*55,*/ 4&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V8&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v8&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 4&quot; value=&quot;4&quot;/>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements:TimerIsInactive&quot; text=&quot;che  /*,*/  il timer MainClass_C1_timer_T1 sia disattivo&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+              &lt;ctx>&#xD;
+                &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+              &lt;/ctx>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t1&quot;/>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/right>&#xD;
+      &lt;/right>&#xD;
+    &lt;/operands>&#xD;
+    &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&amp;#xD;&amp;#xA; /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False &amp;#xD;&amp;#xA; /*104,*/ o  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  diverso da  False &amp;#xD;&amp;#xA; /*104,*/ o  che   l'argomento argomento_ave6 sia  diverso da  True&quot;>&#xD;
+      &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&amp;#xD;&amp;#xA; /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False &amp;#xD;&amp;#xA; /*104,*/ o  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  diverso da  False&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True  /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&amp;#xD;&amp;#xA; /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;che   /*48,52,*/   l'argomento argomento_ave6 sia  uguale a  True&quot;>&#xD;
+            &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave6&quot;>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave6&quot;/>&#xD;
+            &lt;/left>&#xD;
+            &lt;right xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&amp;#xD;&amp;#xA; /*104,*/ e  che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che  /*,*/  il controllo MainClass_C1_controllo_C4 sia  diverso da avanzamento&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo MainClass_C1_controllo_C4&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_controllo_c4&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;avanzamento&quot;>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;avanzamento&quot;/>&#xD;
+                &lt;/right>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  uguale a  False&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo MainClass_C1_controllo_C5&quot;>&#xD;
+                &lt;ctx>&#xD;
+                  &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                &lt;/ctx>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_controllo_c5&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;False&quot;/>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che  /*35,*/  il controllo MainClass_C1_controllo_C5 sia  diverso da  False&quot;>&#xD;
+          &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+            &lt;left xsi:type=&quot;ASTElements:PlantControl&quot; text=&quot;controllo MainClass_C1_controllo_C5&quot;>&#xD;
+              &lt;ctx>&#xD;
+                &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+              &lt;/ctx>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_controllo_c5&quot;/>&#xD;
+            &lt;/left>&#xD;
+            &lt;right xsi:type=&quot;ASTElements_1:FalsePredicate&quot; text=&quot;False&quot;/>&#xD;
+          &lt;/expr>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/operands>&#xD;
+      &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che   l'argomento argomento_ave6 sia  diverso da  True&quot;>&#xD;
+        &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave6&quot;>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave6&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+        &lt;/expr>&#xD;
+      &lt;/operands>&#xD;
+    &lt;/operands>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroVerificaDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NpnksL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrove_m9_behavior" specification="_Npm9or60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+{ /*34,*/  se il parametro MainClass_C1_parametro_P1 è  diverso da  True , Verifica che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC /*,*/ &#xD;
+ /*104,*/ o  che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&#xD;
+ /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&#xD;
+ /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC /*39,*/ &#xD;
+ /*104,*/ o  che  /*37,*/  la variabile MainClass_C1_variabile_V10 non sia  minore di  /*55,*/ 2&#xD;
+&#xD;
+&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:MacroVerificaDefinition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/rfisrf/ast/&quot; xmlns:ASTElements_1=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;name>&#xD;
+    &lt;ctx/>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;macroMainclass_c1_macrove_m9&quot;/>&#xD;
+  &lt;/name>&#xD;
+  &lt;args>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave10&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;args>&#xD;
+    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave5&quot;/>&#xD;
+  &lt;/args>&#xD;
+  &lt;body xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;/*34,*/  se il parametro MainClass_C1_parametro_P1 &amp;#xe8;  diverso da  True , Verifica che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&amp;#xD;&amp;#xA; /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC /*39,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*37,*/  la variabile MainClass_C1_variabile_V10 non sia  minore di  /*55,*/ 2&quot;>&#xD;
+    &lt;operands xsi:type=&quot;ASTElements_1:ImpliesLogicOp&quot; text=&quot;/*34,*/  se il parametro MainClass_C1_parametro_P1 &amp;#xe8;  diverso da  True , Verifica che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&amp;#xD;&amp;#xA; /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC /*39,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*37,*/  la variabile MainClass_C1_variabile_V10 non sia  minore di  /*55,*/ 2&quot;>&#xD;
+      &lt;left xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;il parametro MainClass_C1_parametro_P1 &amp;#xe8;  diverso da  True&quot;>&#xD;
+        &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+          &lt;left xsi:type=&quot;ASTElements_1:Parameter&quot; text=&quot;parametro MainClass_C1_parametro_P1&quot;>&#xD;
+            &lt;ctx>&#xD;
+              &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+            &lt;/ctx>&#xD;
+            &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_parametro_p1&quot;/>&#xD;
+          &lt;/left>&#xD;
+          &lt;right xsi:type=&quot;ASTElements_1:TruePredicate&quot; text=&quot;True&quot;/>&#xD;
+        &lt;/expr>&#xD;
+      &lt;/left>&#xD;
+      &lt;right xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&amp;#xD;&amp;#xA; /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC /*39,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*37,*/  la variabile MainClass_C1_variabile_V10 non sia  minore di  /*55,*/ 2&quot;>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:OrLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC /*,*/ &amp;#xD;&amp;#xA; /*104,*/ o  che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&amp;#xD;&amp;#xA; /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC&quot;>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che   /*49,50,52,*/   l'argomento argomento_ave10 non  sia  diverso da AC&quot;>&#xD;
+            &lt;expr xsi:type=&quot;ASTElements_1:NotLogicOP&quot;>&#xD;
+              &lt;expr xsi:type=&quot;ASTElements_1:Equal&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave10&quot;>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave10&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;AC&quot;>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;ac&quot;/>&#xD;
+                &lt;/right>&#xD;
+              &lt;/expr>&#xD;
+            &lt;/expr>&#xD;
+          &lt;/operands>&#xD;
+          &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&amp;#xD;&amp;#xA; /*104,*/ e  che   l'argomento argomento_ave10 sia  uguale a AC&quot;>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:AndLogicOP&quot; text=&quot;che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&amp;#xD;&amp;#xA; /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&quot;>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che  /*,*/  il timer MainClass_C1_timer_T5 non sia disattivo&quot;>&#xD;
+                &lt;expr xsi:type=&quot;ASTElements:TimerIsInactive&quot;>&#xD;
+                  &lt;expr xsi:type=&quot;ASTElements:Timer&quot;>&#xD;
+                    &lt;ctx>&#xD;
+                      &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                    &lt;/ctx>&#xD;
+                    &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_timer_t5&quot;/>&#xD;
+                  &lt;/expr>&#xD;
+                &lt;/expr>&#xD;
+              &lt;/operands>&#xD;
+              &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;che  /*,*/  la variabile MainClass_C1_variabile_V10 sia  uguale a  /*53,*/ 2&quot;>&#xD;
+                &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V10&quot;>&#xD;
+                  &lt;ctx>&#xD;
+                    &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+                  &lt;/ctx>&#xD;
+                  &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v10&quot;/>&#xD;
+                &lt;/left>&#xD;
+                &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*53,*/ 2&quot; value=&quot;2&quot;/>&#xD;
+              &lt;/operands>&#xD;
+            &lt;/operands>&#xD;
+            &lt;operands xsi:type=&quot;ASTElements_1:Equal&quot; text=&quot;che   l'argomento argomento_ave10 sia  uguale a AC&quot;>&#xD;
+              &lt;left xsi:type=&quot;ASTElements:Argument&quot; text=&quot;argomento argomento_ave10&quot;>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;argomento_ave10&quot;/>&#xD;
+              &lt;/left>&#xD;
+              &lt;right xsi:type=&quot;ASTElements_1:SetLiteral&quot; text=&quot;AC&quot;>&#xD;
+                &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;ac&quot;/>&#xD;
+              &lt;/right>&#xD;
+            &lt;/operands>&#xD;
+          &lt;/operands>&#xD;
+        &lt;/operands>&#xD;
+        &lt;operands xsi:type=&quot;ASTElements_1:NotLogicOP&quot; text=&quot;che  /*37,*/  la variabile MainClass_C1_variabile_V10 non sia  minore di  /*55,*/ 2&quot;>&#xD;
+          &lt;expr xsi:type=&quot;ASTElements_1:LessThan&quot;>&#xD;
+            &lt;left xsi:type=&quot;ASTElements_1:Variable&quot; text=&quot;variabile MainClass_C1_variabile_V10&quot;>&#xD;
+              &lt;ctx>&#xD;
+                &lt;atoms xsi:type=&quot;ASTElements_1:SelfAtom&quot;/>&#xD;
+              &lt;/ctx>&#xD;
+              &lt;atom xsi:type=&quot;ASTElements_1:Attribute&quot; name=&quot;mainclass_c1_variabile_v10&quot;/>&#xD;
+            &lt;/left>&#xD;
+            &lt;right xsi:type=&quot;ASTElements_1:ConstInteger&quot; text=&quot;/*55,*/ 2&quot; value=&quot;2&quot;/>&#xD;
+          &lt;/expr>&#xD;
+        &lt;/operands>&#xD;
+      &lt;/right>&#xD;
+    &lt;/operands>&#xD;
+  &lt;/body>&#xD;
+&lt;/ASTElements:MacroVerificaDefinition>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Nq-PkL60Ee6KbbyE8MMJSg" name="StateMachine">
+                  <region xmi:type="uml:Region" xmi:id="_Nq-2oL60Ee6KbbyE8MMJSg" name="Region">
+                    <transition xmi:type="uml:Transition" xmi:id="_NrChAL60Ee6KbbyE8MMJSg" name="[StatoIniziale->State1]@initializationSheet/@initialization/@transitionTo.0" guard="_NrDIE760Ee6KbbyE8MMJSg" source="_NrBS4L60Ee6KbbyE8MMJSg" target="_NrAEwL60Ee6KbbyE8MMJSg">
+                      <ownedRule xmi:type="uml:Constraint" xmi:id="_NrDIE760Ee6KbbyE8MMJSg" name="guard_INITIALIZATION_StatoIniziale_state1_000">
+                        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NrDIFL60Ee6KbbyE8MMJSg">
+                          <language>CleanC</language>
+                          <language>CNL</language>
+                          <body>guard_INITIALIZATION_StatoIniziale_state1_000();</body>
+                          <body>&#xD;
+ {&#xD;
+ Nessuna &#xD;
+ }</body>
+                        </specification>
+                      </ownedRule>
+                      <effect xmi:type="uml:OpaqueBehavior" xmi:id="_NrDvIb60Ee6KbbyE8MMJSg" name="effect_INITIALIZATION_StatoIniziale_state1_000">
+                        <language>CleanC</language>
+                        <language>CNL</language>
+                        <body>effect_INITIALIZATION_StatoIniziale_state1_000();</body>
+                        <body>&#xD;
+ {&#xD;
+ Nessuna &#xD;
+ }</body>
+                      </effect>
+                    </transition>
+                    <transition xmi:type="uml:Transition" xmi:id="_NrDvIr60Ee6KbbyE8MMJSg" name="[State1->State1]@stateSheet.0/@permanence" guard="_NrE9Qb60Ee6KbbyE8MMJSg" source="_NrAEwL60Ee6KbbyE8MMJSg" target="_NrAEwL60Ee6KbbyE8MMJSg">
+                      <ownedRule xmi:type="uml:Constraint" xmi:id="_NrE9Qb60Ee6KbbyE8MMJSg" name="guard_PERMANENCE_state1_000">
+                        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NrE9Qr60Ee6KbbyE8MMJSg">
+                          <language>CleanC</language>
+                          <language>CNL</language>
+                          <body>guard_PERMANENCE_state1_000();</body>
+                          <body> &#xD;
+{&#xD;
+Nessuna&#xD;
+}</body>
+                        </specification>
+                      </ownedRule>
+                      <effect xmi:type="uml:OpaqueBehavior" xmi:id="_NrFkUL60Ee6KbbyE8MMJSg" name="effect_PERMANENCE_state1_000">
+                        <language>CleanC</language>
+                        <language>CNL</language>
+                        <body>effect_PERMANENCE_state1_000();</body>
+                        <body> &#xD;
+{&#xD;
+Nessuna&#xD;
+}</body>
+                      </effect>
+                    </transition>
+                    <subvertex xmi:type="uml:State" xmi:id="_NrAEwL60Ee6KbbyE8MMJSg" name="state1"/>
+                    <subvertex xmi:type="uml:Pseudostate" xmi:id="_NrBS4L60Ee6KbbyE8MMJSg" name="StatoIniziale"/>
+                  </region>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NrDIEb60Ee6KbbyE8MMJSg" name="guard_INITIALIZATION_StatoIniziale_state1_000_behavior" specification="_NrDIEL60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+ {&#xD;
+ Nessuna &#xD;
+ }</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:TransitionGuard xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;guard xsi:type=&quot;ASTElements:AndLogicOP&quot; text=&quot;Nessuna&quot;>&#xD;
+    &lt;operands xsi:type=&quot;ASTElements:TruePredicate&quot; text=&quot;Nessuna&quot;/>&#xD;
+  &lt;/guard>&#xD;
+&lt;/ASTElements:TransitionGuard>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NrDvIL60Ee6KbbyE8MMJSg" name="effect_INITIALIZATION_StatoIniziale_state1_000_behavior" specification="_NrDIFb60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body>&#xD;
+ {&#xD;
+ Nessuna &#xD;
+ }</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:TransitionEffect xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;statements/>&#xD;
+&lt;/ASTElements:TransitionEffect>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NrEWNb60Ee6KbbyE8MMJSg" name="guard_PERMANENCE_state1_000_behavior" specification="_NrEWNL60Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body> &#xD;
+{&#xD;
+Nessuna&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:TransitionGuard xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;guard xsi:type=&quot;ASTElements:AndLogicOP&quot; text=&quot;Nessuna&quot;>&#xD;
+    &lt;operands xsi:type=&quot;ASTElements:TruePredicate&quot; text=&quot;Nessuna&quot;/>&#xD;
+  &lt;/guard>&#xD;
+&lt;/ASTElements:TransitionGuard>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NrE9RL60Ee6KbbyE8MMJSg" name="effect_PERMANENCE_state1_000_behavior" specification="_NrE9Q760Ee6KbbyE8MMJSg">
+                  <language>CNL</language>
+                  <language>Srf-Ast</language>
+                  <body> &#xD;
+{&#xD;
+Nessuna&#xD;
+}</body>
+                  <body>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?>&#xD;
+&lt;ASTElements:TransitionEffect xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:ASTElements=&quot;http://www.fbk.eu/tools/ast/&quot;>&#xD;
+  &lt;statements/>&#xD;
+&lt;/ASTElements:TransitionEffect>&#xD;
+</body>
+                </ownedBehavior>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpXGAb60Ee6KbbyE8MMJSg" name="eventMainclass_c1_command_comm10" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpYUIL60Ee6KbbyE8MMJSg" name="eventMainclass_c1_command_comm3" visibility="public"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpYUI760Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m3" visibility="private" method="_NpY7Mb60Ee6KbbyE8MMJSg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpY7Mr60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m4" visibility="private" method="_NpY7NL60Ee6KbbyE8MMJSg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpY7Nb60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macroef_m8" visibility="private" method="_NpZiQL60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpZiQb60Ee6KbbyE8MMJSg" name="argomento_af3" type="_No0TcL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpaJUL60Ee6KbbyE8MMJSg" name="argomento_af8" type="_No0TcL60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpawYL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m1" visibility="private" method="_NpawYr60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpbXcL60Ee6KbbyE8MMJSg" name="return" type="_No0TcL60Ee6KbbyE8MMJSg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpbXcb60Ee6KbbyE8MMJSg" name="argomento_a10" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npb-gL60Ee6KbbyE8MMJSg" name="argomento_a6">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npb-gr60Ee6KbbyE8MMJSg" name="argomento_a9" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpclkL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m4" visibility="private" method="_Npclkr60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpdMoL60Ee6KbbyE8MMJSg" name="return" type="_No0TcL60Ee6KbbyE8MMJSg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpdMob60Ee6KbbyE8MMJSg" name="argomento_a1" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpdzsL60Ee6KbbyE8MMJSg" name="argomento_a2" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npdzsr60Ee6KbbyE8MMJSg" name="argomento_a3" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npeawb60Ee6KbbyE8MMJSg" name="argomento_a4" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpfB0L60Ee6KbbyE8MMJSg" name="argomento_a5" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpfB0r60Ee6KbbyE8MMJSg" name="argomento_a8" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Npfo4b60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m5" visibility="public" method="_Npfo4760Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpgP8L60Ee6KbbyE8MMJSg" name="return" type="_No0TcL60Ee6KbbyE8MMJSg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpgP8b60Ee6KbbyE8MMJSg" name="argomento_a10" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npg3Ab60Ee6KbbyE8MMJSg" name="argomento_a6" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpheEL60Ee6KbbyE8MMJSg" name="argomento_a7">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpheEr60Ee6KbbyE8MMJSg" name="argomento_a9" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpiFIb60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m6" visibility="public" method="_NpiFI760Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpiFJL60Ee6KbbyE8MMJSg" name="return" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpiFJb60Ee6KbbyE8MMJSg" name="argomento_a1">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpisMb60Ee6KbbyE8MMJSg" name="argomento_a7" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NpjTQL60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrova_m7" visibility="public" method="_NpjTQr60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpjTQ760Ee6KbbyE8MMJSg" name="return" type="_No1hkL60Ee6KbbyE8MMJSg" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npj6UL60Ee6KbbyE8MMJSg" name="argomento_a2" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpkhYL60Ee6KbbyE8MMJSg" name="argomento_a3" type="_No2IoL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpkhYr60Ee6KbbyE8MMJSg" name="argomento_a4" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NplIcL60Ee6KbbyE8MMJSg" name="argomento_a5" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NplvgL60Ee6KbbyE8MMJSg" name="argomento_a8" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Nplvgr60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrove_m10" visibility="private" method="_NpmWkL60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpmWkb60Ee6KbbyE8MMJSg" name="return" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpmWkr60Ee6KbbyE8MMJSg" name="argomento_ave6">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npm9oL60Ee6KbbyE8MMJSg" name="argomento_ave9" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_Npm9or60Ee6KbbyE8MMJSg" name="macroMainclass_c1_macrove_m9" visibility="private" method="_NpnksL60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npnksb60Ee6KbbyE8MMJSg" name="return" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_Npnksr60Ee6KbbyE8MMJSg" name="argomento_ave10" type="_No1hkL60Ee6KbbyE8MMJSg"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NpoLwL60Ee6KbbyE8MMJSg" name="argomento_ave5" type="_No2vsb60Ee6KbbyE8MMJSg"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NrDIEL60Ee6KbbyE8MMJSg" name="guard_INITIALIZATION_StatoIniziale_state1_000" visibility="private" method="_NrDIEb60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NrDIEr60Ee6KbbyE8MMJSg" name="return" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NrDIFb60Ee6KbbyE8MMJSg" name="effect_INITIALIZATION_StatoIniziale_state1_000" visibility="private" method="_NrDvIL60Ee6KbbyE8MMJSg"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NrEWNL60Ee6KbbyE8MMJSg" name="guard_PERMANENCE_state1_000" visibility="private" method="_NrEWNb60Ee6KbbyE8MMJSg">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_NrE9QL60Ee6KbbyE8MMJSg" name="return" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_NrE9Q760Ee6KbbyE8MMJSg" name="effect_PERMANENCE_state1_000" visibility="private" method="_NrE9RL60Ee6KbbyE8MMJSg"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_JTiVQb60Ee6KbbyE8MMJSg" name="LdV">
+          <packagedElement xmi:type="uml:Package" xmi:id="_JTiVQ760Ee6KbbyE8MMJSg" name="Viste"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_JTiVRb60Ee6KbbyE8MMJSg" name="Logica"/>
+        </packagedElement>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89sZ8L6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89sZ8b6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89tBAL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89tBAb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89tBAr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89tBA76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89tBBL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89tBBb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89toEL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89toEb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89toEr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89toE76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89toFL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89toFb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89uPIL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89uPIb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/SystemModel/STS#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_-aQIUKbREeSHP5PnCeTneg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-XvYL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-XvYb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-XvYr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-XvY76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-YWdL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-YWdb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-iHcL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-iHcb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-iugL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-iugb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-jVkL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-jVkb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-jVkr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-j8oL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-j8ob6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-j8or6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-kjsL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-kjsb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-lKwL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-lKwb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-lKwr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-lKw76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_89uPIr6zEe6KbbyE8MMJSg" name="modelComponentView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ygkL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ygkb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/ComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_MftccDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zHoL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zHob6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zHor6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zHo76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zHpL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zHpb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zHpr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zHp76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zusL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zusb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zusr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zus76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zutL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zutb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89zutr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89zut76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-Js8L6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-Js8b6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/GCM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YgAioAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-Js8r6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-Js876zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Alloc"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ar8OsAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-XIUL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-XIUb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_890VwL6zEe6KbbyE8MMJSg" name="modelDeploymentView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_894AIL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_894AIb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/DeploymentConfiguration/HardwareBaseline#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_1TsX8MCpEd-RT45s8cwWMg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_894nML6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_894nMb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_894nMr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_894nM76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_894nNL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_894nNb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_894nNr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_894nN76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_895OQL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_895OQb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_895OQr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_895OQ76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_895ORL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_895ORb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-KUAL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-KUAb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_2dtsgAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-K7EL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-K7Eb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_P80EcBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-K7Er6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-K7E76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwComputing"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_aMhZsBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-LiIL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-LiIb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwCommunication"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_bmL7UBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-LiIr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-LiI76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwTiming"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_dG2c0BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-LiJL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-LiJb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwDevice"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ja8REBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MJML6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MJMb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ZJjPoEIbEd6dmI2dd6jVFQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MJMr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MJM76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwMemory"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_gHI-ABJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MJNL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MJNb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwLogical/HwStorage/HwStorageManager"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_hst0sBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MJNr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MwQL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_R7sL8BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MwQb6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MwQr6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwLayout"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_uAf6gBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MwQ76zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MwRL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwPhysical/HwPower"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_vrbyUBJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-MwRb6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-MwRr6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/HRM/HwGeneral"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_WGZ44BJwEdygQ5HMNSpiZw"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-NXUL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-NXUb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/Alloc"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_ar8OsAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-NXUr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-NXU76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-NXVL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-NXVb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/GCM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_YgAioAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-N-YL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-N-Yb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-XIUr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-XIU76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/GRM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_XVWGUAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_895ORr6zEe6KbbyE8MMJSg" name="modelAnalysisView">
+      <packagedElement xmi:type="uml:Package" xmi:id="_89_U4L6zEe6KbbyE8MMJSg" name="modelDependabilityAnalysisView">
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89_U4b6zEe6KbbyE8MMJSg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89_U4r6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedAnalysis#/"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_Wgxh0L8_Ed-TL8tpOyViyA"/>
+        </profileApplication>
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89_U476zEe6KbbyE8MMJSg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89_78L6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+        </profileApplication>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_8-DmUL6zEe6KbbyE8MMJSg" name="modelRTAnalysisView">
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-QaoL6zEe6KbbyE8MMJSg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-Qaob6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/SAM"/>
+          </eAnnotations>
+          <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5ZCOIAPMEdyuUt-4qHuVvQ"/>
+        </profileApplication>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-RBsL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-RBsb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/GQAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_4bV20APMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8-Fbgb6zEe6KbbyE8MMJSg" name="modelPSMView">
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-RBsr6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-RBs76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_AnalysisModel/SAM"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_5ZCOIAPMEdyuUt-4qHuVvQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-RBtL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-RBtb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Concurrency"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_A_vtYBJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-RowL6zEe6KbbyE8MMJSg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-Rowb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_DesignModel/SRM/SW_Interaction"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_EIfnABJeEdy3Td9UhuLFPg"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_87Z68L6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_87aiAL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_EA6IcDcwEd-mWLzcI61s7Q"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89Y38L6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89Y38b6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Core#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_ad4owDgVEd-68Z_bhNRGsA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89Y38r6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89Y3876zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Core#//CHESSViews"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_FttqgMJDEd-0jpzjleFnug"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ZfAL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ZfAb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/FailurePropagation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_hdOrwLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ZfAr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ZfA76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_QgRZcMe6Ed-7etIj5eTw0Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_cE_bwLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89aGEL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89aGEb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedComponents#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_d50lQL86Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89atIL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89atIb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/FaultTolerance#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_mbqqgL86Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89atIr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89atI76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/MaintenanceMonitoring#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_oUVxcL88Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89atJL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89atJb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/StateBased/StateBasedAnalysis#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_Wgxh0L8_Ed-TL8tpOyViyA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89atJr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89atJ76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/DependableComponent#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_uNKOgDQ2EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89bUML6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89bUMb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Dependability/ThreatsPropagation#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_5g4wEDQ3EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89bUMr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89bUM76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS.Dependability/MitigationMeans#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_kJICMFiIEeGbwa2cK55fPQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89bUNL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89bUNb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_S2Uq0ce6Ed-7etIj5eTw0Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_nyQ7MLwzEd-CDNLmLgazUQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89b7QL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89b7Qb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/DeploymentConfiguration/HardwareBaseline#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_1TsX8MCpEd-RT45s8cwWMg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89b7Qr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89b7Q76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/RTComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_WgatoDgVEd-68Z_bhNRGsA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89b7RL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89b7Rb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Predictability/ARINCComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_GMlQEGwuEeWvYIaEJT1qow"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89b7Rr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89b7R76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/ComponentModel#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_MftccDQ2EeC0ueejuetpgA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ciUL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ciUb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/SystemModel/STS#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_-aQIUKbREeSHP5PnCeTneg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ciUr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ciU76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/Safety#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_f-f6oMvrEeSajLw6mg2A8Q"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ciVL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ciVb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/AsyncCommunication#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_iErvYKnlEeyLSfdLzsFShA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_89ciVr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89ciV76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://CHESS/StateMachines#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://CHESSML_PROFILE/CHESS.profile.uml#_gfWT0KnmEeyLSfdLzsFShA"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-N-Yr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-N-Y76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/NFPs"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_U_GAoAPMEdyuUt-4qHuVvQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-Rowr6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-Row76zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Foundations/CoreElements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_-wEewECLEd6UTJZnztgOLw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-UsEL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-UsEb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#//MARTE_Annexes/VSL/DataTypes"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_9FdqwA-MEdyLh7muGbCqMw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-lKxL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-lKxb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-pcML6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-pcMb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-tGkL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-ttoL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-x_EL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-x_Eb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-2QgL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-2Qgb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-5T0L6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-564L6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8-9lQL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8-9lQb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8_AokL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8_BPoL6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8_ES8L6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8_ES8b6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8_bfUL6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8_bfUb6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://RFI-ACC#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://RFI-ACC_PROFILE/rfiacc.profile.uml#_LL370BTCEemW1fIkJDjBiQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8_g-4L6zEe6KbbyE8MMJSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8_g-4b6zEe6KbbyE8MMJSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://RFI-ACC#//Testing"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://RFI-ACC_PROFILE/rfiacc.profile.uml#_yXuEsIDqEeu9XK_wpQaTGw"/>
+    </profileApplication>
+  </uml:Model>
+  <Core:CHESS xmi:id="_89ha0L6zEe6KbbyE8MMJSg" base_Model="_85E_sL6zEe6KbbyE8MMJSg" psmView="_8-HQsL6zEe6KbbyE8MMJSg">
+    <analysisView xmi:type="CHESSViews:AnalysisView" xmi:id="_897DcL6zEe6KbbyE8MMJSg" base_Package="_895ORr6zEe6KbbyE8MMJSg" depanalysisview="_8-BxIL6zEe6KbbyE8MMJSg">
+      <rtanalysisview xmi:type="CHESSViews:RTAnalysisView" xmi:id="_8-FbgL6zEe6KbbyE8MMJSg" base_Package="_8-DmUL6zEe6KbbyE8MMJSg"/>
+    </analysisView>
+    <deploymentView xmi:type="CHESSViews:DeploymentView" xmi:id="_892K8L6zEe6KbbyE8MMJSg" base_Package="_890VwL6zEe6KbbyE8MMJSg"/>
+    <requirementView xmi:type="CHESSViews:RequirementView" xmi:id="_89mTUL6zEe6KbbyE8MMJSg" base_Package="_89j3EL6zEe6KbbyE8MMJSg"/>
+    <componentView xmi:type="CHESSViews:ComponentView" xmi:id="_89wrYL6zEe6KbbyE8MMJSg" base_Package="_89uPIr6zEe6KbbyE8MMJSg"/>
+    <systemView xmi:type="CHESSViews:SystemView" xmi:id="_89qkwL6zEe6KbbyE8MMJSg" base_Package="_89oIgL6zEe6KbbyE8MMJSg"/>
+  </Core:CHESS>
+  <CHESSViews:DependabilityAnalysisView xmi:id="_8-BxIL6zEe6KbbyE8MMJSg" base_Package="_89_U4L6zEe6KbbyE8MMJSg"/>
+  <CHESSViews:PSMView xmi:id="_8-HQsL6zEe6KbbyE8MMJSg" base_Package="_8-Fbgb6zEe6KbbyE8MMJSg"/>
+  <RFI-ACC:GlobalTypesPackage xmi:id="_JTf5AL60Ee6KbbyE8MMJSg" base_Package="_JTeq4L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:PlantPackage xmi:id="_JTggEL60Ee6KbbyE8MMJSg" base_Package="_JTf5Ab60Ee6KbbyE8MMJSg" id="1"/>
+  <RFI-ACC:LdSPackage xmi:id="_JThuMb60Ee6KbbyE8MMJSg" base_Package="_JThuML60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ViewsPackage xmi:id="_JThuM760Ee6KbbyE8MMJSg" base_Package="_JThuMr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:LogicPackage xmi:id="_JTiVQL60Ee6KbbyE8MMJSg" base_Package="_JThuNL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:LdVPackage xmi:id="_JTiVQr60Ee6KbbyE8MMJSg" base_Package="_JTiVQb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ViewsPackage xmi:id="_JTiVRL60Ee6KbbyE8MMJSg" base_Package="_JTiVQ760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:LogicPackage xmi:id="_JTi8UL60Ee6KbbyE8MMJSg" base_Package="_JTiVRb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ClassPackage xmi:id="_JT1QMr60Ee6KbbyE8MMJSg" base_Package="_JT0pIL60Ee6KbbyE8MMJSg" containedClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <Blocks:Block xmi:id="_JT2eUL60Ee6KbbyE8MMJSg" base_Class="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CdLBlock xmi:id="_JT3FYL60Ee6KbbyE8MMJSg" base_Class="_JT13QL60Ee6KbbyE8MMJSg" id="1"/>
+  <Blocks:Block xmi:id="_JUO40L60Ee6KbbyE8MMJSg" base_Class="_JUORwb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:SpecialBlock xmi:id="_JUO40b60Ee6KbbyE8MMJSg" base_Class="_JUORwb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_JUQG9L60Ee6KbbyE8MMJSg" base_Enumeration="_JUQG8L60Ee6KbbyE8MMJSg" category="FSM" ownerClass="_JUORwb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_JUQuAL60Ee6KbbyE8MMJSg" category="FSM_LOCATION" base_Property="_JUQG9b60Ee6KbbyE8MMJSg" originalName="Timer"/>
+  <Blocks:Block xmi:id="_JUewcb60Ee6KbbyE8MMJSg" base_Class="_JUewcL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:SpecialBlock xmi:id="_JUfXgL60Ee6KbbyE8MMJSg" base_Class="_JUewcL60Ee6KbbyE8MMJSg" kind="COUNTER"/>
+  <Blocks:Block xmi:id="_JUkQAL60Ee6KbbyE8MMJSg" base_Class="_JUjo8L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:SpecialBlock xmi:id="_JUkQAb60Ee6KbbyE8MMJSg" base_Class="_JUjo8L60Ee6KbbyE8MMJSg" kind="COMMAND_RESPONSE"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_JUleIb60Ee6KbbyE8MMJSg" base_Enumeration="_JUk3EL60Ee6KbbyE8MMJSg" category="FSM" ownerClass="_JUjo8L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_NozsYr60Ee6KbbyE8MMJSg" base_Enumeration="_NozFUL60Ee6KbbyE8MMJSg" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_No06gb60Ee6KbbyE8MMJSg" base_Enumeration="_No0TcL60Ee6KbbyE8MMJSg" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_No1hk760Ee6KbbyE8MMJSg" base_Enumeration="_No1hkL60Ee6KbbyE8MMJSg" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_No2vsL60Ee6KbbyE8MMJSg" base_Enumeration="_No2IoL60Ee6KbbyE8MMJSg" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_No3Wwr60Ee6KbbyE8MMJSg" base_Enumeration="_No2vsb60Ee6KbbyE8MMJSg" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedEnum xmi:id="_No390r60Ee6KbbyE8MMJSg" base_Enumeration="_No3Ww760Ee6KbbyE8MMJSg" category="FSM" ownerClass="_JT13QL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No8PQb60Ee6KbbyE8MMJSg" category="CONTROL_VARIABLE" base_Property="_No8PQL60Ee6KbbyE8MMJSg" visible="true" safeValue="true" id="2" originalName="ConsDef"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No82Ub60Ee6KbbyE8MMJSg" category="COMMAND_VARIABLE" base_Property="_No82UL60Ee6KbbyE8MMJSg" visible="true" safeValue="false" id="3" originalName="mainclass_c1_comando_c2"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No82U760Ee6KbbyE8MMJSg" category="COMMAND_VARIABLE" base_Property="_No82Ur60Ee6KbbyE8MMJSg" visible="true" safeValue="false" id="4" originalName="mainclass_c1_comando_c3"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No9dYb60Ee6KbbyE8MMJSg" category="COMMAND_VARIABLE" base_Property="_No9dYL60Ee6KbbyE8MMJSg" visible="true" safeValue="false" id="5" originalName="mainclass_c1_comando_c6"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No9dY760Ee6KbbyE8MMJSg" category="COMMAND_VARIABLE" base_Property="_No9dYr60Ee6KbbyE8MMJSg" visible="true" safeValue="true" id="6" originalName="mainclass_c1_comando_c7"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No-Ecb60Ee6KbbyE8MMJSg" category="COMMAND_VARIABLE" base_Property="_No-EcL60Ee6KbbyE8MMJSg" visible="true" safeValue="ac" id="7" originalName="mainclass_c1_comando_c9"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No-Ec760Ee6KbbyE8MMJSg" category="CONTROL_VARIABLE" base_Property="_No-Ecr60Ee6KbbyE8MMJSg" visible="true" safeValue="c120x" id="8" originalName="MainClass_C1_controllo_C10"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No-rgb60Ee6KbbyE8MMJSg" category="CONTROL_VARIABLE" base_Property="_No-rgL60Ee6KbbyE8MMJSg" visible="true" safeValue="avanzamento" id="9" originalName="MainClass_C1_controllo_C4"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_SkL60Ee6KbbyE8MMJSg" category="CONTROL_VARIABLE" base_Property="_No-rgr60Ee6KbbyE8MMJSg" visible="true" safeValue="false" id="10" originalName="MainClass_C1_controllo_C5"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_Skr60Ee6KbbyE8MMJSg" category="LOCAL_PARAMETER" base_Property="_No_Skb60Ee6KbbyE8MMJSg" originalName="MainClass_C1_parametro_P1"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_SlL60Ee6KbbyE8MMJSg" category="LOCAL_PARAMETER" base_Property="_No_Sk760Ee6KbbyE8MMJSg" originalName="MainClass_C1_parametro_P10"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_5ob60Ee6KbbyE8MMJSg" category="LOCAL_PARAMETER" base_Property="_No_5oL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_parametro_P4"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_5o760Ee6KbbyE8MMJSg" category="LOCAL_PARAMETER" base_Property="_No_5or60Ee6KbbyE8MMJSg" originalName="MainClass_C1_parametro_P8"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_No_5pb60Ee6KbbyE8MMJSg" category="LOCAL_PARAMETER" base_Property="_No_5pL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_parametro_P9"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpAgsb60Ee6KbbyE8MMJSg" category="CONTROL_VARIABLE" base_Property="_NpAgsL60Ee6KbbyE8MMJSg" visible="true" safeValue="true" id="11" originalName="MainClass_C1_previousco_C8" references="_NpAgsr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpAgs760Ee6KbbyE8MMJSg" category="PREV_CONTROL_VARIABLE" base_Property="_NpAgsr60Ee6KbbyE8MMJSg" visible="true" id="12" originalName="mainclass_c1_previousco_c8" references="_NpAgsL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpBHwb60Ee6KbbyE8MMJSg" base_Property="_NpBHwL60Ee6KbbyE8MMJSg" visible="true" id="13" originalName="MainClass_C1_previousva_PV1" references="_NpBHwr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpBHw760Ee6KbbyE8MMJSg" category="PREV_STATE_VARIABLE" base_Property="_NpBHwr60Ee6KbbyE8MMJSg" visible="true" id="14" originalName="MainClass_C1_previousva_PV1" references="_NpBHwL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpBu0b60Ee6KbbyE8MMJSg" base_Property="_NpBu0L60Ee6KbbyE8MMJSg" visible="true" id="15" originalName="MainClass_C1_previousva_PV2" references="_NpBu0r60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpBu0760Ee6KbbyE8MMJSg" category="PREV_STATE_VARIABLE" base_Property="_NpBu0r60Ee6KbbyE8MMJSg" visible="true" id="16" originalName="MainClass_C1_previousva_PV2" references="_NpBu0L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpCV4b60Ee6KbbyE8MMJSg" base_Property="_NpCV4L60Ee6KbbyE8MMJSg" visible="true" id="17" originalName="MainClass_C1_restoreva_RV1" references="_NpCV4r60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpC88L60Ee6KbbyE8MMJSg" base_Property="_NpCV4r60Ee6KbbyE8MMJSg" visible="true" id="18" originalName="mainclass_c1_restoreva_rv1" restore="true" references="_NpCV4L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpC88r60Ee6KbbyE8MMJSg" base_Property="_NpC88b60Ee6KbbyE8MMJSg" visible="true" id="19" originalName="MainClass_C1_restoreva_RV2" references="_NpDkAL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpDkAb60Ee6KbbyE8MMJSg" base_Property="_NpDkAL60Ee6KbbyE8MMJSg" visible="true" id="20" originalName="mainclass_c1_restoreva_rv2" restore="true" references="_NpC88b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpDkA760Ee6KbbyE8MMJSg" base_Property="_NpDkAr60Ee6KbbyE8MMJSg" visible="true" id="21" originalName="MainClass_C1_restoreva_RV3" references="_NpDkBL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpELEL60Ee6KbbyE8MMJSg" base_Property="_NpDkBL60Ee6KbbyE8MMJSg" visible="true" id="22" originalName="mainclass_c1_restoreva_rv3" restore="true" references="_NpDkAr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpELEr60Ee6KbbyE8MMJSg" base_Property="_NpELEb60Ee6KbbyE8MMJSg" visible="true" id="23" originalName="MainClass_C1_restoreva_RV4" references="_NpELE760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpEyIL60Ee6KbbyE8MMJSg" base_Property="_NpELE760Ee6KbbyE8MMJSg" visible="true" id="24" originalName="mainclass_c1_restoreva_rv4" restore="true" references="_NpELEb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpEyIr60Ee6KbbyE8MMJSg" base_Property="_NpEyIb60Ee6KbbyE8MMJSg" visible="true" id="25" originalName="MainClass_C1_variabile_V10"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpFZMb60Ee6KbbyE8MMJSg" base_Property="_NpFZML60Ee6KbbyE8MMJSg" visible="true" id="26" originalName="MainClass_C1_variabile_V2"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpFZM760Ee6KbbyE8MMJSg" base_Property="_NpFZMr60Ee6KbbyE8MMJSg" visible="true" id="27" originalName="MainClass_C1_variabile_V3"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpGAQb60Ee6KbbyE8MMJSg" base_Property="_NpGAQL60Ee6KbbyE8MMJSg" visible="true" id="28" originalName="MainClass_C1_variabile_V8"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpGAQ760Ee6KbbyE8MMJSg" base_Property="_NpGAQr60Ee6KbbyE8MMJSg" visible="true" id="29" originalName="MainClass_C1_variabile_V9"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpGnUb60Ee6KbbyE8MMJSg" category="FSM_LOCATION" base_Property="_NpGnUL60Ee6KbbyE8MMJSg" visible="true" id="1" originalName="stato" references="_NpGnUr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpGnU760Ee6KbbyE8MMJSg" base_Property="_NpGnUr60Ee6KbbyE8MMJSg" visible="true" id="30" originalName="stato" restore="true" references="_NpGnUL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpJDkL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpJDkb60Ee6KbbyE8MMJSg" base_Property="_NpH1cL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpJDkr60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpH1cL60Ee6KbbyE8MMJSg" visible="true" id="32" originalName="mainclass_c1_restoreti_ti1" references="_NpJDk760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpJqoL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpJDkb60Ee6KbbyE8MMJSg" base_Property="_NpJDk760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpJqob60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpJDk760Ee6KbbyE8MMJSg" visible="true" id="31" originalName="mainclass_c1_restoreti_ti1" restore="true" references="_NpH1cL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpK4wL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpK4wb60Ee6KbbyE8MMJSg" base_Property="_NpKRsL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpLf0L60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpKRsL60Ee6KbbyE8MMJSg" visible="true" id="34" originalName="mainclass_c1_restoreti_ti2" references="_NpLf0b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpLf0760Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpK4wb60Ee6KbbyE8MMJSg" base_Property="_NpLf0b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpLf1L60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpLf0b60Ee6KbbyE8MMJSg" visible="true" id="33" originalName="mainclass_c1_restoreti_ti2" restore="true" references="_NpKRsL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpNVAL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpNVAb60Ee6KbbyE8MMJSg" base_Property="_NpMG4L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpNVAr60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpMG4L60Ee6KbbyE8MMJSg" visible="true" id="36" originalName="mainclass_c1_restoreti_ti3" references="_NpNVA760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpNVBb60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpNVAb60Ee6KbbyE8MMJSg" base_Property="_NpNVA760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpN8EL60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpNVA760Ee6KbbyE8MMJSg" visible="true" id="35" originalName="mainclass_c1_restoreti_ti3" restore="true" references="_NpMG4L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpPKML60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpPKMb60Ee6KbbyE8MMJSg" base_Property="_NpN8Eb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpPKMr60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpN8Eb60Ee6KbbyE8MMJSg" visible="true" id="37" originalName="mainclass_c1_timer_t1"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpPxQL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpPxQb60Ee6KbbyE8MMJSg" base_Property="_NpPKM760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpQYUL60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpPKM760Ee6KbbyE8MMJSg" visible="true" id="38" originalName="mainclass_c1_timer_t4"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpQ_YL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpQ_Yb60Ee6KbbyE8MMJSg" base_Property="_NpQYUb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpRmcL60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpQYUb60Ee6KbbyE8MMJSg" visible="true" id="39" originalName="mainclass_c1_timer_t5"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpSNgL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpS0kL60Ee6KbbyE8MMJSg" base_Property="_NpRmcb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpS0kb60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpRmcb60Ee6KbbyE8MMJSg" visible="true" id="40" originalName="mainclass_c1_timer_t8"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpTboL60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpUCsL60Ee6KbbyE8MMJSg" base_Property="_NpS0kr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpUCsb60Ee6KbbyE8MMJSg" category="TIMER" base_Property="_NpS0kr60Ee6KbbyE8MMJSg" visible="true" id="41" originalName="mainclass_c1_timer_t9"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpVQ0L60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpVQ0b60Ee6KbbyE8MMJSg" base_Property="_NpUpw760Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpV34L60Ee6KbbyE8MMJSg" category="COUNTER" base_Property="_NpUpw760Ee6KbbyE8MMJSg" visible="true" id="42" originalName="MainClass_C1_contatore_Co2"/>
+  <RFI-ACC:ParameterSubstitutionOnPropertyType xmi:id="_NpWe8L60Ee6KbbyE8MMJSg" parameterSubstitutionList="_NpWe8b60Ee6KbbyE8MMJSg" base_Property="_NpV34b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpXGAL60Ee6KbbyE8MMJSg" category="COUNTER" base_Property="_NpV34b60Ee6KbbyE8MMJSg" visible="true" id="43" originalName="MainClass_C1_contatore_Co5"/>
+  <RFI-ACC:CommandOperation xmi:id="_NpXGAr60Ee6KbbyE8MMJSg" base_Operation="_NpXGAb60Ee6KbbyE8MMJSg" kind="LIGHT_MANUAL" visible="true" id="44" originalName="MainClass_C1_command_comm10" references="_NpXtEb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedProperty xmi:id="_NpXtEr60Ee6KbbyE8MMJSg" category="RESPONSE_VARIABLE" base_Property="_NpXtEb60Ee6KbbyE8MMJSg" visible="true" id="45" originalName="MainClass_C1_command_comm10" references="_NpXGAb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CommandOperation xmi:id="_NpYUIb60Ee6KbbyE8MMJSg" base_Operation="_NpYUIL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_command_comm3"/>
+  <RFI-ACC:Macro xmi:id="_NpY7ML60Ee6KbbyE8MMJSg" kind="EFFECT" base_Operation="_NpYUI760Ee6KbbyE8MMJSg" originalName="MainClass_C1_macroef_M3"/>
+  <RFI-ACC:Macro xmi:id="_NpY7M760Ee6KbbyE8MMJSg" kind="EFFECT" base_Operation="_NpY7Mr60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macroef_M4"/>
+  <RFI-ACC:Macro xmi:id="_NpY7Nr60Ee6KbbyE8MMJSg" kind="EFFECT" base_Operation="_NpY7Nb60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macroef_M8"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpZiQr60Ee6KbbyE8MMJSg" originalName="argomento_af3" base_Parameter="_NpZiQb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpaJUb60Ee6KbbyE8MMJSg" originalName="argomento_af8" base_Parameter="_NpaJUL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_NpawYb60Ee6KbbyE8MMJSg" kind="VALUE" base_Operation="_NpawYL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrova_M1"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpbXcr60Ee6KbbyE8MMJSg" originalName="argomento_a10" base_Parameter="_NpbXcb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npb-gb60Ee6KbbyE8MMJSg" originalName="argomento_a6" base_Parameter="_Npb-gL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npb-g760Ee6KbbyE8MMJSg" originalName="argomento_a9" base_Parameter="_Npb-gr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_Npclkb60Ee6KbbyE8MMJSg" kind="VALUE" base_Operation="_NpclkL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrova_M4"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpdMor60Ee6KbbyE8MMJSg" originalName="argomento_a1" base_Parameter="_NpdMob60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npdzsb60Ee6KbbyE8MMJSg" originalName="argomento_a2" base_Parameter="_NpdzsL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpeawL60Ee6KbbyE8MMJSg" originalName="argomento_a3" base_Parameter="_Npdzsr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npeawr60Ee6KbbyE8MMJSg" originalName="argomento_a4" base_Parameter="_Npeawb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpfB0b60Ee6KbbyE8MMJSg" originalName="argomento_a5" base_Parameter="_NpfB0L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npfo4L60Ee6KbbyE8MMJSg" originalName="argomento_a8" base_Parameter="_NpfB0r60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_Npfo4r60Ee6KbbyE8MMJSg" kind="VALUE" base_Operation="_Npfo4b60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrova_M5"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npg3AL60Ee6KbbyE8MMJSg" originalName="argomento_a10" base_Parameter="_NpgP8b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npg3Ar60Ee6KbbyE8MMJSg" originalName="argomento_a6" base_Parameter="_Npg3Ab60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpheEb60Ee6KbbyE8MMJSg" originalName="argomento_a7" base_Parameter="_NpheEL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpiFIL60Ee6KbbyE8MMJSg" originalName="argomento_a9" base_Parameter="_NpheEr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_NpiFIr60Ee6KbbyE8MMJSg" kind="VALUE" base_Operation="_NpiFIb60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrova_M6"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpisML60Ee6KbbyE8MMJSg" originalName="argomento_a1" base_Parameter="_NpiFJb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpisMr60Ee6KbbyE8MMJSg" originalName="argomento_a7" base_Parameter="_NpisMb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_NpjTQb60Ee6KbbyE8MMJSg" kind="VALUE" base_Operation="_NpjTQL60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrova_M7"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npj6Ub60Ee6KbbyE8MMJSg" originalName="argomento_a2" base_Parameter="_Npj6UL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpkhYb60Ee6KbbyE8MMJSg" originalName="argomento_a3" base_Parameter="_NpkhYL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpkhY760Ee6KbbyE8MMJSg" originalName="argomento_a4" base_Parameter="_NpkhYr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NplIcb60Ee6KbbyE8MMJSg" originalName="argomento_a5" base_Parameter="_NplIcL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Nplvgb60Ee6KbbyE8MMJSg" originalName="argomento_a8" base_Parameter="_NplvgL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_Nplvg760Ee6KbbyE8MMJSg" base_Operation="_Nplvgr60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrove_M10"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpmWk760Ee6KbbyE8MMJSg" originalName="argomento_ave6" base_Parameter="_NpmWkr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npm9ob60Ee6KbbyE8MMJSg" originalName="argomento_ave9" base_Parameter="_Npm9oL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:Macro xmi:id="_Npm9o760Ee6KbbyE8MMJSg" base_Operation="_Npm9or60Ee6KbbyE8MMJSg" originalName="MainClass_C1_macrove_M9"/>
+  <RFI-ACC:NamedParameter xmi:id="_Npnks760Ee6KbbyE8MMJSg" originalName="argomento_ave10" base_Parameter="_Npnksr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NamedParameter xmi:id="_NpoLwb60Ee6KbbyE8MMJSg" originalName="argomento_ave5" base_Parameter="_NpoLwL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:ExtendedState xmi:id="_NrAr0L60Ee6KbbyE8MMJSg" base_State="_NrAEwL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedTransition xmi:id="_NrChAr60Ee6KbbyE8MMJSg" category="INITIALIZATION" base_Transition="_NrChAL60Ee6KbbyE8MMJSg" phase="STATE_PHASE"/>
+  <StateMachines:PrioritizedTransition xmi:id="_NrChAb60Ee6KbbyE8MMJSg" base_Transition="_NrChAL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:CategorizedTransition xmi:id="_NrEWMb60Ee6KbbyE8MMJSg" category="PERMANENCE" base_Transition="_NrDvIr60Ee6KbbyE8MMJSg" phase="STATE_PHASE"/>
+  <StateMachines:PrioritizedTransition xmi:id="_NrEWML60Ee6KbbyE8MMJSg" base_Transition="_NrDvIr60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NunZcL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUk3Eb60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NunZcb60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUk3Er60Ee6KbbyE8MMJSg" globalValue="1" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NunZcr60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUk3E760Ee6KbbyE8MMJSg" globalValue="2" localValue="2"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NuoAgL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUleIL60Ee6KbbyE8MMJSg" globalValue="3" localValue="3"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NuonkL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_NozsYL60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nuonkb60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_NozsYb60Ee6KbbyE8MMJSg" globalValue="1" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NupOoL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No0Tcb60Ee6KbbyE8MMJSg" globalValue="2"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NupOob60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No06gL60Ee6KbbyE8MMJSg" globalValue="3" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NupOor60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No1hkb60Ee6KbbyE8MMJSg" globalValue="4"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NupOo760Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No1hkr60Ee6KbbyE8MMJSg" globalValue="5" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nup1sL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No2Iob60Ee6KbbyE8MMJSg" globalValue="6"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nup1sb60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No2Ior60Ee6KbbyE8MMJSg" globalValue="7" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NuqcwL60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No3WwL60Ee6KbbyE8MMJSg" globalValue="8"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nuqcwb60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No3Wwb60Ee6KbbyE8MMJSg" globalValue="9" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nuqcwr60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No390L60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NurD0L60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_No390b60Ee6KbbyE8MMJSg" globalValue="1" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_NurD0b60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUQG8b60Ee6KbbyE8MMJSg"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nurq4L60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUQG8r60Ee6KbbyE8MMJSg" globalValue="1" localValue="1"/>
+  <RFI-ACC:NumberedLiteral xmi:id="_Nurq4b60Ee6KbbyE8MMJSg" base_EnumerationLiteral="_JUQG8760Ee6KbbyE8MMJSg" globalValue="2" localValue="2"/>
+</xmi:XMI>

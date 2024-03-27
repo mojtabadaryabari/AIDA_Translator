@@ -1,0 +1,14 @@
+Logica,ID Classe,Classe,Nome enumerazione,Tipologia,Valori
+Stazione.LdS,1,MainClass_C1,Enumerator_0,insieme,{verde=0;c180=1}
+Stazione.LdS,1,MainClass_C1,Enumerator_1,insieme,{c270xx=4;giallox=5}
+Stazione.LdS,1,MainClass_C1,Enumerator_2,insieme,{c270x=8;rossogialloverde=9}
+Stazione.LdS,1,MainClass_C1,Enumerator_3,insieme,{gialloaverdea=12;rossogiallox=13}
+Stazione.LdS,1,MainClass_C1,Enumerator_4,insieme,{c180x=16;rossogialloxverdex=17}
+Stazione.LdS,2,SubClass_C2,Enumerator_0,insieme,{rossogialloaverdea=2;spento=3}
+Stazione.LdS,2,SubClass_C2,Enumerator_1,insieme,{giallogiallo=6;gialloverde=7}
+Stazione.LdS,2,SubClass_C2,Enumerator_2,insieme,{rosso=10;c270=11}
+Stazione.LdS,2,SubClass_C2,Enumerator_3,insieme,{avanzamento=14;rossoverde=15}
+Stazione.LdS,2,SubClass_C2,Enumerator_4,insieme,{avanzamentox=18;c120x=19}
+Stazione.LdS,1,MainClass_C1,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+Stazione.LdS,2,SubClass_C2,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+,,Timer,TimerState,insieme,{Disattivo=0;Attivo=1;Scaduto=2}

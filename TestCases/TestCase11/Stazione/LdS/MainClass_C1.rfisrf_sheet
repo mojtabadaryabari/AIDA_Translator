@@ -1,0 +1,56 @@
+Scheda di classe MainClass_C1
+ /*[*/ Scheda di inizializzazione 
+ Transizioni iniziali 
+
+ Transizione iniziale verso state1
+ Condizioni per la transizione
+ {
+ Nessuna 
+ }
+ Effetti della transizione
+ {
+ Nessuna 
+ } /*],*/
+ /*[*/
+ Scheda di stato  state1
+
+ Permanenza in  state1
+
+Condizioni per la permanenza
+{
+
+ Nessuna 
+}
+Effetti della permanenza
+{
+
+  se il controllo ConsDef  è  uguale a FALSE  /*37,*/ o  se la variabile MainClass_C1_variabile_V8 non è  uguale a  False  e  se il controllo ConsDef  è  uguale a FALSE ,  Applica gli effetti
+       della macro MainClass_C1_macroef_M8   /*73,*/
+
+   
+ /*38,*/  se il contatore MainClass_C1_contatore_Co7 è  uguale a  /*53,*/ 11 /*36,*/ e  se il timer MainClass_C1_timer_T6 non è attivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co1 è  maggiore di  /*54,*/ 14 /*34,*/ o  se il parametro MainClass_C1_parametro_P9 non è  uguale a  True  /*34,*/ e  se il parametro MainClass_C1_parametro_P1 non è  uguale a c270 /*36,*/ e  se il timer MainClass_C1_timer_T6 non è disattivo, /*69,*/Disattiva il timer MainClass_C1_timer_T6
+
+   
+  se il controllo ConsDef è uguale a FALSE ,  Applica gli effetti
+       della macro MainClass_C1_macroef_M7  /*73,*/
+
+ ,altrimenti  /*70,*/Incrementa il contatore MainClass_C1_contatore_Co1
+
+
+
+}
+
+ Attuazioni nominali 
+ Nessuna  /*89,*/ 
+ Normalizzazioni 
+ Nessuna  /*89,*/ 
+ Attuazioni con soccorso  Nessuna  /*92,*/ /*],*/
+ /*[*/
+ 
+ 
+ 
+ 
+ 
+ 
+ /*]*//*[*/
+/*[*/

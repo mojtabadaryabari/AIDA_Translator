@@ -1,0 +1,13 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{38}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p10,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p2,Enumerator:Enumerator_1,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p4,Enumerator:Enumerator_2,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p8,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p9,Enumerator:Enumerator_2,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,55,comando manuale pesante,eventMainclass_c1_command_comm4,,pubblico,si,,,{56}
+classe,Stazione.LdS,1,MainClass_C1,57,comando manuale pesante,eventMainclass_c1_command_comm5,,pubblico,si,,,{58}
+classe,Stazione.LdS,1,MainClass_C1,59,comando manuale pesante,eventMainclass_c1_command_comm6,,pubblico,si,,,{60}
+classe,Stazione.LdS,1,MainClass_C1,56,risposta comando manuale,eventMainclass_c1_command_comm4_response,CommandReponse:Enum_response,privato,si,,,{55}
+classe,Stazione.LdS,1,MainClass_C1,58,risposta comando manuale,eventMainclass_c1_command_comm5_response,CommandReponse:Enum_response,privato,si,,,{57}
+classe,Stazione.LdS,1,MainClass_C1,60,risposta comando manuale,eventMainclass_c1_command_comm6_response,CommandReponse:Enum_response,privato,si,,,{59}

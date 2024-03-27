@@ -1,0 +1,9 @@
+digraph classRelations {
+	subgraph Stazione {
+		MainClass_C1 [ classID=1, classIndex=0, ownerPlantType=Stazione, isStarClass=false]
+		SubClass_C2 [ classID=2, classIndex=1, ownerPlantType=Stazione, isStarClass=false]
+
+		 SubClass_C2 -> MainClass_C1[OperationKind=AUTO]  [list_name=subclass_c2_lista_l10, field=mainclass_c1, fieldType=MainClass_C1, op=R] [label="R:subclass_c2_lista_l10.MainClass_C1"] 
+		 SubClass_C2 -> MainClass_C1[OperationKind=AUTO]  [list_name=subclass_c2_lista_l5, field=mainclass_c1, fieldType=MainClass_C1, op=R] [label="R:subclass_c2_lista_l5.MainClass_C1"] 
+	}
+}

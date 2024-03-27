@@ -1,0 +1,4 @@
+LIBRARY lds
+EXPORTS
+lds_LogicInit
+lds_LogicExec

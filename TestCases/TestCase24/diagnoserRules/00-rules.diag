@@ -1,0 +1,12 @@
+// Regole di reset diagnostica, non editare
+
+nelle transizioni imposta :
+- abilitata a vero
+- tipo_attivazione a fallimento
+dove :
+- il nome del tipo impianto è in {*}
+
+nelle macro imposta :
+- abilitata a vero
+dove :
+- il nome del tipo impianto è in {*}

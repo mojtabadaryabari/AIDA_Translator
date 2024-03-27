@@ -1,0 +1,122 @@
+
+
+FoglioDefinizioni della classe MainClass_C1
+{
+Dichiarazioni 
+{
+controllo piazzale pubblico ConsDef di tipo Booleano con valore sicuro TRUE
+parametro pubblico MainClass_C1_parametro_P10 di tipo booleano /*101,*/ /*4,*/
+parametro pubblico MainClass_C1_parametro_P7 di tipo intero /*100,*/ /*2,*/
+parametro privato MainClass_C1_parametro_P3 di tipo booleano /*101,*/ /*3,*/
+parametro pubblico MainClass_C1_parametro_P5 di tipo intero /*100,*/ /*2,*/
+parametro pubblico MainClass_C1_parametro_P9 di tipo booleano /*101,*/ /*2,*/
+
+ 
+variabile pubblico visibile MainClass_C1_variabile_V5 di tipo booleano /*101,*/ /*7,*/
+variabile pubblico visibile MainClass_C1_variabile_V8 di tipo booleano /*101,*/ /*7,*/
+variabile pubblico visibile MainClass_C1_variabile_V1 di tipo intero /*100,*/ /*12,*/
+
+variabile pubblico visibile MainClass_C1_previousva_PV1 di tipo Enumerator_1 con valore precedente /*97,*/ 
+variabile privata visibile MainClass_C1_previousva_PV2 di tipo booleano /*101,*/ con valore precedente /*97,*/ 
+variabile pubblico visibile MainClass_C1_previousva_PV3 di tipo Enumerator_3 con valore precedente /*97,*/ 
+variabile pubblica visibile MainClass_C1_previousva_PV4 di tipo booleano /*101,*/ con valore precedente /*97,*/ 
+variabile privata visibile MainClass_C1_previousva_PV5 di tipo intero /*100,*/ con valore precedente /*97,*/ 
+
+variabile privato visibile MainClass_C1_restoreva_RV1 di tipo intero /*100,*/ con ripristino /*98,*/ 
+variabile pubblico visibile MainClass_C1_restoreva_RV2 di tipo booleano /*101,*/ con ripristino /*98,*/ 
+variabile protetto visibile MainClass_C1_restoreva_RV3 di tipo Enumerator_2 con ripristino /*98,*/ 
+variabile protetta visibile MainClass_C1_restoreva_RV4 di tipo Enumerator_1 con ripristino /*98,*/ 
+
+attributo MainClass_C1_attribute_AT1 di tipo Enumerator_1 /*96,*/ 
+attributo MainClass_C1_attribute_AT2 di tipo intero /*100,*/ /*96,*/ 
+attributo MainClass_C1_attribute_AT3 di tipo Enumerator_2 /*96,*/ 
+
+variabile protetta visibile stato di tipo StateEnumerator con ripristino /*102,*/ 
+
+contatore pubblica visibile MainClass_C1_contatore_Co7 /*15,*/
+contatore protetto visibile MainClass_C1_contatore_Co1 /*18,*/
+contatore protetta visibile MainClass_C1_contatore_Co9 /*17,*/
+
+timer pubblico visibile MainClass_C1_timer_T9 con durata in secondi uguale a 05 /*21,*/
+timer pubblico visibile MainClass_C1_timer_T5 con durata in secondi uguale a 03530 /*22,*/
+
+timer pubblica visibile MainClass_C1_restoreTI_TI1 con durata in secondi uguale a 014 /*21,*/ con ripristino /*99,*/ 
+timer pubblico visibile MainClass_C1_restoreTI_TI2 con durata in secondi uguale a 011 /*19,*/ con ripristino /*99,*/ 
+
+controllo piazzale pubblico MainClass_C1_controllo_C8 di tipo Enumerator_2 con valore sicuro RossoGialloGiallo /*28,*/
+
+
+controllo piazzale pubblico MainClass_C1_previousco_C3 di tipo Enumerator_4 con valore sicuro c180x con valore precedente /*25,*/
+controllo piazzale privato MainClass_C1_previousco_C2 di tipo Enumerator_3 con valore sicuro RossoGialloaVerdea con valore precedente /*26,*/
+
+comando piazzale MainClass_C1_comando_C6 di tipo Enumerator_3 con valore sicuro RossoGialloaVerdea
+comando piazzale MainClass_C1_comando_C5 di tipo Enumerator_2 con valore sicuro RossoGialloGiallo
+comando piazzale MainClass_C1_comando_C10 di tipo booleano con valore sicuro False 
+comando piazzale MainClass_C1_comando_C4 di tipo Enumerator_1 con valore sicuro avvio
+comando piazzale MainClass_C1_comando_C1 di tipo Enumerator_1 con valore sicuro avvio
+ /*29,*/
+
+macro valorizzata  privato MainClass_C1_macrova_M9  di tipo booleano( con argomento_a10  di tipo Enumerator_1,argomento_a3  di tipo Enumerator_3 e argomento_a9  di tipo Enumerator_3)
+   /*31,*/
+
+ Macro di verifica privato MainClass_C1_macrove_M6( con argomento_ave5  di tipo Enumerator_1,argomento_ave2  di tipo booleano,argomento_ave8  di tipo booleano,argomento_ave10  di tipo Enumerator_3,argomento_ave3  di tipo Enumerator_4 e argomento_ave9  di tipo Enumerator_3)
+   /*58,*/
+ Macro di verifica pubblico MainClass_C1_macrove_M7( con argomento_ave2  di tipo booleano,argomento_ave8  di tipo Enumerator_3,argomento_ave10  di tipo Enumerator_3,argomento_ave3  di tipo booleano,argomento_ave9  di tipo booleano,argomento_ave6  di tipo Enumerator_4 e argomento_ave4  di tipo Enumerator_2)
+   /*57,*/
+ Macro di verifica privato MainClass_C1_macrove_M2( con argomento_ave7  di tipo booleano,argomento_ave1  di tipo booleano,argomento_ave5  di tipo booleano,argomento_ave2  di tipo booleano,argomento_ave8  di tipo Enumerator_3 e argomento_ave10  di tipo Enumerator_2)
+   /*58,*/
+
+ Macro di effetto  MainClass_C1_macroef_M10
+   /*65,*/
+ comando manuale leggero MainClass_C1_command_comm3 da  Sender4ae38da5   /*74,*/
+ comando manuale pesante MainClass_C1_command_comm8 da  Sender66ff29ab   /*76,*/
+ comando manuale pesante MainClass_C1_command_comm1 da  Senderd480970a   /*76,*/
+
+}
+ Definizioni  {
+
+ /*0,*/tipo Enumerator_0 insieme {GialloGiallo,c270xx}//
+tipo Enumerator_1 insieme {GialloxVerdex,avvio}//
+tipo Enumerator_2 insieme {spento,RossoGialloGiallo}//
+tipo Enumerator_3 insieme {RossoGialloxVerdex,RossoGialloaVerdea}//
+tipo Enumerator_4 insieme {Giallox,c180x}//
+tipo StateEnumerator insieme {  state1,StatoIniziale}//
+
+ /*1,*/ 
+ /*[*/ macro valorizzata  MainClass_C1_macrova_M9  di tipo booleano( con argomento_a10  ,argomento_a3  e argomento_a9 )
+{ /*[*/  se il controllo ConsDef è uguale a FALSE   /*36,*/ o  se il timer MainClass_C1_timer_T9 non è disattivo o  se l'argomento argomento_a10 non  è  diverso da avvio /*39,*/  /*35,*/ o  se il controllo MainClass_C1_controllo_C8 non è  uguale a RossoGialloGiallo , assegna alla macro il valore  False 
+
+ /*46,*/ assegna alla macro il valore  False  /*],*/
+}
+ /*]*/ /*,[*/ /*[*/ Macro di verifica MainClass_C1_macrove_M6( con argomento_ave5 ,argomento_ave2 ,argomento_ave8 ,argomento_ave10 ,argomento_ave3  e argomento_ave9 )
+{ /*62,*/ /*36,*/  se il timer MainClass_C1_timer_T9 è disattivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co7 è  uguale a  /*53,*/ 14, Almeno una delle seguenti { 
+ /*36,*/  se il timer MainClass_C1_timer_T9 non è scaduto /*35,*/ o  se il controllo MainClass_C1_controllo_C8 è  uguale a RossoGialloGiallo /*36,*/ e  se il timer MainClass_C1_timer_T9 è scaduto /*36,*/ o  se il timer MainClass_C1_timer_T5 non è disattivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co7 non è  minore di  /*55,*/ 11, Verifica che   /*49,*/  /*,*/  il timer MainClass_C1_timer_T5 non sia attivo
+
+
+ } Verifica che   /*50,51,52,*/  /*,*/  la variabile MainClass_C1_variabile_V5 non sia  uguale a  True 
+ /*104,*/ o  che  /*,*/  il contatore MainClass_C1_contatore_Co7 non sia  uguale a  /*53,*/ 155304
+ /*104,*/ o  che   l'argomento argomento_ave2 sia  diverso da  True  /*,*/ 
+
+
+}
+ /*],*/ /*[*/ Macro di verifica MainClass_C1_macrove_M7( con argomento_ave2 ,argomento_ave8 ,argomento_ave10 ,argomento_ave3 ,argomento_ave9 ,argomento_ave6  e argomento_ave4 )
+{  se la macro  MainClass_C1_macrova_M9 ( con argomento_a10   uguale a avvio ,argomento_a3   uguale a RossoGialloaVerdea  e argomento_a9   uguale a RossoGialloaVerdea )   è  uguale a  False  /*40,*/  /*36,*/ e  se il timer MainClass_C1_timer_T9 non è scaduto /*36,*/ o  se il timer MainClass_C1_timer_T9 è disattivo /*36,*/ e  se il timer MainClass_C1_timer_T5 non è disattivo /*34,*/ o  se il parametro MainClass_C1_parametro_P10 non è  diverso da  True  /*37,*/ e  se la variabile MainClass_C1_variabile_V8 è  uguale a  False , Verifica che   /*52,*/   l'argomento argomento_ave8 sia  diverso da RossoGialloaVerdea /*,*/ 
+
+
+}
+ /*],*/ /*[*/ Macro di verifica MainClass_C1_macrove_M2( con argomento_ave7 ,argomento_ave1 ,argomento_ave5 ,argomento_ave2 ,argomento_ave8  e argomento_ave10 )
+{ /*35,*/  se il controllo MainClass_C1_controllo_C8 non è  uguale a RossoGialloGiallo /*36,*/ e  se il timer MainClass_C1_timer_T5 è attivo, Verifica che   /*48,49,50,*/  /*,*/  il timer MainClass_C1_timer_T5 sia scaduto
+ /*104,*/ e  che  /*,*/  la variabile MainClass_C1_variabile_V5 sia  diverso da  True 
+ /*104,*/ e  che  /*,*/  il controllo MainClass_C1_controllo_C8 non sia  diverso da RossoGialloGiallo
+
+
+}
+ /*],*/ /*]*/ /*,[*/ /*[*/ Macro di effetto  MainClass_C1_macroef_M10
+{ /*36,*/  se il timer MainClass_C1_timer_T5 non è attivo /*38,*/ o  se il contatore MainClass_C1_contatore_Co1 è  maggiore di  /*54,*/ 1525 /*36,*/ o  se il timer MainClass_C1_timer_T9 è scaduto /*34,*/ e  se il parametro MainClass_C1_parametro_P9 non è  diverso da  False  /*37,*/ o  se la variabile MainClass_C1_variabile_V1 è  minore di  /*55,*/ 2 /*37,*/ o  se la variabile MainClass_C1_variabile_V5 è  diverso da  True , /*72,*/Azzera il contatore MainClass_C1_contatore_Co7
+
+   
+
+}
+ /*],*/ /*]*/
+}
+} /*,[*/ 

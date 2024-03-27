@@ -1,0 +1,70 @@
+Scheda di classe MainClass_C1
+ /*[*/ Scheda di inizializzazione 
+ Transizioni iniziali 
+
+ Transizione iniziale verso state1
+ Condizioni per la transizione
+ {
+ Nessuna 
+ }
+ Effetti della transizione
+ {
+ Nessuna 
+ } /*],*/
+ /*[*/
+ Scheda di stato  state1
+
+ Permanenza in  state1
+
+Condizioni per la permanenza
+{
+
+ /*67,*/ /*34,*/  se il parametro MainClass_C1_parametro_P10 non è  uguale a GialloVerde /*37,*/ o  se la variabile MainClass_C1_variabile_V4 non è  uguale a  False  /*38,*/ o  se il contatore MainClass_C1_contatore_Co1 non è  maggiore di  /*54,*/ 15 e  se il controllo ConsDef  è  uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T4 è disattivo, Tutte le seguenti { 
+ /*68,*/ /*38,*/  se il contatore MainClass_C1_contatore_Co6 è  uguale a  /*53,*/ 144 /*34,*/ o  se il parametro MainClass_C1_parametro_P9 è  uguale a  /*53,*/ 8 /*34,*/ e  se il parametro MainClass_C1_parametro_P10 è  uguale a GialloVerde /*34,*/ e  se il parametro MainClass_C1_parametro_P9 è  uguale a  /*53,*/ 7 /*37,*/ e  se la variabile MainClass_C1_variabile_V7 non è  diverso da c180x, Almeno una delle seguenti { 
+ /*69,*/ /*35,*/  se il controllo MainClass_C1_controllo_C8 è  diverso da  False  o  se il controllo ConsDef  è  uguale a FALSE  /*34,*/ o  se il parametro MainClass_C1_parametro_P10 è  diverso da GialloVerde /*36,*/ o  se il timer MainClass_C1_timer_T3 è attivo /*37,*/ e  se la variabile MainClass_C1_variabile_V3 è  diverso da  /*56,*/ 6 /*38,*/ e  se il contatore MainClass_C1_contatore_Co6 è  diverso da  /*56,*/ 145, Solo una delle seguenti { 
+ /*68,*/  se il controllo ConsDef  è  uguale a FALSE  /*37,*/ e  se la variabile MainClass_C1_variabile_V3 è  maggiore di  /*54,*/ 2 /*34,*/ o  se il parametro MainClass_C1_parametro_P9 è  diverso da  /*56,*/ 5, Almeno una delle seguenti { 
+  se il controllo ConsDef  è  uguale a FALSE , Verifica che   /*48,*/   il controllo ConsDef  sia  uguale a FALSE 
+
+
+ } Verifica che   /*48,*/  /*,*/  il controllo MainClass_C1_controllo_C8 non sia  uguale a  False 
+
+
+ } Verifica che   /*47,*/  /*34,*/  il parametro MainClass_C1_parametro_P9 sia  diverso da  /*56,*/ 2
+
+
+ } Verifica che   /*49,*/  /*,*/  il timer MainClass_C1_timer_T2 non sia scaduto
+
+
+ } Verifica che   /*51,*/  /*,*/  il contatore MainClass_C1_contatore_Co6 sia  uguale a  /*53,*/ 1332
+
+
+}
+Effetti della permanenza
+{
+
+  se il ripristino dello stato  è  diverso da  /*56,*/  state1  /*107,*/, /*67,*/ Assegna alla variabile MainClass_C1_variabile_V4 il valore  False 
+
+   
+  se la macro  MainClass_C1_macrova_M6 ( con argomento_a6   uguale a True ,argomento_a9   uguale a Verde ,argomento_a4   uguale a AC ,argomento_a3   uguale a GialloVerde ,argomento_a7   uguale a c180 ,argomento_a2   uguale a RossoGialloxVerdex  e argomento_a1   uguale a RossoGialloxVerdex )   è  diverso da  False  /*40,*/  /*37,*/ e  se la variabile MainClass_C1_variabile_V10 non è  uguale a  /*53,*/ 6 /*36,*/ e  se il timer MainClass_C1_timer_T4 è scaduto /*35,*/ o  se il controllo MainClass_C1_controllo_C8 è  uguale a  True , /*67,*/ Assegna alla variabile MainClass_C1_variabile_V4 il valore  True 
+
+ ,altrimenti  /*67,*/ Assegna alla variabile MainClass_C1_variabile_V3 il valore 2
+
+
+
+}
+
+ Attuazioni nominali 
+ Nessuna  /*89,*/ 
+ Normalizzazioni 
+ Nessuna  /*89,*/ 
+ Attuazioni con soccorso  Nessuna  /*92,*/ /*],*/
+ /*[*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*]*//*[*/
+/*[*/

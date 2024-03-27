@@ -1,0 +1,6 @@
+digraph classRelations {
+	subgraph Stazione {
+		MainClass_C1 [ classID=1, classIndex=0, ownerPlantType=Stazione, isStarClass=false]
+
+	}
+}

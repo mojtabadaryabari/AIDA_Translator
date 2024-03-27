@@ -1,0 +1,19 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{35}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p3,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p6,Enumerator:Enumerator_4,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p9,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,33,variabile,mainclass_c1_variabile_v4,BasicType:Integer,privato,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,34,variabile,mainclass_c1_variabile_v9,BasicType:Integer,pubblico,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,2,controllo input,consdef,BasicType:Boolean,pubblico,si,,true,{}
+classe,Stazione.LdS,1,MainClass_C1,7,controllo input,mainclass_c1_controllo_c3,Enumerator:Enumerator_1,privato,si,,rossogiallo,{}
+classe,Stazione.LdS,1,MainClass_C1,44,timer,mainclass_c1_timer_t9,Timer:TimerState,privato,si,,51000,{}
+classe,Stazione.LdS,1,MainClass_C1,45,contatore,mainclass_c1_contatore_co8,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,46,comando manuale pesante,eventMainclass_c1_command_comm2DaSenderb6f8ffb3,,pubblico,si,,,{47}
+classe,Stazione.LdS,1,MainClass_C1,48,comando manuale leggero,eventMainclass_c1_command_comm3,,pubblico,si,,,{49}
+classe,Stazione.LdS,1,MainClass_C1,50,comando manuale leggero,eventMainclass_c1_command_comm6,,pubblico,si,,,{51}
+classe,Stazione.LdS,1,MainClass_C1,52,comando manuale pesante,eventMainclass_c1_command_comm8DaSender1a75134,,pubblico,si,,,{53}
+classe,Stazione.LdS,1,MainClass_C1,47,risposta comando manuale,eventMainclass_c1_command_comm2DaSenderb6f8ffb3_response,CommandReponse:Enum_response,privato,si,,,{46}
+classe,Stazione.LdS,1,MainClass_C1,49,risposta comando manuale,eventMainclass_c1_command_comm3_response,CommandReponse:Enum_response,privato,si,,,{48}
+classe,Stazione.LdS,1,MainClass_C1,51,risposta comando manuale,eventMainclass_c1_command_comm6_response,CommandReponse:Enum_response,privato,si,,,{50}
+classe,Stazione.LdS,1,MainClass_C1,53,risposta comando manuale,eventMainclass_c1_command_comm8DaSender1a75134_response,CommandReponse:Enum_response,privato,si,,,{52}

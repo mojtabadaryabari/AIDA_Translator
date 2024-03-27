@@ -1,0 +1,44 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{27}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p3,Enumerator:Enumerator_4,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,22,variabile,mainclass_c1_variabile_v2,Enumerator:Enumerator_3,pubblico,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,24,variabile,mainclass_c1_variabile_v6,BasicType:Boolean,pubblico,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,25,variabile,mainclass_c1_variabile_v7,Enumerator:Enumerator_2,pubblico,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,2,controllo input,consdef,BasicType:Boolean,pubblico,si,,true,{}
+classe,Stazione.LdS,1,MainClass_C1,4,controllo input,mainclass_c1_controllo_c5,Enumerator:Enumerator_4,pubblico,si,,c270x,{}
+classe,Stazione.LdS,1,MainClass_C1,5,controllo input,mainclass_c1_controllo_c7,Enumerator:Enumerator_1,pubblico,si,,gialloxverdex,{}
+classe,Stazione.LdS,1,MainClass_C1,6,controllo input,mainclass_c1_controllo_c8,Enumerator:Enumerator_4,pubblico,si,,c270x,{}
+classe,Stazione.LdS,1,MainClass_C1,7,controllo input,mainclass_c1_controllo_c9,Enumerator:Enumerator_1,pubblico,si,,gialloxverdex,{}
+classe,Stazione.LdS,1,MainClass_C1,34,timer,mainclass_c1_timer_t4,Timer:TimerState,pubblico,si,,5432000,{}
+classe,Stazione.LdS,1,MainClass_C1,35,timer,mainclass_c1_timer_t6,Timer:TimerState,pubblico,si,,415000,{}
+classe,Stazione.LdS,1,MainClass_C1,36,contatore,mainclass_c1_contatore_co1,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,37,contatore,mainclass_c1_contatore_co2,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,38,contatore,mainclass_c1_contatore_co5,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,39,comando manuale pesante,eventMainclass_c1_command_comm7,,pubblico,si,,,{40}
+classe,Stazione.LdS,1,MainClass_C1,40,risposta comando manuale,eventMainclass_c1_command_comm7_response,CommandReponse:Enum_response,privato,si,,,{39}
+classe,Stazione.LdS,2,SubClass_C2,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p1,Enumerator:Enumerator_1,pubblico,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p10,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p2,Enumerator:Enumerator_4,pubblico,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p4,Enumerator:Enumerator_1,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p6,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,2,SubClass_C2,49,comando manuale pesante,eventSubclass_c2_command_comm1DaSendercda7890b,,pubblico,si,,,{50}
+classe,Stazione.LdS,2,SubClass_C2,51,comando manuale leggero,eventSubclass_c2_command_comm2,,pubblico,si,,,{52}
+classe,Stazione.LdS,2,SubClass_C2,53,comando manuale leggero,eventSubclass_c2_command_comm5DaSender94b948c6,,pubblico,si,,,{54}
+classe,Stazione.LdS,2,SubClass_C2,55,comando manuale leggero,eventSubclass_c2_command_comm9,,pubblico,si,,,{56}
+classe,Stazione.LdS,2,SubClass_C2,50,risposta comando manuale,eventSubclass_c2_command_comm1DaSendercda7890b_response,CommandReponse:Enum_response,privato,si,,,{49}
+classe,Stazione.LdS,2,SubClass_C2,52,risposta comando manuale,eventSubclass_c2_command_comm2_response,CommandReponse:Enum_response,privato,si,,,{51}
+classe,Stazione.LdS,2,SubClass_C2,54,risposta comando manuale,eventSubclass_c2_command_comm5DaSender94b948c6_response,CommandReponse:Enum_response,privato,si,,,{53}
+classe,Stazione.LdS,2,SubClass_C2,56,risposta comando manuale,eventSubclass_c2_command_comm9_response,CommandReponse:Enum_response,privato,si,,,{55}
+classe,Stazione.LdS,3,SubClass_C3,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p5,Enumerator:Enumerator_1,pubblico,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p7,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,3,SubClass_C3,,parametro locale,subclass_c3_parametro_p8,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,3,SubClass_C3,62,comando manuale leggero,eventSubclass_c3_command_comm10DaSender4471a7d8,,pubblico,si,,,{63}
+classe,Stazione.LdS,3,SubClass_C3,64,comando manuale pesante,eventSubclass_c3_command_comm3,,pubblico,si,,,{65}
+classe,Stazione.LdS,3,SubClass_C3,66,comando manuale leggero,eventSubclass_c3_command_comm7,,pubblico,si,,,{67}
+classe,Stazione.LdS,3,SubClass_C3,68,comando manuale pesante,eventSubclass_c3_command_comm8DaSender7a3d0e35,,pubblico,si,,,{69}
+classe,Stazione.LdS,3,SubClass_C3,63,risposta comando manuale,eventSubclass_c3_command_comm10DaSender4471a7d8_response,CommandReponse:Enum_response,privato,si,,,{62}
+classe,Stazione.LdS,3,SubClass_C3,65,risposta comando manuale,eventSubclass_c3_command_comm3_response,CommandReponse:Enum_response,privato,si,,,{64}
+classe,Stazione.LdS,3,SubClass_C3,67,risposta comando manuale,eventSubclass_c3_command_comm7_response,CommandReponse:Enum_response,privato,si,,,{66}
+classe,Stazione.LdS,3,SubClass_C3,69,risposta comando manuale,eventSubclass_c3_command_comm8DaSender7a3d0e35_response,CommandReponse:Enum_response,privato,si,,,{68}

@@ -1,0 +1,136 @@
+Tipo elemento,Logica,ID Classe,Classe,ID attributo,Tipologia,Nome attributo,Tipo attributo,Accessibilita,Visibilita,Argomenti,Valore,Riferimenti
+classe,Stazione.LdS,1,MainClass_C1,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{39}
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p1,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p10,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p3,BasicType:Boolean,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p6,Enumerator:Enumerator_2,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,,parametro locale,mainclass_c1_parametro_p8,Enumerator:Enumerator_4,privato,no,,,
+classe,Stazione.LdS,1,MainClass_C1,17,variabile,mainclass_c1_previousva_pv1,Enumerator:Enumerator_4,pubblico,si,,,{18}
+classe,Stazione.LdS,1,MainClass_C1,19,variabile,mainclass_c1_previousva_pv2,BasicType:Integer,protetto,si,,,{20}
+classe,Stazione.LdS,1,MainClass_C1,21,variabile,mainclass_c1_previousva_pv3,Enumerator:Enumerator_2,privato,si,,,{22}
+classe,Stazione.LdS,1,MainClass_C1,23,variabile,mainclass_c1_previousva_pv4,Enumerator:Enumerator_3,pubblico,si,,,{24}
+classe,Stazione.LdS,1,MainClass_C1,25,variabile,mainclass_c1_restoreva_rv1,BasicType:Integer,privato,si,,,{26}
+classe,Stazione.LdS,1,MainClass_C1,27,variabile,mainclass_c1_restoreva_rv2,BasicType:Boolean,pubblico,si,,,{28}
+classe,Stazione.LdS,1,MainClass_C1,29,variabile,mainclass_c1_restoreva_rv3,BasicType:Boolean,pubblico,si,,,{30}
+classe,Stazione.LdS,1,MainClass_C1,31,variabile,mainclass_c1_restoreva_rv4,BasicType:Boolean,privato,si,,,{32}
+classe,Stazione.LdS,1,MainClass_C1,33,variabile,mainclass_c1_restoreva_rv5,BasicType:Boolean,privato,si,,,{34}
+classe,Stazione.LdS,1,MainClass_C1,35,variabile,mainclass_c1_variabile_v2,BasicType:Integer,privato,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,36,variabile,mainclass_c1_variabile_v3,BasicType:Boolean,pubblico,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,37,variabile,mainclass_c1_variabile_v4,BasicType:Boolean,privato,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,38,variabile,mainclass_c1_variabile_v8,BasicType:Integer,protetto,si,,,{}
+classe,Stazione.LdS,1,MainClass_C1,18,variabile precedente,mainclass_c1_previousva_pv1_prev,Enumerator:Enumerator_4,protetto,si,,,{17}
+classe,Stazione.LdS,1,MainClass_C1,20,variabile precedente,mainclass_c1_previousva_pv2_prev,BasicType:Integer,protetto,si,,,{19}
+classe,Stazione.LdS,1,MainClass_C1,22,variabile precedente,mainclass_c1_previousva_pv3_prev,Enumerator:Enumerator_2,privato,si,,,{21}
+classe,Stazione.LdS,1,MainClass_C1,24,variabile precedente,mainclass_c1_previousva_pv4_prev,Enumerator:Enumerator_3,protetto,si,,,{23}
+classe,Stazione.LdS,1,MainClass_C1,12,variabile precedente,mainclass_c1_previousco_c10_prev,Enumerator:Enumerator_4,privato,si,,,{11}
+classe,Stazione.LdS,1,MainClass_C1,14,variabile precedente,mainclass_c1_previousco_c4_prev,BasicType:Boolean,protetto,si,,,{13}
+classe,Stazione.LdS,1,MainClass_C1,16,variabile precedente,mainclass_c1_previousco_c5_prev,BasicType:Boolean,protetto,si,,,{15}
+classe,Stazione.LdS,1,MainClass_C1,26,variabile ripristino,mainclass_c1_restoreva_rv1_restore,BasicType:Integer,privato,si,,,{25}
+classe,Stazione.LdS,1,MainClass_C1,28,variabile ripristino,mainclass_c1_restoreva_rv2_restore,BasicType:Boolean,protetto,si,,,{27}
+classe,Stazione.LdS,1,MainClass_C1,30,variabile ripristino,mainclass_c1_restoreva_rv3_restore,BasicType:Boolean,protetto,si,,,{29}
+classe,Stazione.LdS,1,MainClass_C1,32,variabile ripristino,mainclass_c1_restoreva_rv4_restore,BasicType:Boolean,privato,si,,,{31}
+classe,Stazione.LdS,1,MainClass_C1,34,variabile ripristino,mainclass_c1_restoreva_rv5_restore,BasicType:Boolean,privato,si,,,{33}
+classe,Stazione.LdS,1,MainClass_C1,39,variabile ripristino,stato_restore,Enumerator:Stateenumerator,protetto,si,,,{1}
+classe,Stazione.LdS,1,MainClass_C1,3,comando output,mainclass_c1_comando_c1,Enumerator:Enumerator_4,privato,si,,rossogialloverde,
+classe,Stazione.LdS,1,MainClass_C1,4,comando output,mainclass_c1_comando_c2,BasicType:Boolean,privato,si,,true,
+classe,Stazione.LdS,1,MainClass_C1,5,comando output,mainclass_c1_comando_c6,Enumerator:Enumerator_4,privato,si,,rossogialloverde,
+classe,Stazione.LdS,1,MainClass_C1,6,comando output,mainclass_c1_comando_c8,Enumerator:Enumerator_2,privato,si,,ac,
+classe,Stazione.LdS,1,MainClass_C1,2,controllo input,consdef,BasicType:Boolean,pubblico,si,,true,{}
+classe,Stazione.LdS,1,MainClass_C1,7,controllo input,mainclass_c1_controllo_c3,BasicType:Boolean,privato,si,,true,{}
+classe,Stazione.LdS,1,MainClass_C1,8,controllo input,mainclass_c1_controllo_c6,BasicType:Boolean,pubblico,si,,false,{}
+classe,Stazione.LdS,1,MainClass_C1,9,controllo input,mainclass_c1_controllo_c7,Enumerator:Enumerator_1,pubblico,si,,c120x,{}
+classe,Stazione.LdS,1,MainClass_C1,10,controllo input,mainclass_c1_controllo_c9,BasicType:Boolean,pubblico,si,,false,{}
+classe,Stazione.LdS,1,MainClass_C1,11,controllo input,mainclass_c1_previousco_c10,Enumerator:Enumerator_4,privato,si,,rossogialloverde,{12}
+classe,Stazione.LdS,1,MainClass_C1,13,controllo input,mainclass_c1_previousco_c4,BasicType:Boolean,pubblico,si,,false,{14}
+classe,Stazione.LdS,1,MainClass_C1,15,controllo input,mainclass_c1_previousco_c5,BasicType:Boolean,pubblico,si,,false,{16}
+classe,Stazione.LdS,1,MainClass_C1,41,timer,mainclass_c1_restoreti_ti1,Timer:TimerState,pubblico,si,,24000,{40}
+classe,Stazione.LdS,1,MainClass_C1,43,timer,mainclass_c1_restoreti_ti2,Timer:TimerState,protetto,si,,32000,{42}
+classe,Stazione.LdS,1,MainClass_C1,45,timer,mainclass_c1_restoreti_ti3,Timer:TimerState,protetto,si,,2130000,{44}
+classe,Stazione.LdS,1,MainClass_C1,46,timer,mainclass_c1_timer_t10,Timer:TimerState,pubblico,si,,305000,{}
+classe,Stazione.LdS,1,MainClass_C1,40,variabile ripristino,mainclass_c1_restoreti_ti1_restore,Timer:TimerState,protetto,si,,24000,{41}
+classe,Stazione.LdS,1,MainClass_C1,42,variabile ripristino,mainclass_c1_restoreti_ti2_restore,Timer:TimerState,protetto,si,,32000,{43}
+classe,Stazione.LdS,1,MainClass_C1,44,variabile ripristino,mainclass_c1_restoreti_ti3_restore,Timer:TimerState,protetto,si,,2130000,{45}
+classe,Stazione.LdS,1,MainClass_C1,47,contatore,mainclass_c1_contatore_co3,Counter,privato,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,48,contatore,mainclass_c1_contatore_co5,Counter,protetto,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,49,contatore,mainclass_c1_contatore_co6,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,50,contatore,mainclass_c1_contatore_co7,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,51,contatore,mainclass_c1_contatore_co9,Counter,pubblico,si,,0,
+classe,Stazione.LdS,1,MainClass_C1,,comando automatico,eventMainclass_c1_command_comm7,,pubblico,no,{argomento_ave10=Enumerator:Enumerator_1;argomento_ave2=BasicType:Boolean;argomento_ave4=Enumerator:Enumerator_2;argomento_ave8=Enumerator:Enumerator_1},,
+classe,Stazione.LdS,1,MainClass_C1,52,comando manuale pesante,eventMainclass_c1_command_comm2DaSender127c0aca,,pubblico,si,,,{53}
+classe,Stazione.LdS,1,MainClass_C1,54,comando manuale pesante,eventMainclass_c1_command_comm5DaSender83c691f2,,pubblico,si,,,{55}
+classe,Stazione.LdS,1,MainClass_C1,56,comando manuale leggero,eventMainclass_c1_command_comm6,,pubblico,si,,,{57}
+classe,Stazione.LdS,1,MainClass_C1,53,risposta comando manuale,eventMainclass_c1_command_comm2DaSender127c0aca_response,CommandReponse:Enum_response,privato,si,,,{52}
+classe,Stazione.LdS,1,MainClass_C1,55,risposta comando manuale,eventMainclass_c1_command_comm5DaSender83c691f2_response,CommandReponse:Enum_response,privato,si,,,{54}
+classe,Stazione.LdS,1,MainClass_C1,57,risposta comando manuale,eventMainclass_c1_command_comm6_response,CommandReponse:Enum_response,privato,si,,,{56}
+classe,Stazione.LdS,1,MainClass_C1,,macro verifica,macroMainclass_c1_macrove_m9,BasicType:Boolean,privato,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro effetto,macroMainclass_c1_macroef_m10,,privato,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro effetto,macroMainclass_c1_macroef_m3,,privato,no,{argomento_af1=BasicType:Boolean;argomento_af3=Enumerator:Enumerator_4;argomento_af5=Enumerator:Enumerator_2;argomento_af6=Enumerator:Enumerator_3;argomento_af7=Enumerator:Enumerator_2;argomento_af9=Enumerator:Enumerator_2},,
+classe,Stazione.LdS,1,MainClass_C1,,macro effetto,macroMainclass_c1_macroef_m4,,privato,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro effetto,macroMainclass_c1_macroef_m7,,privato,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro valorizzata,macroMainclass_c1_macrova_m1,Enumerator:Enumerator_4,pubblico,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro valorizzata,macroMainclass_c1_macrova_m10,BasicType:Boolean,privato,no,{argomento_a1=Enumerator:Enumerator_3;argomento_a4=Enumerator:Enumerator_1;argomento_a6=Enumerator:Enumerator_2;argomento_a8=BasicType:Boolean;argomento_a9=Enumerator:Enumerator_1},,
+classe,Stazione.LdS,1,MainClass_C1,,macro valorizzata,macroMainclass_c1_macrova_m5,BasicType:Boolean,pubblico,no,{argomento_a10=Enumerator:Enumerator_2;argomento_a2=Enumerator:Enumerator_3;argomento_a3=Enumerator:Enumerator_3;argomento_a4=Enumerator:Enumerator_1;argomento_a5=BasicType:Boolean;argomento_a7=Enumerator:Enumerator_3;argomento_a8=Enumerator:Enumerator_1},,
+classe,Stazione.LdS,1,MainClass_C1,,macro valorizzata,macroMainclass_c1_macrova_m6,Enumerator:Enumerator_4,privato,no,{},,
+classe,Stazione.LdS,1,MainClass_C1,,macro valorizzata,macroMainclass_c1_macrova_m7,BasicType:Boolean,pubblico,no,{argomento_a10=Enumerator:Enumerator_4;argomento_a2=Enumerator:Enumerator_1;argomento_a3=Enumerator:Enumerator_1;argomento_a5=Enumerator:Enumerator_3;argomento_a6=Enumerator:Enumerator_1;argomento_a7=Enumerator:Enumerator_3},,
+classe,Stazione.LdS,2,SubClass_C2,1,stato FSM,stato,Enumerator:Stateenumerator,protetto,si,,,{3}
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p2,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p4,BasicType:Integer,pubblico,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p5,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,parametro locale,subclass_c2_parametro_p9,BasicType:Integer,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,17,variabile,subclass_c2_previousva_pv1,BasicType:Integer,privato,si,,,{18}
+classe,Stazione.LdS,2,SubClass_C2,19,variabile,subclass_c2_previousva_pv2,Enumerator:Enumerator_2,protetto,si,,,{20}
+classe,Stazione.LdS,2,SubClass_C2,21,variabile,subclass_c2_previousva_pv3,BasicType:Boolean,pubblico,si,,,{22}
+classe,Stazione.LdS,2,SubClass_C2,23,variabile,subclass_c2_previousva_pv4,BasicType:Boolean,privato,si,,,{24}
+classe,Stazione.LdS,2,SubClass_C2,25,variabile,subclass_c2_restoreva_rv1,BasicType:Integer,privato,si,,,{26}
+classe,Stazione.LdS,2,SubClass_C2,27,variabile,subclass_c2_restoreva_rv2,Enumerator:Enumerator_1,pubblico,si,,,{28}
+classe,Stazione.LdS,2,SubClass_C2,29,variabile,subclass_c2_variabile_v6,BasicType:Integer,pubblico,si,,,{}
+classe,Stazione.LdS,2,SubClass_C2,18,variabile precedente,subclass_c2_previousva_pv1_prev,BasicType:Integer,privato,si,,,{17}
+classe,Stazione.LdS,2,SubClass_C2,20,variabile precedente,subclass_c2_previousva_pv2_prev,Enumerator:Enumerator_2,protetto,si,,,{19}
+classe,Stazione.LdS,2,SubClass_C2,22,variabile precedente,subclass_c2_previousva_pv3_prev,BasicType:Boolean,protetto,si,,,{21}
+classe,Stazione.LdS,2,SubClass_C2,24,variabile precedente,subclass_c2_previousva_pv4_prev,BasicType:Boolean,privato,si,,,{23}
+classe,Stazione.LdS,2,SubClass_C2,14,variabile precedente,subclass_c2_previousco_c10_prev,BasicType:Boolean,privato,si,,,{13}
+classe,Stazione.LdS,2,SubClass_C2,16,variabile precedente,subclass_c2_previousco_c4_prev,Enumerator:Enumerator_3,protetto,si,,,{15}
+classe,Stazione.LdS,2,SubClass_C2,3,variabile ripristino,stato_restore,Enumerator:Stateenumerator,protetto,si,,,{1}
+classe,Stazione.LdS,2,SubClass_C2,26,variabile ripristino,subclass_c2_restoreva_rv1_restore,BasicType:Integer,privato,si,,,{25}
+classe,Stazione.LdS,2,SubClass_C2,28,variabile ripristino,subclass_c2_restoreva_rv2_restore,Enumerator:Enumerator_1,protetto,si,,,{27}
+classe,Stazione.LdS,2,SubClass_C2,4,comando output,subclass_c2_comando_c1,Enumerator:Enumerator_2,privato,si,,rossogiallogiallo,
+classe,Stazione.LdS,2,SubClass_C2,5,comando output,subclass_c2_comando_c2,BasicType:Boolean,privato,si,,false,
+classe,Stazione.LdS,2,SubClass_C2,6,comando output,subclass_c2_comando_c5,BasicType:Boolean,privato,si,,false,
+classe,Stazione.LdS,2,SubClass_C2,7,comando output,subclass_c2_comando_c8,BasicType:Boolean,privato,si,,true,
+classe,Stazione.LdS,2,SubClass_C2,2,controllo input,consdef,BasicType:Boolean,pubblico,si,,true,{}
+classe,Stazione.LdS,2,SubClass_C2,8,controllo input,subclass_c2_controllo_c3,BasicType:Boolean,privato,si,,true,{}
+classe,Stazione.LdS,2,SubClass_C2,9,controllo input,subclass_c2_controllo_c6,Enumerator:Enumerator_1,privato,si,,spento,{}
+classe,Stazione.LdS,2,SubClass_C2,10,controllo input,subclass_c2_controllo_c7,BasicType:Boolean,pubblico,si,,false,{}
+classe,Stazione.LdS,2,SubClass_C2,11,controllo input,subclass_c2_controllo_c8,Enumerator:Enumerator_3,privato,si,,rossogiallox,{}
+classe,Stazione.LdS,2,SubClass_C2,12,controllo input,subclass_c2_controllo_c9,Enumerator:Enumerator_2,pubblico,si,,rossogiallogiallo,{}
+classe,Stazione.LdS,2,SubClass_C2,13,controllo input,subclass_c2_previousco_c10,BasicType:Boolean,privato,si,,false,{14}
+classe,Stazione.LdS,2,SubClass_C2,15,controllo input,subclass_c2_previousco_c4,Enumerator:Enumerator_3,pubblico,si,,rossogiallox,{16}
+classe,Stazione.LdS,2,SubClass_C2,,lista enti collegati,subclass_c2_lista_l1,Record:RecordHeaderR1,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,lista enti collegati,subclass_c2_lista_l10,Record:RecordHeaderR9,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,lista enti collegati,subclass_c2_lista_l2,Record:RecordHeaderR9,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,lista enti collegati,subclass_c2_lista_l4,Record:RecordHeaderR9,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,,lista enti collegati,subclass_c2_lista_l8,Record:RecordHeaderR1,privato,no,,,
+classe,Stazione.LdS,2,SubClass_C2,31,timer,subclass_c2_restoreti_ti1,Timer:TimerState,protetto,si,,121000,{30}
+classe,Stazione.LdS,2,SubClass_C2,32,timer,subclass_c2_timer_t1,Timer:TimerState,privato,si,,31000,{}
+classe,Stazione.LdS,2,SubClass_C2,33,timer,subclass_c2_timer_t3,Timer:TimerState,protetto,si,,43000,{}
+classe,Stazione.LdS,2,SubClass_C2,34,timer,subclass_c2_timer_t4,Timer:TimerState,privato,si,,2542000,{}
+classe,Stazione.LdS,2,SubClass_C2,35,timer,subclass_c2_timer_t8,Timer:TimerState,privato,si,,5000,{}
+classe,Stazione.LdS,2,SubClass_C2,36,timer,subclass_c2_timer_t9,Timer:TimerState,privato,si,,4054000,{}
+classe,Stazione.LdS,2,SubClass_C2,30,variabile ripristino,subclass_c2_restoreti_ti1_restore,Timer:TimerState,protetto,si,,121000,{31}
+classe,Stazione.LdS,2,SubClass_C2,37,contatore,subclass_c2_contatore_co7,Counter,protetto,si,,0,
+classe,Stazione.LdS,2,SubClass_C2,,comando automatico,eventSubclass_c2_command_comm10,,pubblico,no,{argomento_ave3=Enumerator:Enumerator_4;argomento_ave7=BasicType:Boolean},,
+classe,Stazione.LdS,2,SubClass_C2,38,comando manuale pesante,eventSubclass_c2_command_comm6DaSender17ae81e7,,pubblico,si,,,{39}
+classe,Stazione.LdS,2,SubClass_C2,39,risposta comando manuale,eventSubclass_c2_command_comm6DaSender17ae81e7_response,CommandReponse:Enum_response,privato,si,,,{38}
+classe,Stazione.LdS,2,SubClass_C2,,macro verifica,macroSubclass_c2_macrove_m2,BasicType:Boolean,privato,no,{},,
+classe,Stazione.LdS,2,SubClass_C2,,macro verifica,macroSubclass_c2_macrove_m3,BasicType:Boolean,privato,no,{argomento_ave1=Enumerator:Enumerator_2;argomento_ave6=Enumerator:Enumerator_3},,
+classe,Stazione.LdS,2,SubClass_C2,,macro verifica,macroSubclass_c2_macrove_m4,BasicType:Boolean,pubblico,no,{argomento_ave1=Enumerator:Enumerator_2;argomento_ave2=BasicType:Boolean;argomento_ave4=Enumerator:Enumerator_3;argomento_ave5=Enumerator:Enumerator_3;argomento_ave6=Enumerator:Enumerator_1;argomento_ave8=BasicType:Boolean;argomento_ave9=BasicType:Boolean},,
+classe,Stazione.LdS,2,SubClass_C2,,macro effetto,macroSubclass_c2_macroef_m8,,privato,no,{},,
+classe,Stazione.LdS,2,SubClass_C2,,macro valorizzata,macroSubclass_c2_macrova_m9,Enumerator:Enumerator_3,pubblico,no,{argomento_a4=BasicType:Boolean;argomento_a9=Enumerator:Enumerator_4},,
+record,Stazione.LdS,2,RecordHeaderR1,,parametro locale,mainclass_c1,Class:MainClass_C1,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR1,,parametro locale,recordfiled19,BasicType:Boolean,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR1,,parametro locale,recordfiled2,Enumerator:Enumerator_4,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR1,,parametro locale,recordfiled8,BasicType:Boolean,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR9,,parametro locale,mainclass_c1,Class:MainClass_C1,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR9,,parametro locale,recordfiled10,Enumerator:Enumerator_4,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR9,,parametro locale,recordfiled4,BasicType:Boolean,pubblico,no,,,
+record,Stazione.LdS,2,RecordHeaderR9,,parametro locale,recordfiled12,Enumerator:Enumerator_2,pubblico,no,,,

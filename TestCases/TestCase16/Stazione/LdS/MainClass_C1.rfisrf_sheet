@@ -1,0 +1,63 @@
+Scheda di classe MainClass_C1
+ /*[*/ Scheda di inizializzazione 
+ Transizioni iniziali 
+
+ Transizione iniziale verso state1
+ Condizioni per la transizione
+ {
+ Nessuna 
+ }
+ Effetti della transizione
+ {
+ Nessuna 
+ } /*],*/
+ /*[*/
+ Scheda di stato  state1
+
+ Permanenza in  state1
+
+Condizioni per la permanenza
+{
+
+ Nessuna  /*80,*/
+}
+Effetti della permanenza
+{
+
+  se il ripristino dello stato  è  diverso da  /*56,*/  state1  /*107,*/ /*35,*/ e  se il controllo MainClass_C1_controllo_C10 non è  diverso da  True  /*34,*/ e  se il parametro MainClass_C1_parametro_P9 è  uguale a c75Giallo,  Applica gli effetti
+       della macro MainClass_C1_macroef_M1  /*73,*/
+
+   
+  se il controllo ConsDef è uguale a FALSE  /*36,*/ o  se il timer MainClass_C1_timer_T7 non è attivo /*38,*/ e  se il contatore MainClass_C1_contatore_Co10 è  minore di  /*55,*/ 123 /*37,*/ e  se la variabile MainClass_C1_variabile_V9 è  uguale a c120x /*35,*/ e  se il controllo MainClass_C1_controllo_C6 è  uguale a  False  o  se il controllo ConsDef  è  uguale a FALSE , /*71,*/Decrementa il contatore MainClass_C1_contatore_Co9
+
+   
+ /*109,*/  se il ripristino della variabile  MainClass_C1_restoreva_RV1 è  minore di  /*55,*/ 9 /*34,*/ e  se il parametro MainClass_C1_parametro_P9 è  diverso da c75Giallo, /*70,*/Incrementa il contatore MainClass_C1_contatore_Co9
+
+ ,altrimenti  /*66,*/ Assegna al comando MainClass_C1_comando_C1 il valore  True 
+
+
+  se il ripristino dello stato  non è  uguale a  /*53,*/  state1  /*107,*/, /*66,*/ Assegna al comando MainClass_C1_comando_C1 il valore  True 
+
+   
+ /*34,*/  se il parametro MainClass_C1_parametro_P8 non è  minore di  /*55,*/ 8 /*37,*/ o  se la variabile MainClass_C1_variabile_V6 non è  uguale a c75Giallo /*36,*/ e  se il timer MainClass_C1_timer_T7 non è scaduto /*37,*/ o  se la variabile MainClass_C1_variabile_V9 è  uguale a c120x /*38,*/ o  se il contatore MainClass_C1_contatore_Co10 è  uguale a  /*53,*/ 1341, /*67,*/ Assegna alla variabile MainClass_C1_variabile_V5 il valore  False 
+
+ ,altrimenti  /*67,*/ Assegna alla variabile MainClass_C1_variabile_V6 il valore c75Giallo
+
+
+
+}
+
+ Attuazioni nominali 
+ Nessuna  /*89,*/ 
+ Normalizzazioni 
+ Nessuna  /*89,*/ 
+ Attuazioni con soccorso  Nessuna  /*92,*/ /*],*/
+ /*[*/
+ 
+ 
+ 
+ 
+ 
+ /*]*/ 
+
+/*]*/

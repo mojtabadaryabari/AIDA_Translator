@@ -1,0 +1,15 @@
+Logica,ID Classe,Classe,Nome enumerazione,Tipologia,Valori
+Stazione.LdS,1,MainClass_C1,Enumerator_0,insieme,{giallox=0;ac=1}
+Stazione.LdS,1,MainClass_C1,Enumerator_1,insieme,{gialloaverdea=4;rossogialloverde=5}
+Stazione.LdS,1,MainClass_C1,Enumerator_2,insieme,{gialloverde=8;rossogialloxverdex=9}
+Stazione.LdS,1,MainClass_C1,Enumerator_3,insieme,{giallogiallo=12;verde=13}
+Stazione.LdS,1,MainClass_C1,Enumerator_4,insieme,{rossogiallox=16;c270x=17}
+Stazione.LdS,2,SubClass_C2,Enumerator_0,insieme,{c120=2;spento=3}
+Stazione.LdS,2,SubClass_C2,Enumerator_1,insieme,{c270=6;c75giallo=7}
+Stazione.LdS,2,SubClass_C2,Enumerator_2,insieme,{avanzamento=10;rossogiallo=11}
+Stazione.LdS,2,SubClass_C2,Enumerator_3,insieme,{c270xx=14;c180x=15}
+Stazione.LdS,2,SubClass_C2,Enumerator_4,insieme,{avvio=18;rossoverde=19}
+,,CommandResponse,Enum_response,insieme,{LDS_MANCMD_NOOP=0;LDS_MANCMD_PROCESSED=1;LDS_MANCMD_UNEXPECTED=2;LDS_MANCMD_BLOCKED=3}
+Stazione.LdS,1,MainClass_C1,Stateenumerator,insieme,{state1=0;state2=1;StatoIniziale=2}
+Stazione.LdS,2,SubClass_C2,Stateenumerator,insieme,{state1=0;StatoIniziale=1}
+,,Timer,TimerState,insieme,{Disattivo=0;Attivo=1;Scaduto=2}
